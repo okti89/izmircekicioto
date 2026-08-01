@@ -8,7 +8,7 @@ export default function StickyCallBar() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex flex-col gap-2 sm:flex-row">
+    <div className="fixed bottom-4 right-4 z-40 flex flex-col gap-2 sm:flex-row">
       <a
         href={whatsappUrl}
         target="_blank"
