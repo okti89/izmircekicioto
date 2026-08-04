@@ -5,7 +5,7 @@ export const MAIN_PHONE_RAW = "05366762866";
 export const WHATSAPP_NUMBER = "905366762866";
 export const COMPANY_NAME = "İzmir Çekici";
 
-const serviceSlugs = ["oto-cekici", "aku-takviye", "oto-elektrik", "agir-vasita-kurtarma", "oto-kurtarma", "lastik-yol-yardim", "motorsiklet-cekici"];
+const serviceSlugs = ["oto-cekici", "aku-takviye", "oto-elektrik", "agir-vasita-kurtarma", "agir-ticari-cekici", "oto-kurtarma", "lastik-yol-yardim", "motorsiklet-cekici"];
 
 export interface DistrictData {
   slug: string; name: string; district: string; estimatedTime: string; neighborhoods: string[];

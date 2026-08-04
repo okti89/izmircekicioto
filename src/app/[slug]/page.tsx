@@ -18,6 +18,7 @@ const services = [
   { slug: "aku-takviye", title: "Akü Takviye", intro: "Biten akünüz için bulunduğunuz noktada güvenli takviye desteği.", image: "/aku-takviye-izmir.png" },
   { slug: "oto-elektrik", title: "Mobil Oto Elektrik", intro: "Marş, şarj ve temel elektrik arızalarında yerinde destek.", image: "/aku-takviye-izmir.png" },
   { slug: "agir-vasita-kurtarma", title: "Ağır Vasıta Kurtarma", intro: "Tır, kamyon ve otobüs için kurtarma planlaması.", image: "/agir-vasita-izmir.png" },
+  { slug: "agir-ticari-cekici", title: "A\u011f\u0131r Ticari \u00c7ekici", intro: "Kamyon, panelvan ve ticari ara\u00e7lar i\u00e7in g\u00fcvenli \u00e7ekici ve transfer planlamas\u0131.", image: "/agir-vasita-izmir.png" },
   { slug: "oto-kurtarma", title: "Oto Kurtarma", intro: "Kaza ve zor konumlar için vinçli kurtarma desteği.", image: "/izmir-cekici-hero.png" },
   { slug: "lastik-yol-yardim", title: "Lastik ve Yol Yardım", intro: "Lastik ve temel yol yardım ihtiyaçları için destek.", image: "/izmir-cekici-hero.png" },
   { slug: "motorsiklet-cekici", title: "Motosiklet Çekici", intro: "Motosiklet için kontrollü ve güvenli taşıma.", image: "/izmir-cekici-hero.png" },

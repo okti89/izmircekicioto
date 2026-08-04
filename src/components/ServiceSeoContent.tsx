@@ -6,6 +6,7 @@ const notes:Record<string,[string,string[]]>={
 "aku-takviye":["Akü bitmesi, marş alma ve şarj belirtilerinde yerinde ilk destek.",["12V ve 24V sistemler","Bağlantı ve voltaj kontrolü","Gerekirse çekici yönlendirmesi"]],
 "oto-elektrik":["Marş, şarj, akü ve temel elektrik arızalarında mobil değerlendirme.",["Marş sistemi ön kontrolü","Şarj belirtisi incelemesi","Güvenli servis transferi"]],
 "agir-vasita-kurtarma":["Tır, kamyon ve otobüs için tonaj ve yol koşuluna uygun kurtarma planı.",["Uygun kurtarıcı seçimi","Otoyol ve sanayi alanı desteği","Güvenlik planlaması"]],
+"agir-ticari-cekici":["Kamyon, panelvan ve ticari ara\u00e7lar i\u00e7in g\u00fcvenli \u00e7ekici ile kontroll\u00fc transfer planlamas\u0131.",["Ticari ara\u00e7 tipine uygun ekipman","Sanayi, otoyol ve merkez b\u00f6lge deste\u011fi","G\u00fcvenli y\u00fckleme ve teslim s\u00fcreci"]],
 "oto-kurtarma":["Kaza, şarampol ve zor konumlarda vinçli kurtarma değerlendirmesi.",["Kontrollü yükleme","Zor zeminlerde aparat seçimi","Güvenli transfer"]],
 "lastik-yol-yardim":["Patlak lastik, stepne ve temel yol yardım ihtiyaçlarında yönlendirme.",["Güvenli konum bilgisi","Stepne desteği","Gerekirse çekici"]],
 "motorsiklet-cekici":["Motosiklet için uygun sabitleme ile kontrollü taşıma.",["Sabitleme planı","Servise transfer","Kaza sonrası destek"]]};
