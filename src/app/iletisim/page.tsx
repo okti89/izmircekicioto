@@ -8,27 +8,27 @@ import JsonLd from "@/components/JsonLd";
 import { MAIN_PHONE, MAIN_PHONE_RAW, WHATSAPP_NUMBER } from "@/data/districts";
 
 export const metadata: Metadata = {
-  title: "\u0130leti\u015fim | \u0130zmir \u00c7ekici",
-  description: "\u0130zmir \u00c7ekici ileti\u015fim bilgileri. 7/24 oto \u00e7ekici, yol yard\u0131m, ak\u00fc takviye ve oto kurtarma deste\u011fi i\u00e7in hemen aray\u0131n veya WhatsApp'tan konumunuzu g\u00f6nderin.",
+  title: "İletişim | İzmir Çekici",
+  description: "İzmir Çekici iletişim bilgileri. 7/24 oto çekici, yol yardım, akü takviye ve oto kurtarma desteği için hemen arayın veya WhatsApp'tan konumunuzu gönderin.",
 };
 
 const content = {
-  eyebrow: "\u0130zmir \u00e7ekici ileti\u015fim",
-  title: "Yolda m\u0131 kald\u0131n\u0131z? Konumunuzu payla\u015f\u0131n, do\u011fru ekibi y\u00f6nlendirelim.",
-  intro: "Oto \u00e7ekici, ak\u00fc takviye, oto elektrik, oto kurtarma ve a\u011f\u0131r vas\u0131ta deste\u011fi i\u00e7in 7/24 ula\u015fabilirsiniz. Arac\u0131n\u0131z\u0131n konumunu ve ihtiyac\u0131n\u0131z\u0131 payla\u015fman\u0131z yeterlidir.",
-  whatsapp: "WhatsApp'tan konum g\u00f6nder",
+  eyebrow: "İzmir çekici iletişim",
+  title: "Yolda mı kaldınız? Konumunuzu paylaşın, doğru ekibi yönlendirelim.",
+  intro: "Oto çekici, akü takviye, oto elektrik, oto kurtarma ve ağır vasıta desteği için 7/24 ulaşabilirsiniz. Aracınızın konumunu ve ihtiyacınızı paylaşmanız yeterlidir.",
+  whatsapp: "WhatsApp'tan konum gönder",
   call: "Hemen ara",
-  stepsTitle: "H\u0131zl\u0131 y\u00f6nlendirme i\u00e7in",
+  stepsTitle: "Hızlı yönlendirme için",
   steps: [
-    "Konumunuzu veya bulundu\u011funuz yolu payla\u015f\u0131n.",
-    "Ara\u00e7 tipi ile ar\u0131za ya da hasar durumunu k\u0131saca belirtin.",
-    "Teslim adresini iletin; uygun ekipman\u0131 planlayal\u0131m.",
+    "Konumunuzu veya bulunduğunuz yolu paylaşın.",
+    "Araç tipi ile arıza ya da hasar durumunu kısaca belirtin.",
+    "Teslim adresini iletin; uygun ekipmanı planlayalım.",
   ],
-  coverageTitle: "Hizmet b\u00f6lgemiz",
-  coverage: "\u0130zmir merkez, il\u00e7eler, ana arterler, \u00e7evre yolu ve yak\u0131n g\u00fczerg\u00e2hlarda 7/24 yol yard\u0131m deste\u011fi.",
-  regionLink: "T\u00fcm hizmet b\u00f6lgelerini inceleyin",
-  serviceTitle: "Size nas\u0131l destek olabiliriz?",
-  services: ["Oto \u00e7ekici ve kayar kasa ta\u015f\u0131ma", "Ak\u00fc takviye ve mobil oto elektrik", "Kaza, ar\u0131za ve oto kurtarma", "A\u011f\u0131r vas\u0131ta kurtarma ve transfer"],
+  coverageTitle: "Hizmet bölgemiz",
+  coverage: "İzmir merkez, ilçeler, ana arterler, çevre yolu ve yakın güzergâhlarda 7/24 yol yardım desteği.",
+  regionLink: "Tüm hizmet bölgelerini inceleyin",
+  serviceTitle: "Size nasıl destek olabiliriz?",
+  services: ["Oto çekici ve kayar kasa taşıma", "Akü takviye ve mobil oto elektrik", "Kaza, arıza ve oto kurtarma", "Ağır vasıta kurtarma ve transfer"],
 };
 
 export default function ContactPage() {
