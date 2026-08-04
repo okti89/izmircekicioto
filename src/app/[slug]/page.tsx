@@ -29,7 +29,11 @@ function pageData(slug: string) {
   const service = services.find((item) => slug === item.slug || slug.endsWith(`-${item.slug}`)) ?? services[0];
   const key = slug === service.slug ? "izmir" : slug.slice(0, -service.slug.length - 1);
   const district = key === "izmir" ? "İzmir" : knownDistricts[key] ?? REFERENCE_REGIONS.find((region) => region.slug === key)?.name ?? "İzmir";
-  return { service, district, title: `${district} ${service.title}` };
+  const isTowing = service.slug === "oto-cekici";
+  const searchQuery = isTowing ? `${district} \u00c7ekici` : `${district} ${service.title}`;
+  const title = isTowing ? `${searchQuery} | 7/24 ${district} Oto \u00c7ekici` : `${district} ${service.title}`;
+  const heading = isTowing ? `${searchQuery} ve ${district} Oto \u00c7ekici` : title;
+  return { service, district, title, heading, searchQuery, isTowing };
 }
 
 export async function generateStaticParams() {
@@ -38,8 +42,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const { service, district, title } = pageData(slug);
-  const description = `${district} ${service.title} hizmeti. ${service.intro} İzmir genelinde 7/24 destek.`;
+  const { service, district, title, searchQuery, isTowing } = pageData(slug);
+  const description = isTowing
+    ? `${searchQuery} arayanlar i\u00e7in 7/24 ${district} oto \u00e7ekici, kayar kasa ve g\u00fcvenli ara\u00e7 transfer deste\u011fi.`
+    : `${district} ${service.title} hizmeti. ${service.intro} \u0130zmir genelinde 7/24 destek.`;
 
   return {
     title: `${title} | 7/24 Acil Destek`,
@@ -51,20 +57,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { service, district, title } = pageData(slug);
-  const description = `${district} ${service.title} hizmeti. ${service.intro} İzmir genelinde 7/24 destek.`;
+  const { service, district, title, searchQuery, isTowing } = pageData(slug);
+  const description = isTowing
+    ? `${searchQuery} arayanlar i\u00e7in 7/24 ${district} oto \u00e7ekici, kayar kasa ve g\u00fcvenli ara\u00e7 transfer deste\u011fi.`
+    : `${district} ${service.title} hizmeti. ${service.intro} \u0130zmir genelinde 7/24 destek.`;
 
   return (
     <>
       <Header />
-      <JsonLd name={title} description={description} path={`/${slug}`} serviceName={service.title} district={district} />
+      <JsonLd name={title} description={description} path={`/${slug}`} serviceName={isTowing ? searchQuery : service.title} district={district} />
       <main>
         <section className="relative overflow-hidden bg-slate-950 text-white">
           <Image src={service.image} alt={title} fill priority className="object-cover" />
           <div className="absolute inset-0 bg-slate-950/80" />
           <div className="relative container mx-auto max-w-6xl px-4 py-24">
             <p className="text-sm font-bold uppercase tracking-widest text-amber-300">{district} • 7/24 acil destek</p>
-            <h1 className="mt-5 max-w-3xl font-heading text-5xl font-black">{title}</h1>
+            <h1 className="mt-5 max-w-3xl font-heading text-5xl font-black">{heading}</h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">{service.intro} {district} merkez, ana yollar ve çevre bölgelerde konumunuza uygun ekip yönlendirilir.</p>
             <a href={`tel:${MAIN_PHONE_RAW}`} className="mt-8 inline-flex items-center gap-2 bg-amber-400 px-7 py-4 font-bold text-slate-950"><Phone className="h-5 w-5" />{MAIN_PHONE}</a>
           </div>
@@ -80,7 +88,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             {["Konuma göre ekip yönlendirmesi", "Araca uygun ekipman planlaması", "Güvenli taşıma ve teslim süreci"].map((item) => <p key={item} className="mt-5 flex gap-3 text-slate-200"><CheckCircle2 className="h-5 w-5 text-amber-300" />{item}</p>)}
           </div>
         </section>
-        <ServiceSeoContent district={district} serviceSlug={service.slug} serviceTitle={service.title} />
+        <ServiceSeoContent district={district} serviceSlug={service.slug} serviceTitle={isTowing ? `${searchQuery} / ${district} Oto \u00c7ekici` : service.title} />
         <LocalServiceJourney district={district} serviceSlug={service.slug} serviceTitle={service.title} />
         <section className="bg-slate-100 py-16"><div className="container mx-auto max-w-6xl px-4"><h2 className="section-title">Diğer hizmet bölgeleri</h2><Link href="/hizmet-bolgeleri" className="mt-5 inline-flex font-bold text-amber-700">Tüm İzmir hizmet bölgelerini inceleyin</Link></div></section>
       </main>
