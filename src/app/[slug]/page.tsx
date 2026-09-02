@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import JsonLd from "@/components/JsonLd";
 import LocalAreaGuide from "@/components/LocalAreaGuide";
+import ServiceRegionIndex from "@/components/ServiceRegionIndex";
 import LocalServiceJourney from "@/components/LocalServiceJourney";
 import ServiceSeoContent from "@/components/ServiceSeoContent";
 import StickyCallBar from "@/components/StickyCallBar";
@@ -91,6 +92,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </div>
         </section>
         <ServiceSeoContent district={district} serviceSlug={service.slug} serviceTitle={isTowing ? `${searchQuery} / ${district} Oto \u00c7ekici` : service.title} />
+        {slug === service.slug && <ServiceRegionIndex serviceSlug={service.slug} serviceTitle={service.title} />}
         <LocalAreaGuide slug={slug} district={district} serviceTitle={service.title} />
         <LocalServiceJourney district={district} serviceSlug={service.slug} serviceTitle={service.title} />
         <section className="bg-slate-100 py-16"><div className="container mx-auto max-w-6xl px-4"><h2 className="section-title">Diğer hizmet bölgeleri</h2><Link href="/hizmet-bolgeleri" className="mt-5 inline-flex font-bold text-amber-700">Tüm İzmir hizmet bölgelerini inceleyin</Link></div></section>
