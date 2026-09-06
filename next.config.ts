@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
         destination: "/:slug-cekici",
         permanent: true,
       },
+      {
+        source: "/motosiklet-cekici",
+        destination: "/motorsiklet-cekici",
+        permanent: true,
+      },
+      {
+        source: "/:slug-motosiklet-cekici",
+        destination: "/:slug-motorsiklet-cekici",
+        permanent: true,
+      },
     ];
   },
 };
