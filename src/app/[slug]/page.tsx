@@ -16,7 +16,7 @@ import { REFERENCE_REGIONS } from "@/data/referenceRegions";
 export const dynamicParams = false;
 
 const services = [
-  { slug: "oto-cekici", title: "Oto Çekici", intro: "Kayar kasa ile otomobil, SUV ve hafif ticari araç taşıma.", image: "/izmir-cekici-hero.png" },
+  { slug: "cekici", title: "Çekici", intro: "Kayar kasa ile otomobil, SUV ve hafif ticari araç taşıma.", image: "/izmir-cekici-hero.png" },
   { slug: "aku-takviye", title: "Akü Takviye", intro: "Biten akünüz için bulunduğunuz noktada güvenli takviye desteği.", image: "/aku-takviye-izmir.png" },
   { slug: "oto-elektrik", title: "Mobil Oto Elektrik", intro: "Marş, şarj ve temel elektrik arızalarında yerinde destek.", image: "/aku-takviye-izmir.png" },
   { slug: "agir-vasita-kurtarma", title: "Ağır Vasıta Kurtarma", intro: "Tır, kamyon ve otobüs için kurtarma planlaması.", image: "/agir-vasita-izmir.png" },
@@ -56,15 +56,15 @@ function pageData(slug: string) {
   const key = slug === service.slug ? "izmir" : slug.slice(0, -service.slug.length - 1);
   const district = key === "izmir" ? "İzmir" : knownDistricts[key] ?? REFERENCE_REGIONS.find((region) => region.slug === key)?.name ?? "İzmir";
   const detail = getDistrictDetail(key);
-  const isTowing = service.slug === "oto-cekici";
+  const isTowing = service.slug === "cekici" || service.slug === "oto-cekici";
 
   const searchQuery = isTowing ? `${district} Çekici` : `${district} ${service.title}`;
   const seoTitle = isTowing
-    ? `${district} Çekici | 7/24 En Yakın ${district} Oto Çekici`
+    ? `${district} Çekici | 7/24 En Yakın ${district} Çekici`
     : `${district} ${service.title} | 7/24 Acil Yol Yardım`;
 
   const heading = isTowing
-    ? `${district} Çekici - 7/24 En Yakın ${district} Oto Çekici`
+    ? `${district} Çekici - 7/24 En Yakın ${district} Çekici`
     : `${district} ${service.title}`;
 
   let description: string;

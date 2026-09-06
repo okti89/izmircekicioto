@@ -7,7 +7,7 @@ import { MAIN_PHONE, MAIN_PHONE_RAW } from "@/data/districts";
 import { REFERENCE_REGIONS } from "@/data/referenceRegions";
 
 const S = [
-  { slug: "oto-cekici", label: "Oto Çekici" },
+  { slug: "cekici", label: "Çekici" },
   { slug: "aku-takviye", label: "Akü Takviye" },
   { slug: "oto-elektrik", label: "Oto Elektrik" },
   { slug: "agir-vasita-kurtarma", label: "Ağır Vasıta" },
@@ -31,7 +31,7 @@ export default function Header() {
       {/* Üst Bilgi Barı */}
       <div className="hidden border-b border-slate-800 bg-slate-900 md:block">
         <div className="container mx-auto flex justify-between px-4 py-2 text-xs text-slate-300">
-          <span>İzmir Tüm Bölgeler • 7/24 Acil Yol Yardım</span>
+          <span>İzmir Tüm Bölgeler • 7/24 Acil Yol Yardım & Çekici</span>
           <span>Konum gönderin, en yakın ekibi yönlendirelim.</span>
         </div>
       </div>

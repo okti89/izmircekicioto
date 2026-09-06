@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${slug}`,
       lastModified: now,
       changeFrequency: "weekly" as const,
-      priority: slug.endsWith("-oto-cekici") ? 0.8 : 0.6,
+      priority: slug.endsWith("-cekici") || slug === "cekici" ? 0.8 : 0.6,
     })),
   ];
 }

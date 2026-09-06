@@ -3,9 +3,9 @@ import { AlertTriangle, CarFront, ClipboardCheck, MapPinned, Wrench, ShieldAlert
 
 const guides = [
   [
-    "Oto çekici ve kayar kasa",
+    "Çekici ve kayar kasa",
     "Arıza yapan, kaza sonrası hareket edemeyen veya servise güvenle ulaştırılması gereken otomobil, SUV ve hafif ticari araçlar için kayar kasa tercih edilir. Yükleme öncesinde aracın yürür durumu, hasarı ve bulunduğu alan değerlendirilir.",
-    "/oto-cekici",
+    "/cekici",
   ],
   [
     "Akü takviye ve mobil oto elektrik",
@@ -20,21 +20,21 @@ const guides = [
 ];
 
 const directLinks = [
-  { name: "Bornova Çekici", href: "/bornova-oto-cekici" },
-  { name: "Karşıyaka Çekici", href: "/karsiyaka-oto-cekici" },
-  { name: "Konak Çekici", href: "/konak-oto-cekici" },
-  { name: "Buca Çekici", href: "/buca-oto-cekici" },
-  { name: "Gaziemir Çekici", href: "/gaziemir-oto-cekici" },
-  { name: "Torbalı Çekici", href: "/torbali-oto-cekici" },
-  { name: "Çeşme / Alaçatı Çekici", href: "/alacati-oto-cekici" },
-  { name: "Menemen Çekici", href: "/menemen-oto-cekici" },
-  { name: "İzmir Çevre Yolu Çekici", href: "/izmir-cevre-yolu-oto-cekici" },
-  { name: "Sabuncubeli Tüneli Çekici", href: "/sabuncubeli-tuneli-oto-cekici" },
-  { name: "Belkahve Rampası Çekici", href: "/belkahve-rampasi-oto-cekici" },
-  { name: "1. Sanayi Çekici", href: "/1-sanayi-oto-cekici" },
-  { name: "Kısıkköy Sanayi Çekici", href: "/kisikkoy-sanayi-sitesi-oto-cekici" },
-  { name: "Bergama Çekici", href: "/bergama-oto-cekici" },
-  { name: "Ödemiş Çekici", href: "/odemis-oto-cekici" },
+  { name: "Bornova Çekici", href: "/bornova-cekici" },
+  { name: "Karşıyaka Çekici", href: "/karsiyaka-cekici" },
+  { name: "Konak Çekici", href: "/konak-cekici" },
+  { name: "Buca Çekici", href: "/buca-cekici" },
+  { name: "Gaziemir Çekici", href: "/gaziemir-cekici" },
+  { name: "Torbalı Çekici", href: "/torbali-cekici" },
+  { name: "Çeşme / Alaçatı Çekici", href: "/alacati-cekici" },
+  { name: "Menemen Çekici", href: "/menemen-cekici" },
+  { name: "İzmir Çevre Yolu Çekici", href: "/izmir-cevre-yolu-cekici" },
+  { name: "Sabuncubeli Tüneli Çekici", href: "/sabuncubeli-tuneli-cekici" },
+  { name: "Belkahve Rampası Çekici", href: "/belkahve-rampasi-cekici" },
+  { name: "1. Sanayi Çekici", href: "/1-sanayi-cekici" },
+  { name: "Kısıkköy Sanayi Çekici", href: "/kisikkoy-sanayi-sitesi-cekici" },
+  { name: "Bergama Çekici", href: "/bergama-cekici" },
+  { name: "Ödemiş Çekici", href: "/odemis-cekici" },
   { name: "Çekici Fiyat Tarifesi", href: "/fiyatlar" },
 ];
 

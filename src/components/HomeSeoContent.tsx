@@ -8,15 +8,15 @@ import {
 } from "@/data/navigationCategories";
 
 const coreAreas = [
-  ["Bornova Oto Çekici", "/bornova-oto-cekici"],
-  ["Karşıyaka Oto Çekici", "/karsiyaka-oto-cekici"],
-  ["Konak Oto Çekici", "/konak-oto-cekici"],
-  ["Buca Oto Çekici", "/buca-oto-cekici"],
-  ["Gaziemir Oto Çekici", "/gaziemir-oto-cekici"],
-  ["Çiğli Oto Çekici", "/cigli-oto-cekici"],
-  ["Çeşme Alaçatı Çekici", "/alacati-oto-cekici"],
-  ["Torbalı Ayrancılar Çekici", "/torbali-ayrancilar-oto-cekici"],
-  ["Buca Gölet Çekici", "/buca-golet-oto-cekici"],
+  ["Bornova Çekici", "/bornova-cekici"],
+  ["Karşıyaka Çekici", "/karsiyaka-cekici"],
+  ["Konak Çekici", "/konak-cekici"],
+  ["Buca Çekici", "/buca-cekici"],
+  ["Gaziemir Çekici", "/gaziemir-cekici"],
+  ["Çiğli Çekici", "/cigli-cekici"],
+  ["Çeşme Alaçatı Çekici", "/alacati-cekici"],
+  ["Torbalı Ayrancılar Çekici", "/torbali-ayrancilar-cekici"],
+  ["Buca Gölet Çekici", "/buca-golet-cekici"],
 ];
 
 const faqs = [

@@ -16,7 +16,7 @@ import {
 import { MAIN_PHONE, MAIN_PHONE_RAW } from "@/data/districts";
 
 const services = [
-  ["oto-cekici", "Oto Çekici"],
+  ["cekici", "Çekici"],
   ["aku-takviye", "Akü Takviye"],
   ["oto-elektrik", "Oto Elektrik"],
   ["agir-vasita-kurtarma", "Ağır Vasıta Kurtarma"],
@@ -282,7 +282,7 @@ export default function ServiceRegionsPage() {
                         href={`/${region.slug}-${slug}`}
                         className="border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-xs text-slate-700 transition hover:bg-slate-950 hover:text-white"
                       >
-                        {region.name} {slug === "oto-cekici" ? "Çekici" : label}
+                        {region.name} {slug === "cekici" ? "Çekici" : label}
                       </Link>
                     ))}
                   </div>

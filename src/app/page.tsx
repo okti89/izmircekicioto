@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 };
 
 const services: [string, string, string, LucideIcon][] = [
-  ["Oto Çekici", "Kayar kasa ile güvenli araç taşıma", "/oto-cekici", Truck],
+  ["Çekici", "Kayar kasa ile güvenli araç taşıma", "/cekici", Truck],
   ["Akü Takviye", "Yerinde akü ve marş desteği", "/aku-takviye", Zap],
   ["Mobil Oto Elektrik", "Şarj ve elektrik arızalarında destek", "/oto-elektrik", Wrench],
 ];

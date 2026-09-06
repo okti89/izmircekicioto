@@ -10,7 +10,7 @@ import {
 } from "@/data/navigationCategories";
 
 const SERVICES = [
-  { name: "Oto Çekici", href: "/oto-cekici" },
+  { name: "Çekici", href: "/cekici" },
   { name: "Çekici Fiyat Tarifesi", href: "/fiyatlar", badge: "2026" },
   { name: "Akü Takviye", href: "/aku-takviye" },
   { name: "Mobil Oto Elektrik", href: "/oto-elektrik" },
@@ -54,7 +54,7 @@ export default function Footer() {
               İzmir <span className="text-amber-400">Çekici</span>
             </h2>
             <p className="mt-4 text-xs leading-6 text-slate-400">
-              İzmir genelinde otoyollar, tüneller, çevre yolları, sanayi siteleri ve tüm ilçelerde 7/24 oto kurtarma, akü takviye ve yol yardım ağı.
+              İzmir genelinde otoyollar, tüneller, çevre yolları, sanayi siteleri ve tüm ilçelerde 7/24 çekici, kurtarma, akü takviye ve yol yardım ağı.
             </p>
             <div className="mt-6 space-y-3">
               <a
@@ -150,7 +150,7 @@ export default function Footer() {
               ))}
               <li>
                 <Link
-                  href="/buca-golet-oto-cekici"
+                  href="/buca-golet-cekici"
                   className="text-slate-300 transition hover:text-amber-400 block"
                 >
                   Buca Gölet Çekici
@@ -158,7 +158,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/pinarbasi-oto-cekici"
+                  href="/pinarbasi-cekici"
                   className="text-slate-300 transition hover:text-amber-400 block"
                 >
                   Pınarbaşı Çekici
@@ -174,47 +174,47 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-2 text-xs">
               <li>
-                <Link href="/bornova-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
-                  Bornova Oto Çekici
+                <Link href="/bornova-cekici" className="text-slate-300 transition hover:text-amber-400">
+                  Bornova Çekici
                 </Link>
               </li>
               <li>
-                <Link href="/karsiyaka-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
-                  Karşıyaka Oto Çekici
+                <Link href="/karsiyaka-cekici" className="text-slate-300 transition hover:text-amber-400">
+                  Karşıyaka Çekici
                 </Link>
               </li>
               <li>
-                <Link href="/konak-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
-                  Konak Oto Çekici
+                <Link href="/konak-cekici" className="text-slate-300 transition hover:text-amber-400">
+                  Konak Çekici
                 </Link>
               </li>
               <li>
-                <Link href="/buca-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
-                  Buca Oto Çekici
+                <Link href="/buca-cekici" className="text-slate-300 transition hover:text-amber-400">
+                  Buca Çekici
                 </Link>
               </li>
               <li>
-                <Link href="/gaziemir-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
-                  Gaziemir Oto Çekici
+                <Link href="/gaziemir-cekici" className="text-slate-300 transition hover:text-amber-400">
+                  Gaziemir Çekici
                 </Link>
               </li>
               <li>
-                <Link href="/alacati-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
+                <Link href="/alacati-cekici" className="text-slate-300 transition hover:text-amber-400">
                   Çeşme / Alaçatı Çekici
                 </Link>
               </li>
               <li>
-                <Link href="/torbali-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
+                <Link href="/torbali-cekici" className="text-slate-300 transition hover:text-amber-400">
                   Torbalı Çekici
                 </Link>
               </li>
               <li>
-                <Link href="/menemen-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
+                <Link href="/menemen-cekici" className="text-slate-300 transition hover:text-amber-400">
                   Menemen Çekici
                 </Link>
               </li>
               <li>
-                <Link href="/bergama-oto-cekici" className="text-slate-300 transition hover:text-amber-400">
+                <Link href="/bergama-cekici" className="text-slate-300 transition hover:text-amber-400">
                   Bergama Çekici
                 </Link>
               </li>
@@ -222,10 +222,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Hızlı Erişim Etiketleri: Çeşme, Torbalı, Çevre Yolu & Sanayi */}
+        {/* Hızlı Erişim Etiketleri */}
         <div className="mt-12 border-t border-slate-800/80 pt-8">
           <p className="mb-3 font-heading text-xs font-black uppercase tracking-wider text-slate-400">
-            Hızlı Çekici & Kurtarıcı Noktaları
+            Hızlı Çekici & Kurtarma Noktaları
           </p>
           <div className="flex flex-wrap gap-2 text-[11px]">
             {CESME_PENINSULA_LINKS.slice(0, 6).map((c) => (

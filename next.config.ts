@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
         destination: "https://izmircekicioto.com/:path*",
         permanent: true,
       },
+      {
+        source: "/oto-cekici",
+        destination: "/cekici",
+        permanent: true,
+      },
+      {
+        source: "/:slug-oto-cekici",
+        destination: "/:slug-cekici",
+        permanent: true,
+      },
     ];
   },
 };
