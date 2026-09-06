@@ -18,7 +18,7 @@ export const dynamicParams = false;
 const services = [
   { slug: "cekici", title: "Çekici", intro: "Kayar kasa ile otomobil, SUV ve hafif ticari araç taşıma.", image: "/izmir-cekici-hero.png" },
   { slug: "aku-takviye", title: "Akü Takviye", intro: "Biten akünüz için bulunduğunuz noktada güvenli takviye desteği.", image: "/aku-takviye-izmir.png" },
-  { slug: "oto-elektrik", title: "Mobil Oto Elektrik", intro: "Marş, şarj ve temel elektrik arızalarında yerinde destek.", image: "/aku-takviye-izmir.png" },
+  { slug: "oto-elektrik", title: "Oto Elektrik", intro: "Marş, şarj ve yerinde elektrik arızalarında 7/24 gezici oto elektrikçi desteği.", image: "/aku-takviye-izmir.png" },
   { slug: "agir-vasita-kurtarma", title: "Ağır Vasıta Kurtarma", intro: "Tır, kamyon ve otobüs için kurtarma planlaması.", image: "/agir-vasita-izmir.png" },
   { slug: "agir-ticari-cekici", title: "Ağır Ticari Çekici", intro: "Kamyon, panelvan ve ticari araçlar için güvenli çekici ve transfer planlaması.", image: "/agir-vasita-izmir.png" },
   { slug: "oto-kurtarma", title: "Oto Kurtarma", intro: "Kaza ve zor konumlar için vinçli kurtarma desteği.", image: "/izmir-cekici-hero.png" },
@@ -57,19 +57,31 @@ function pageData(slug: string) {
   const district = key === "izmir" ? "İzmir" : knownDistricts[key] ?? REFERENCE_REGIONS.find((region) => region.slug === key)?.name ?? "İzmir";
   const detail = getDistrictDetail(key);
   const isTowing = service.slug === "cekici" || service.slug === "oto-cekici";
+  const isElectric = service.slug === "oto-elektrik";
 
-  const searchQuery = isTowing ? `${district} Çekici` : `${district} ${service.title}`;
+  const searchQuery = isTowing
+    ? `${district} Çekici`
+    : isElectric
+    ? `${district} Oto Elektrik`
+    : `${district} ${service.title}`;
+
   const seoTitle = isTowing
     ? `${district} Çekici | 7/24 En Yakın ${district} Çekici`
+    : isElectric
+    ? `${district} Oto Elektrik | 7/24 Nöbetçi ${district} Oto Elektrikçi`
     : `${district} ${service.title} | 7/24 Acil Yol Yardım`;
 
   const heading = isTowing
     ? `${district} Çekici - 7/24 En Yakın ${district} Çekici`
+    : isElectric
+    ? `${district} Oto Elektrik - 7/24 Nöbetçi & Gezici Servis`
     : `${district} ${service.title}`;
 
   let description: string;
   if (detail && isTowing) {
     description = `${district} çekici ve 7/24 oto kurtarma. ${detail.popularArteries.slice(0, 3).join(", ")} çevresinde ${detail.estimatedTime} içinde en yakın kayar kasa çekici. Hemen arayın!`;
+  } else if (isElectric) {
+    description = `${district} oto elektrik ve 7/24 acil nöbetçi oto elektrikçi servisi. Marş, şarj dinamoları, akü ve yerinde elektrik arızalarında gezici servis ekibi konumunuzda.`;
   } else if (detail) {
     description = `${district} ${service.title} hizmeti. ${detail.popularArteries.slice(0, 2).join(", ")} bölgesinde 7/24 acil mobil destek. Hemen arayın!`;
   } else if (isTowing) {
@@ -78,7 +90,20 @@ function pageData(slug: string) {
     description = `${district} ${service.title} hizmeti. ${service.intro} İzmir genelinde 7/24 güvenilir destek.`;
   }
 
-  const faqs = detail?.faqs ?? [
+  const faqs = detail?.faqs ?? (isElectric ? [
+    {
+      q: `${district} oto elektrikçi ne kadar sürede gelir?`,
+      a: `${district} genelinde hazır bekleyen gezici mobil oto elektrik ekiplerimiz çağrınız sonrası ortalama 15-20 dakika içinde konumunuza ulaşarak yerinde müdahale sağlar.`,
+    },
+    {
+      q: `${district} yerinde oto elektrik tamiri yapılıyor mu?`,
+      a: `Evet, marş motoru, şarj dinamosu, akü arızası ve kablo tesisatı gibi yolda bırakan arızalara bulunduğunuz noktada yerinde müdahale edilir.`,
+    },
+    {
+      q: `${district} 7/24 nöbetçi oto elektrikçi var mı?`,
+      a: `Evet, gece, gündüz ve tatil günleri 7/24 ${MAIN_PHONE} numarasından ${district} nöbetçi oto elektrikçimize ulaşabilirsiniz.`,
+    },
+  ] : [
     {
       q: `${district} çekici ne kadar sürede gelir?`,
       a: `${district} ve çevresindeki ana arterlerde bekleyen nöbetçi ekiplerimiz çağrınız sonrası ortalama 15-20 dakika içinde konumunuza ulaşır.`,
@@ -91,9 +116,9 @@ function pageData(slug: string) {
       q: `${district} en yakın çekici telefon numarası nedir?`,
       a: `7 gün 24 saat ${MAIN_PHONE} numarasını arayarak veya WhatsApp üzerinden konum ileterek en yakın ${district} çekici ekibini hemen çağırabilirsiniz.`,
     },
-  ];
+  ]);
 
-  return { service, district, detail, seoTitle, heading, searchQuery, isTowing, description, faqs };
+  return { service, district, detail, seoTitle, heading, searchQuery, isTowing, isElectric, description, faqs };
 }
 
 export async function generateStaticParams() {
@@ -119,7 +144,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { service, district, detail, seoTitle, heading, searchQuery, isTowing, description, faqs } = pageData(slug);
+  const { service, district, detail, seoTitle, heading, searchQuery, isTowing, isElectric, description, faqs } = pageData(slug);
 
   const breadcrumbs = [
     { name: "Ana Sayfa", url: "/" },
@@ -177,6 +202,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   {detail
                     ? detail.localOverview
                     : `${district} merkez, mahalleler ve bağlantı yollarında yolda kalan binek, SUV ve hafif ticari araçlarınız için en yakın kayar kasa kurtarıcımız dakikalar içinde konumunuza yönlendirilir.`}
+                </>
+              ) : isElectric ? (
+                <>
+                  <strong className="text-amber-300 font-bold">{district} oto elektrik</strong> ve{" "}
+                  <strong className="text-white font-bold">nöbetçi oto elektrikçi</strong> servisimizle 7/24 yanınızdayız.{" "}
+                  {district} genelinde marş basmama, akü bitmesi, şarj dinamosu arızası ve yerinde elektrik problemlerine gezici mobil servis aracımızla dakikalar içinde müdahale ediyoruz.
                 </>
               ) : detail ? (
                 `${detail.localOverview}`

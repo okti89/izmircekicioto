@@ -13,7 +13,7 @@ const SERVICES = [
   { name: "Çekici", href: "/cekici" },
   { name: "Çekici Fiyat Tarifesi", href: "/fiyatlar", badge: "2026" },
   { name: "Akü Takviye", href: "/aku-takviye" },
-  { name: "Mobil Oto Elektrik", href: "/oto-elektrik" },
+  { name: "Oto Elektrik", href: "/oto-elektrik" },
   { name: "Ağır Vasıta Kurtarma", href: "/agir-vasita-kurtarma" },
   { name: "Ağır Ticari Çekici", href: "/agir-ticari-cekici" },
   { name: "Oto Kurtarma", href: "/oto-kurtarma" },
