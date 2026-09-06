@@ -51,14 +51,22 @@ const knownDistricts: Record<string, string> = {
   kisikkoy: "Kısıkköy",
 };
 
+const servicesSortedBySlugLength = [...services].sort((a, b) => b.slug.length - a.slug.length);
+
 function pageData(slug: string) {
-  const service = services.find((item) => slug === item.slug || slug.endsWith(`-${item.slug}`)) ?? services[0];
+  const exactService = services.find((item) => slug === item.slug);
+  const service =
+    exactService ??
+    servicesSortedBySlugLength.find((item) => slug.endsWith(`-${item.slug}`)) ??
+    services[0];
   const key = slug === service.slug ? "izmir" : slug.slice(0, -service.slug.length - 1);
   const district = key === "izmir" ? "İzmir" : knownDistricts[key] ?? REFERENCE_REGIONS.find((region) => region.slug === key)?.name ?? "İzmir";
   const detail = getDistrictDetail(key);
   const isTowing = service.slug === "cekici" || service.slug === "oto-cekici";
   const isElectric = service.slug === "oto-elektrik";
   const isMoto = service.slug === "motorsiklet-cekici";
+  const isCommercial = service.slug === "agir-ticari-cekici";
+  const isHeavy = service.slug === "agir-vasita-kurtarma";
 
   const searchQuery = isTowing
     ? `${district} Çekici`
@@ -66,6 +74,10 @@ function pageData(slug: string) {
     ? `${district} Oto Elektrik`
     : isMoto
     ? `${district} Motosiklet Çekici`
+    : isCommercial
+    ? `${district} Ağır Ticari Çekici`
+    : isHeavy
+    ? `${district} Ağır Vasıta Kurtarma`
     : `${district} ${service.title}`;
 
   const seoTitle = isTowing
@@ -74,6 +86,10 @@ function pageData(slug: string) {
     ? `${district} Oto Elektrik | 7/24 Nöbetçi ${district} Oto Elektrikçi`
     : isMoto
     ? `${district} Motosiklet Çekici | 7/24 Güvenli Motor Taşıma`
+    : isCommercial
+    ? `${district} Ağır Ticari Çekici | 7/24 Kamyon & Panelvan Çekici`
+    : isHeavy
+    ? `${district} Ağır Vasıta Kurtarma | 7/24 Tır & Kamyon Kurtarıcı`
     : `${district} ${service.title} | 7/24 Acil Yol Yardım`;
 
   const heading = isTowing
@@ -82,6 +98,10 @@ function pageData(slug: string) {
     ? `${district} Oto Elektrik - 7/24 Nöbetçi & Gezici Servis`
     : isMoto
     ? `${district} Motosiklet Çekici - 7/24 Özel Sabitlemeli Taşıma`
+    : isCommercial
+    ? `${district} Ağır Ticari Çekici - Kamyon, Minibüs ve Panelvan Taşıma`
+    : isHeavy
+    ? `${district} Ağır Vasıta Kurtarma - Tır, Kamyon ve Otobüs Çekici`
     : `${district} ${service.title}`;
 
   let description: string;
@@ -91,6 +111,10 @@ function pageData(slug: string) {
     description = `${district} oto elektrik ve 7/24 acil nöbetçi oto elektrikçi servisi. Marş, şarj dinamoları, akü ve yerinde elektrik arızalarında gezici servis ekibi konumunuzda.`;
   } else if (isMoto) {
     description = `${district} motosiklet çekici ve 7/24 motor kurtarma hizmeti. Özel ön tekerlek kilitleme aparatı, yumuşak spanzetler ve hasarsız dik taşıma güvencesi.`;
+  } else if (isCommercial) {
+    description = `${district} ağır ticari çekici ve yol yardım hizmeti. Kamyon, panelvan, minibüs ve ticari araçlar için 7/24 yüksek tonajlı kurtarıcı ve transfer desteği.`;
+  } else if (isHeavy) {
+    description = `${district} ağır vasıta kurtarma hizmeti. Tır, kamyon, otobüs ve iş makineleri için 7/24 profesyonel vinçli çekici ve acil kurtarma operasyonu.`;
   } else if (detail) {
     description = `${district} ${service.title} hizmeti. ${detail.popularArteries.slice(0, 2).join(", ")} bölgesinde 7/24 acil mobil destek. Hemen arayın!`;
   } else if (isTowing) {
@@ -125,6 +149,32 @@ function pageData(slug: string) {
       q: `Scooter, Chopper ve Racing motorlar için uygun mu?`,
       a: `Evet; scooter, maxi-scooter, alçak chopper ve hassas grenajlı racing/touring motorların tümüne uygun sabitleme aparatlarımız mevcuttur.`,
     },
+  ] : isCommercial ? [
+    {
+      q: `${district} ağır ticari çekici hangi araçları taşır?`,
+      a: `Panelvan, minibüs, kamyonet, kamyon ve uzun şasi ticari araçların transferi ve arıza/kaza çekici hizmetini güvenle sağlıyoruz.`,
+    },
+    {
+      q: `${district} ağır ticari çekici fiyatları nasıl belirlenir?`,
+      a: `Aracın tonajı, dingil uzunluğu, tekerlek durumu ve taşınacağı mesafe dikkate alınarak net ve sabit fiyat teklifi verilir.`,
+    },
+    {
+      q: `Yüklü ticari araç çekilebilir mi?`,
+      a: `Evet; yük durumu ve araç tonajı belirtildiğinde yüksek taşıma kapasiteli uygun kayar kasa veya vinçli kurtarıcı sevk edilir.`,
+    },
+  ] : isHeavy ? [
+    {
+      q: `${district} ağır vasıta kurtarma hangi araçlar içindir?`,
+      a: `Tır, kırkayak kamyon, mikser, körüklü otobüs ve şantiye iş makineleri için özel ağır kurtarma araçlarımızla hizmet verilir.`,
+    },
+    {
+      q: `Otoyol ve virajlı yollarda vinçli kurtarma yapılıyor mu?`,
+      a: `Evet, otoyol, viyadük, şarampol ve viraj gibi riskli bölgelerde çift tamburlu vinç ve ahtapot vinç sistemleriyle kontrollü kurtarma yapılır.`,
+    },
+    {
+      q: `${district} ağır vasıta çekiciye 7/24 ulaşılabilir mi?`,
+      a: `Evet, 7 gün 24 saat ${MAIN_PHONE} acil çağrı hattımız üzerinden ağır vasıta kurtarma ekibimize ulaşabilirsiniz.`,
+    },
   ] : [
     {
       q: `${district} çekici ne kadar sürede gelir?`,
@@ -140,7 +190,7 @@ function pageData(slug: string) {
     },
   ]);
 
-  return { service, district, detail, seoTitle, heading, searchQuery, isTowing, isElectric, isMoto, description, faqs };
+  return { service, district, detail, seoTitle, heading, searchQuery, isTowing, isElectric, isMoto, isCommercial, isHeavy, description, faqs };
 }
 
 export async function generateStaticParams() {
@@ -166,7 +216,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { service, district, detail, seoTitle, heading, searchQuery, isTowing, isElectric, isMoto, description, faqs } = pageData(slug);
+  const { service, district, detail, seoTitle, heading, searchQuery, isTowing, isElectric, isMoto, isCommercial, isHeavy, description, faqs } = pageData(slug);
 
   const breadcrumbs = [
     { name: "Ana Sayfa", url: "/" },
@@ -236,6 +286,18 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   <strong className="text-amber-300 font-bold">{district} motosiklet çekici</strong> ve{" "}
                   <strong className="text-white font-bold">motor kurtarma</strong> hizmetimizle 7/24 yoldayız.{" "}
                   Scooter, chopper, enduro ve racing motorlarınız için özel ön teker sabitleme takozu ve 4 noktalı yumuşak bağlama sapanlarıyla çiziksiz ve devrilme riski olmadan güvenli nakil sağlıyoruz.
+                </>
+              ) : isCommercial ? (
+                <>
+                  <strong className="text-amber-300 font-bold">{district} ağır ticari çekici</strong> ve{" "}
+                  <strong className="text-white font-bold">ticari araç kurtarma</strong> ekibimizle 7/24 sahadayız.{" "}
+                  Panelvan, kamyon, minibüs ve ticari filolar için yüksek tonaj kapasiteli çekicilerimizle sanayi sitelerine, yetkili servislere veya istediğiniz adrese güvenli transfer sağlıyoruz.
+                </>
+              ) : isHeavy ? (
+                <>
+                  <strong className="text-amber-300 font-bold">{district} ağır vasıta kurtarma</strong> ve{" "}
+                  <strong className="text-white font-bold">tır çekici</strong> hizmetimizle 7/24 yol yardım desteği sunuyoruz.{" "}
+                  Tır, kamyon, otobüs ve iş makineleri için güçlü vinç ve donanımlı ağır kurtarıcı filomuzla otoyol ve çevre yollarında acil müdahale sağlıyoruz.
                 </>
               ) : detail ? (
                 `${detail.localOverview}`

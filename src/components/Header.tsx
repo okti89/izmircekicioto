@@ -10,6 +10,7 @@ const S = [
   { slug: "cekici", label: "Çekici" },
   { slug: "aku-takviye", label: "Akü Takviye" },
   { slug: "oto-elektrik", label: "Oto Elektrik" },
+  { slug: "motorsiklet-cekici", label: "Motosiklet Çekici" },
   { slug: "agir-vasita-kurtarma", label: "Ağır Vasıta" },
   { slug: "agir-ticari-cekici", label: "Ağır Ticari Çekici" },
 ];
@@ -46,7 +47,7 @@ export default function Header() {
         </Link>
 
         {/* Masaüstü Navigasyon */}
-        <nav className="relative hidden items-center gap-5 whitespace-nowrap text-[11px] font-extrabold xl:flex">
+        <nav className="relative hidden items-center gap-3.5 2xl:gap-5 whitespace-nowrap text-[11px] font-extrabold xl:flex">
           <Link href="/" className="hover:text-amber-400 transition">
             ANA SAYFA
           </Link>
