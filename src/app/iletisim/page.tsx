@@ -8,8 +8,9 @@ import JsonLd from "@/components/JsonLd";
 import { MAIN_PHONE, MAIN_PHONE_RAW, WHATSAPP_NUMBER } from "@/data/districts";
 
 export const metadata: Metadata = {
-  title: "İletişim | İzmir Çekici",
+  title: { absolute: "İletişim | İzmir Çekici 7/24 Yol Yardım" },
   description: "İzmir Çekici iletişim bilgileri. 7/24 oto çekici, yol yardım, akü takviye ve oto kurtarma desteği için hemen arayın veya WhatsApp'tan konumunuzu gönderin.",
+  alternates: { canonical: "/iletisim" },
 };
 
 const content = {
@@ -36,7 +37,17 @@ export default function ContactPage() {
 
   return (
     <>
-      <Header />`n      <JsonLd path="/iletisim" name="İzmir Çekici İletişim" serviceName="Oto çekici ve yol yardım" district="İzmir" />
+      <Header />
+      <JsonLd
+        path="/iletisim"
+        name="İzmir Çekici İletişim"
+        serviceName="Oto çekici ve yol yardım"
+        district="İzmir"
+        breadcrumbs={[
+          { name: "Ana Sayfa", url: "/" },
+          { name: "İletişim", url: "/iletisim" },
+        ]}
+      />
       <main>
         <section className="bg-slate-950 py-20 text-white">
           <div className="container mx-auto grid max-w-6xl gap-12 px-4 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
