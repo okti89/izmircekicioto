@@ -17,6 +17,8 @@ const S = [
 
 export default function Header() {
   const [o, setO] = useState(false);
+  const [activeDesktopService, setActiveDesktopService] = useState<string | null>(null);
+  const [activeMobileService, setActiveMobileService] = useState<string | null>(null);
 
   useEffect(() => {
     document.body.style.overflow = o ? "hidden" : "";
@@ -53,35 +55,48 @@ export default function Header() {
           </Link>
 
           {S.map((x) => (
-            <div key={x.slug} className="group">
+            <div
+              key={x.slug}
+              className="relative"
+              onMouseEnter={() => setActiveDesktopService(x.slug)}
+              onMouseLeave={() => setActiveDesktopService(null)}
+              onFocusCapture={() => setActiveDesktopService(x.slug)}
+              onBlurCapture={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                  setActiveDesktopService(null);
+                }
+              }}
+            >
               <Link
                 href={`/${x.slug}`}
                 className="flex items-center gap-1 py-3 text-amber-300 transition hover:text-amber-400"
               >
                 {x.label.toLocaleUpperCase("tr-TR")}
-                <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" />
+                <ChevronDown className={`h-3.5 w-3.5 transition ${activeDesktopService === x.slug ? "rotate-180" : ""}`} />
               </Link>
-              <div className="absolute left-1/2 top-full z-[60] hidden max-h-[70vh] w-[920px] max-w-[calc(100vw-2rem)] -translate-x-1/2 overflow-y-auto border-t-4 border-amber-500 bg-white p-6 text-slate-900 shadow-2xl group-hover:block">
-                <div className="mb-3 flex items-center justify-between border-b border-slate-200 pb-2">
-                  <p className="font-heading text-lg font-black text-slate-950">
-                    {x.label} Hizmet Bölgeleri
-                  </p>
-                  <Link href={`/${x.slug}`} className="text-xs font-bold text-amber-700 hover:underline">
-                    Genel {x.label} Sayfası →
-                  </Link>
-                </div>
-                <div className="grid grid-cols-3 gap-x-5 gap-y-1">
-                  {REFERENCE_REGIONS.map((r) => (
-                    <Link
-                      key={r.slug}
-                      href={`/${r.slug}-${x.slug}`}
-                      className="py-1.5 text-xs font-semibold hover:text-amber-700 block truncate"
-                    >
-                      {r.name} {x.label}
+              {activeDesktopService === x.slug && (
+                <div className="absolute left-1/2 top-full z-[60] max-h-[70vh] w-[920px] max-w-[calc(100vw-2rem)] -translate-x-1/2 overflow-y-auto border-t-4 border-amber-500 bg-white p-6 text-slate-900 shadow-2xl">
+                  <div className="mb-3 flex items-center justify-between border-b border-slate-200 pb-2">
+                    <p className="font-heading text-lg font-black text-slate-950">
+                      {x.label} Hizmet Bölgeleri
+                    </p>
+                    <Link href={`/${x.slug}`} className="text-xs font-bold text-amber-700 hover:underline">
+                      Genel {x.label} Sayfası →
                     </Link>
-                  ))}
+                  </div>
+                  <div className="grid grid-cols-3 gap-x-5 gap-y-1">
+                    {REFERENCE_REGIONS.map((r) => (
+                      <Link
+                        key={r.slug}
+                        href={`/${r.slug}-${x.slug}`}
+                        className="block truncate py-1.5 text-xs font-semibold hover:text-amber-700"
+                      >
+                        {r.name} {x.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           ))}
 
@@ -161,7 +176,12 @@ export default function Header() {
             </Link>
 
             {S.map((x) => (
-              <details key={x.slug} className="border-b border-slate-800">
+              <details
+                key={x.slug}
+                className="border-b border-slate-800"
+                open={activeMobileService === x.slug}
+                onToggle={(event) => setActiveMobileService(event.currentTarget.open ? x.slug : null)}
+              >
                 <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-sm font-extrabold text-amber-300">
                   {x.label.toLocaleUpperCase("tr-TR")}
                   <ChevronDown className="h-4 w-4" />
@@ -170,7 +190,7 @@ export default function Header() {
                   <Link href={`/${x.slug}`} onClick={close} className="font-bold text-white">
                     {x.label} ana sayfası
                   </Link>
-                  {REFERENCE_REGIONS.map((r) => (
+                  {activeMobileService === x.slug && REFERENCE_REGIONS.map((r) => (
                     <Link
                       key={r.slug}
                       href={`/${r.slug}-${x.slug}`}
