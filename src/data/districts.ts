@@ -1,11 +1,12 @@
 import { REFERENCE_REGIONS } from "./referenceRegions";
+import { SERVICES } from "./services";
 
 export const MAIN_PHONE = "0536 676 28 66";
 export const MAIN_PHONE_RAW = "05366762866";
 export const WHATSAPP_NUMBER = "905366762866";
 export const COMPANY_NAME = "İzmir Çekici";
 
-const serviceSlugs = ["cekici", "aku-takviye", "oto-elektrik", "agir-vasita-kurtarma", "agir-ticari-cekici", "oto-kurtarma", "lastik-yol-yardim", "motorsiklet-cekici"];
+const serviceSlugs = SERVICES.map((service) => service.slug);
 
 export interface DistrictData {
   slug: string; name: string; district: string; estimatedTime: string; neighborhoods: string[];

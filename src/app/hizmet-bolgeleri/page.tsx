@@ -278,6 +278,7 @@ export default function ServiceRegionsPage() {
                   <div className="flex flex-wrap gap-2 mt-6">
                     {REFERENCE_REGIONS.map((region) => (
                       <Link
+                        prefetch={false}
                         key={`${slug}-${region.slug}`}
                         href={`/${region.slug}-${slug}`}
                         className="border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-xs text-slate-700 transition hover:bg-slate-950 hover:text-white"

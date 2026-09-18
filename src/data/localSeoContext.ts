@@ -6,13 +6,14 @@ type LocalContext = {
 };
 
 const coastalLocations = new Set([
-  "alacati", "ahmetbeyli", "balikli-ova", "cesme", "gorece", "gulbahce",
+  "alacati", "ahmetbeyli", "balikli-ova", "cesme", "gulbahce",
   "gumuldur", "guzelbahce", "guzelyali", "ilica", "icmeler", "inciralti",
   "karaburun", "liman-reis", "ozdere", "sigacik", "urla", "urla-iskele", "urkmez",
 ]);
 
 function contextType(slug: string, name: string) {
-  if (slug.includes("otoban") || slug.includes("otoyolu") || slug.includes("beton-yol")) return "route";
+  if (/otoban|otoyolu|beton-yol|cevre-yolu|tunel|rampa/.test(slug)) return "route";
+  if (/sanayi|organize|osb/.test(slug)) return "industrial";
   if (slug.includes("havalimani") || slug.includes("iskele") || slug.includes("teleferik")) return "transfer";
   if (name.includes("Mahallesi") || slug.includes("mahalle")) return "neighborhood";
   if (coastalLocations.has(slug)) return "coastal";
@@ -21,6 +22,13 @@ function contextType(slug: string, name: string) {
 
 export function getLocalSeoContext(slug: string, name: string, serviceTitle: string): LocalContext {
   const type = contextType(slug, name);
+
+  if (type === "industrial") return {
+    label: "Sanayi ve işletme erişimi",
+    heading: `${name} için ${serviceTitle} planlaması`,
+    description: "Sanayi ve depo girişlerinde kapı numarası, güvenlik noktası, çalışma saati ve araç ölçüleri erişimi belirler. İşletmenin kabul koşullarını çağrı sırasında paylaşın.",
+    guidance: ["Blok, kapı numarası ve giriş yapılacak yolu iletin.", "Araç yüklüyse toplam ağırlığı ve kasa ölçülerini belirtin.", "Teslim alacak servis veya işletmenin kabul saatini netleştirin."],
+  };
 
   if (type === "route") {
     return {

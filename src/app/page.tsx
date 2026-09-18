@@ -11,29 +11,12 @@ import OperationGallery from "@/components/OperationGallery";
 import ServiceAssurance from "@/components/ServiceAssurance";
 import StickyCallBar from "@/components/StickyCallBar";
 import { MAIN_PHONE, MAIN_PHONE_RAW } from "@/data/districts";
-const homeFaqs = [
-  {
-    q: "İzmir'de en yakın oto çekici ne kadar sürede gelir?",
-    a: "İzmir genelinde stratejik noktalarda bekleyen nöbetçi ekiplerimizle çağrınızdan itibaren ortalama 15-25 dakika içinde konumunuza ulaşıyoruz.",
-  },
-  {
-    q: "Oto çekici çağırmak için hangi bilgiler gerekir?",
-    a: "Aracınızın tam konumu (WhatsApp canlı konum), marka-modeli, hareket edip edemediği ve arıza/hasar durumu hakkında kısa bilgi vermeniz yeterlidir.",
-  },
-  {
-    q: "Kayar kasa çekici hangi araçlar için uygundur?",
-    a: "Binek otomobil, SUV, alçak spor araçlar ve hafif ticari araçlar için kayar kasa hidrolik çekiciler güvenli yükleme sağlar.",
-  },
-  {
-    q: "Gaziemir, Bornova, Karşıyaka ve çevre ilçelerde 7/24 çekici var mı?",
-    a: "Evet, İzmir'in tüm merkez ve çevre ilçelerinde, otoyollarında 7 gün 24 saat kesintisiz oto kurtarma ve çekici hizmeti sağlıyoruz.",
-  },
-];
+import { HOME_FAQS as homeFaqs } from "@/data/homeFaqs";
 
 export const metadata: Metadata = {
   title: { absolute: "İzmir Çekici | 7/24 En Yakın Oto Çekici ve Yol Yardım" },
   description:
-    "İzmir çekici ve 7/24 oto kurtarma hizmeti. Gaziemir, Bornova, Karşıyaka, Buca ve tüm ilçelerde 15 dakikada en yakın kayar kasa çekici. Hemen arayın!",
+    "İzmir çekici ve 7/24 oto kurtarma hizmeti. Gaziemir, Bornova, Karşıyaka, Buca ve çevre bölgelerde araç taşıma ve yol yardım. Konumunuzu paylaşarak destek alın.",
   alternates: { canonical: "/" },
 };
 
@@ -41,6 +24,11 @@ const services: [string, string, string, LucideIcon][] = [
   ["Çekici", "Kayar kasa ile güvenli araç taşıma", "/cekici", Truck],
   ["Akü Takviye", "Yerinde akü ve marş desteği", "/aku-takviye", Zap],
   ["Oto Elektrik", "Marş, şarj ve yerinde elektrik arızalarında destek", "/oto-elektrik", Wrench],
+  ["Oto Kurtarma", "Hasar ve zor konumlar için kurtarma planı", "/oto-kurtarma", Truck],
+  ["Ağır Vasıta Kurtarma", "Tır, kamyon ve otobüs için destek", "/agir-vasita-kurtarma", Truck],
+  ["Ağır Ticari Çekici", "Ticari araçların transfer planlaması", "/agir-ticari-cekici", Truck],
+  ["Motosiklet Çekici", "Modele uygun yükleme ve sabitleme", "/motorsiklet-cekici", Truck],
+  ["Lastik ve Yol Yardım", "Lastik sorunu için yerinde destek değerlendirmesi", "/lastik-yol-yardim", Wrench],
 ];
 
 export default function HomePage() {
@@ -63,6 +51,7 @@ export default function HomePage() {
             alt="İzmir oto çekici ve yol yardım hizmeti"
             fill
             priority
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-slate-950/75" />
@@ -116,7 +105,7 @@ export default function HomePage() {
             </p>
             <p className="flex gap-3 items-center">
               <MapPin className="h-6 w-6 text-amber-300 shrink-0" />
-              Gaziemir, Bornova, Buca dahil tüm İzmir ilçelerinde 15 dk ortalama varış
+              Konum, trafik ve ekipmana göre değerlendirilen tahmini varış süresi
             </p>
             <p className="flex gap-3 items-center">
               <Truck className="h-6 w-6 text-amber-300 shrink-0" />

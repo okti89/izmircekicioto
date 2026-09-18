@@ -1,0 +1,75 @@
+import fs from "node:fs";
+import path from "node:path";
+
+// Run against the actual production output, not just source templates.
+const root = path.resolve(".next/server/app");
+const base = "https://izmircekicioto.com";
+const errors = [];
+const warnings = [];
+const pages = new Map();
+function walk(dir) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) walk(file);
+    else if (file.endsWith(".html") && !entry.name.startsWith("_")) {
+      const relative = path.relative(root, file).replaceAll("\\", "/");
+      const route = relative === "index.html" ? "/" : `/${relative.slice(0, -5)}`;
+      pages.set(route, fs.readFileSync(file, "utf8"));
+    }
+  }
+}
+if (!fs.existsSync(path.resolve(".next/BUILD_ID"))) throw new Error("Complete npm run build before auditing.");
+walk(root);
+const sitemap = fs.readFileSync(path.join(root, "sitemap.xml.body"), "utf8");
+const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
+const sitemapRoutes = new Set(urls.map((url) => new URL(url).pathname));
+if (new Set(urls).size !== urls.length) errors.push("Sitemap contains duplicate URLs");
+const allLinks = new Map();
+const titles = new Map();
+for (const [route, html] of pages) {
+  if (!sitemapRoutes.has(route)) continue;
+  const check = (condition, message) => { if (!condition) errors.push(`${route}: ${message}`); };
+  check((html.match(/<h1(?:\s|>)/g) ?? []).length === 1, "Expected exactly one H1");
+  check(html.includes('lang="tr"'), "Missing Turkish language");
+  const canonical = html.match(/<link[^>]*rel="canonical"[^>]*href="([^"]+)"/i)?.[1];
+  check(canonical && new URL(canonical).pathname === route && new URL(canonical).origin === base, "Incorrect canonical");
+  check(!/<meta[^>]*name="robots"[^>]*content="[^"]*noindex/i.test(html), "Unexpected noindex");
+  const title = html.match(/<title>(.*?)<\/title>/s)?.[1];
+  check(Boolean(title), "Missing title");
+  check(/<meta name="description" content="[^"]+"/.test(html), "Missing description");
+  if (titles.has(title)) warnings.push(`Duplicate title: ${route} and ${titles.get(title)}`);
+  titles.set(title, route);
+  const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "").replace(/<[^>]+>/g, " ");
+  check(!/\\u[0-9a-f]{4}/i.test(visible), "Visible unicode escape");
+  for (const [, json] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      const schema = JSON.parse(json);
+      for (const item of schema["@graph"] ?? [schema]) {
+        if (item["@type"] === "FAQPage") for (const faq of item.mainEntity) {
+          const escape = (text) => text.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("'", "&#x27;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+          check(visible.includes(escape(faq.name)), `FAQ question absent from page: ${faq.name}`);
+          check(visible.includes(escape(faq.acceptedAnswer.text)), "FAQ answer absent from page");
+        }
+        if (item["@type"] === "Organization") check(item["@id"] === `${base}/#organization`, "Inconsistent provider identity");
+      }
+    } catch (error) { errors.push(`${route}: invalid JSON-LD: ${error.message}`); }
+  }
+  const links = [...html.matchAll(/<a\b[^>]*href="(\/[^"?#]*)[^" ]*"/g)].map((match) => match[1]);
+  allLinks.set(route, links);
+  for (const link of links) if (!pages.has(link) && !link.startsWith("/_next/")) errors.push(`${route}: broken/redirecting internal link ${link}`);
+}
+for (const route of sitemapRoutes) if (!pages.has(route)) errors.push(`Sitemap URL has no generated page: ${route}`);
+const reached = new Set(["/"]);
+const queue = ["/"];
+for (let i = 0; i < queue.length; i++) for (const link of allLinks.get(queue[i]) ?? []) if (!reached.has(link)) { reached.add(link); queue.push(link); }
+for (const route of sitemapRoutes) if (!reached.has(route)) errors.push(`No crawlable path from homepage: ${route}`);
+const report = { generatedAt: new Date().toISOString(), sitemapUrls: urls.length, auditedPages: allLinks.size, reachablePages: [...sitemapRoutes].filter((r) => reached.has(r)).length, homepageBytes: Buffer.byteLength(pages.get("/") ?? ""), errors: [...new Set(errors)], warnings: [...new Set(warnings)] };
+fs.mkdirSync("artifacts", { recursive: true });
+const regionsSource = fs.readFileSync("src/data/referenceRegions.ts", "utf8");
+const detailSource = fs.readFileSync("src/data/districtDetails.ts", "utf8");
+const detailedRegions = new Set([...detailSource.matchAll(/^  ([a-z0-9-]+): \{/gm)].map((match) => match[1]));
+const contentCoverage = [...regionsSource.matchAll(/\{ slug: "([^"]+)", name: "([^"]+)" \}/g)].map(([, slug, name]) => ({ slug, name, hasRegionalDetail: detailedRegions.has(slug), operationEvidence: "Owner verification and photo mapping required" }));
+fs.writeFileSync("artifacts/content-coverage.json", JSON.stringify(contentCoverage, null, 2));
+fs.writeFileSync("artifacts/seo-audit.json", JSON.stringify(report, null, 2));
+console.log(JSON.stringify(report, null, 2));
+if (report.errors.length) process.exitCode = 1;

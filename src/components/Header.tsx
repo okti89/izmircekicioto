@@ -57,7 +57,7 @@ export default function Header() {
           {S.map((x) => (
             <div
               key={x.slug}
-              className="relative"
+              className="static"
               onMouseEnter={() => setActiveDesktopService(x.slug)}
               onMouseLeave={() => setActiveDesktopService(null)}
               onFocusCapture={() => setActiveDesktopService(x.slug)}
@@ -87,6 +87,7 @@ export default function Header() {
                   <div className="grid grid-cols-3 gap-x-5 gap-y-1">
                     {REFERENCE_REGIONS.map((r) => (
                       <Link
+                        prefetch={false}
                         key={r.slug}
                         href={`/${r.slug}-${x.slug}`}
                         className="block truncate py-1.5 text-xs font-semibold hover:text-amber-700"
@@ -134,6 +135,7 @@ export default function Header() {
       <div
         className={`fixed inset-0 z-[70] xl:hidden ${o ? "pointer-events-auto" : "pointer-events-none"}`}
         aria-hidden={!o}
+        inert={!o}
       >
         <button
           type="button"
@@ -180,7 +182,10 @@ export default function Header() {
                 key={x.slug}
                 className="border-b border-slate-800"
                 open={activeMobileService === x.slug}
-                onToggle={(event) => setActiveMobileService(event.currentTarget.open ? x.slug : null)}
+                onToggle={(event) => {
+                  const isOpen = event.currentTarget.open;
+                  setActiveMobileService((current) => isOpen ? x.slug : current === x.slug ? null : current);
+                }}
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-sm font-extrabold text-amber-300">
                   {x.label.toLocaleUpperCase("tr-TR")}
@@ -192,6 +197,7 @@ export default function Header() {
                   </Link>
                   {activeMobileService === x.slug && REFERENCE_REGIONS.map((r) => (
                     <Link
+                      prefetch={false}
                       key={r.slug}
                       href={`/${r.slug}-${x.slug}`}
                       onClick={close}

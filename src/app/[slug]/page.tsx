@@ -1,465 +1,151 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle2, Clock, MapPin, Navigation, Phone, ShieldCheck } from "lucide-react";
-import Footer from "@/components/Footer";
+import { notFound } from "next/navigation";
+import { CheckCircle2, Phone } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import LocalAreaGuide from "@/components/LocalAreaGuide";
-import LocalServiceJourney from "@/components/LocalServiceJourney";
-import ServiceSeoContent from "@/components/ServiceSeoContent";
 import StickyCallBar from "@/components/StickyCallBar";
-import { getAllStaticSlugs, MAIN_PHONE, MAIN_PHONE_RAW } from "@/data/districts";
-import { DISTRICT_DETAILS, getDistrictDetail } from "@/data/districtDetails";
+import { getAllStaticSlugs, MAIN_PHONE, MAIN_PHONE_RAW, WHATSAPP_NUMBER } from "@/data/districts";
+import { getDistrictDetail } from "@/data/districtDetails";
 import { REFERENCE_REGIONS } from "@/data/referenceRegions";
+import { SERVICES } from "@/data/services";
 
 export const dynamicParams = false;
-
-const services = [
-  { slug: "cekici", title: "Çekici", intro: "Kayar kasa ile otomobil, SUV ve hafif ticari araç taşıma.", image: "/izmir-cekici-hero.png" },
-  { slug: "aku-takviye", title: "Akü Takviye", intro: "Biten akünüz için bulunduğunuz noktada güvenli takviye desteği.", image: "/aku-takviye-izmir.png" },
-  { slug: "oto-elektrik", title: "Oto Elektrik", intro: "Marş, şarj ve yerinde elektrik arızalarında 7/24 gezici oto elektrikçi desteği.", image: "/aku-takviye-izmir.png" },
-  { slug: "agir-vasita-kurtarma", title: "Ağır Vasıta Kurtarma", intro: "Tır, kamyon ve otobüs için kurtarma planlaması.", image: "/agir-vasita-izmir.png" },
-  { slug: "agir-ticari-cekici", title: "Ağır Ticari Çekici", intro: "Kamyon, panelvan ve ticari araçlar için güvenli çekici ve transfer planlaması.", image: "/agir-vasita-izmir.png" },
-  { slug: "oto-kurtarma", title: "Oto Kurtarma", intro: "Kaza ve zor konumlar için vinçli kurtarma desteği.", image: "/izmir-cekici-hero.png" },
-  { slug: "lastik-yol-yardim", title: "Lastik ve Yol Yardım", intro: "Lastik ve temel yol yardım ihtiyaçları için destek.", image: "/izmir-cekici-hero.png" },
-  { slug: "motorsiklet-cekici", title: "Motosiklet Çekici", intro: "Özel teker kilitleme aparatı ve yumuşak spanzetler ile güvenli dik motosiklet taşıma.", image: "/motosiklet-cekici-izmir.jpg" },
-];
-
-const knownDistricts: Record<string, string> = {
-  bornova: "Bornova",
-  karsiyaka: "Karşıyaka",
-  buca: "Buca",
-  konak: "Konak",
-  bayrakli: "Bayraklı",
-  cigli: "Çiğli",
-  gaziemir: "Gaziemir",
-  cesme: "Çeşme",
-  urla: "Urla",
-  karabaglar: "Karabağlar",
-  balcova: "Balçova",
-  narlidere: "Narlıdere",
-  guzelbahce: "Güzelbahçe",
-  menemen: "Menemen",
-  torbali: "Torbalı",
-  kemalpasa: "Kemalpaşa",
-  seferihisar: "Seferihisar",
-  menderes: "Menderes",
-  aliaga: "Aliağa",
-  ucyol: "Üçyol",
-  kisik: "Kısık",
-  kisikkoy: "Kısıkköy",
-};
-
-const servicesSortedBySlugLength = [...services].sort((a, b) => b.slug.length - a.slug.length);
+const sortedServices = [...SERVICES].sort((a, b) => b.slug.length - a.slug.length);
 
 function pageData(slug: string) {
-  const exactService = services.find((item) => slug === item.slug);
-  const service =
-    exactService ??
-    servicesSortedBySlugLength.find((item) => slug.endsWith(`-${item.slug}`)) ??
-    services[0];
-  const key = slug === service.slug ? "izmir" : slug.slice(0, -service.slug.length - 1);
-  const district = key === "izmir" ? "İzmir" : knownDistricts[key] ?? REFERENCE_REGIONS.find((region) => region.slug === key)?.name ?? "İzmir";
-  const detail = getDistrictDetail(key);
-  const isTowing = service.slug === "cekici" || service.slug === "oto-cekici";
-  const isElectric = service.slug === "oto-elektrik";
-  const isMoto = service.slug === "motorsiklet-cekici";
-  const isCommercial = service.slug === "agir-ticari-cekici";
-  const isHeavy = service.slug === "agir-vasita-kurtarma";
-
-  const searchQuery = isTowing
-    ? `${district} Çekici`
-    : isElectric
-    ? `${district} Oto Elektrik`
-    : isMoto
-    ? `${district} Motosiklet Çekici`
-    : isCommercial
-    ? `${district} Ağır Ticari Çekici`
-    : isHeavy
-    ? `${district} Ağır Vasıta Kurtarma`
-    : `${district} ${service.title}`;
-
-  const seoTitle = isTowing
-    ? `${district} Çekici | 7/24 En Yakın ${district} Çekici`
-    : isElectric
-    ? `${district} Oto Elektrik | 7/24 Nöbetçi ${district} Oto Elektrikçi`
-    : isMoto
-    ? `${district} Motosiklet Çekici | 7/24 Güvenli Motor Taşıma`
-    : isCommercial
-    ? `${district} Ağır Ticari Çekici | 7/24 Kamyon & Panelvan Çekici`
-    : isHeavy
-    ? `${district} Ağır Vasıta Kurtarma | 7/24 Tır & Kamyon Kurtarıcı`
-    : `${district} ${service.title} | 7/24 Acil Yol Yardım`;
-
-  const heading = isTowing
-    ? `${district} Çekici - 7/24 En Yakın ${district} Çekici`
-    : isElectric
-    ? `${district} Oto Elektrik - 7/24 Nöbetçi & Gezici Servis`
-    : isMoto
-    ? `${district} Motosiklet Çekici - 7/24 Özel Sabitlemeli Taşıma`
-    : isCommercial
-    ? `${district} Ağır Ticari Çekici - Kamyon, Minibüs ve Panelvan Taşıma`
-    : isHeavy
-    ? `${district} Ağır Vasıta Kurtarma - Tır, Kamyon ve Otobüs Çekici`
-    : `${district} ${service.title}`;
-
-  let description: string;
-  if (detail && isTowing) {
-    description = `${district} çekici ve 7/24 oto kurtarma. ${detail.popularArteries.slice(0, 3).join(", ")} çevresinde ${detail.estimatedTime} içinde en yakın kayar kasa çekici. Hemen arayın!`;
-  } else if (isElectric) {
-    description = `${district} oto elektrik ve 7/24 acil nöbetçi oto elektrikçi servisi. Marş, şarj dinamoları, akü ve yerinde elektrik arızalarında gezici servis ekibi konumunuzda.`;
-  } else if (isMoto) {
-    description = `${district} motosiklet çekici ve 7/24 motor kurtarma hizmeti. Özel ön tekerlek kilitleme aparatı, yumuşak spanzetler ve hasarsız dik taşıma güvencesi.`;
-  } else if (isCommercial) {
-    description = `${district} ağır ticari çekici ve yol yardım hizmeti. Kamyon, panelvan, minibüs ve ticari araçlar için 7/24 yüksek tonajlı kurtarıcı ve transfer desteği.`;
-  } else if (isHeavy) {
-    description = `${district} ağır vasıta kurtarma hizmeti. Tır, kamyon, otobüs ve iş makineleri için 7/24 profesyonel vinçli çekici ve acil kurtarma operasyonu.`;
-  } else if (detail) {
-    description = `${district} ${service.title} hizmeti. ${detail.popularArteries.slice(0, 2).join(", ")} bölgesinde 7/24 acil mobil destek. Hemen arayın!`;
-  } else if (isTowing) {
-    description = `${district} çekici ve ${district} oto kurtarma hizmeti. 7/24 kayar kasa araç taşıma, kaza ve arıza sonrası acil yol yardım desteği.`;
-  } else {
-    description = `${district} ${service.title} hizmeti. ${service.intro} İzmir genelinde 7/24 güvenilir destek.`;
-  }
-
-  const faqs = detail?.faqs ?? (isElectric ? [
+  const service = sortedServices.find((item) => slug === item.slug || slug.endsWith(`-${item.slug}`));
+  if (!service) notFound();
+  const isHub = slug === service.slug;
+  const regionSlug = isHub ? "izmir" : slug.slice(0, -service.slug.length - 1);
+  const region = REFERENCE_REGIONS.find((item) => item.slug === regionSlug);
+  if (!isHub && !region) notFound();
+  const district = region?.name ?? "İzmir";
+  const detail = getDistrictDetail(regionSlug);
+  const heading = `${district} ${service.title}`;
+  const title = isHub ? `${heading} | Hizmet Kapsamı ve Bölgeler` : `${heading} | 7/24 ${service.slug === "cekici" ? "Oto Çekici ve Yol Yardım" : "Yol Yardım"}`;
+  const description = isHub
+    ? `İzmir ${service.title.toLocaleLowerCase("tr-TR")} rehberi: hizmet kapsamı, müdahale koşulları ve bölge sayfaları. Konumunuzu seçerek ilgili hizmet bilgilerine ulaşın.`
+    : `${heading} hizmeti. ${service.intro} Konum ve araç bilgisiyle destek isteyin.`;
+  const faqs = [
+    ...service.faqs,
     {
-      q: `${district} oto elektrikçi ne kadar sürede gelir?`,
-      a: `${district} genelinde hazır bekleyen gezici mobil oto elektrik ekiplerimiz çağrınız sonrası ortalama 15-20 dakika içinde konumunuza ulaşarak yerinde müdahale sağlar.`,
+      q: `${district} için ${service.title.toLocaleLowerCase("tr-TR")} talebinde konumu nasıl paylaşmalıyım?`,
+      a: detail
+        ? `WhatsApp konumuna cadde, giriş ve yön bilgisini ekleyin. ${detail.popularArteries.slice(0, 2).join(" veya ")} yakınındaysanız bulunduğunuz tarafı da belirtin. Araç modeli ve mevcut sorunu birlikte iletin.`
+        : `${district} için WhatsApp konumunuza ilçe, cadde ve yakın bir referans noktası ekleyin. Aynı adlı yerlerin karışmaması için yalnızca bölge adıyla yetinmeyin. Araç modeli ve mevcut sorunu birlikte iletin.`,
     },
     {
-      q: `${district} yerinde oto elektrik tamiri yapılıyor mu?`,
-      a: `Evet, marş motoru, şarj dinamosu, akü arızası ve kablo tesisatı gibi yolda bırakan arızalara bulunduğunuz noktada yerinde müdahale edilir.`,
+      q: `${district} için varış süresi nasıl belirlenir?`,
+      a: "Uygun ekibin konumu, trafik, yol erişimi ve gereken ekipman değerlendirildikten sonra tahmini süre görüşmede paylaşılır. Her konum için geçerli sabit bir varış süresi yoktur.",
     },
-    {
-      q: `${district} 7/24 nöbetçi oto elektrikçi var mı?`,
-      a: `Evet, gece, gündüz ve tatil günleri 7/24 ${MAIN_PHONE} numarasından ${district} nöbetçi oto elektrikçimize ulaşabilirsiniz.`,
-    },
-  ] : isMoto ? [
-    {
-      q: `${district}'de motosiklet çekiciye nasıl yüklenir ve sabitlenir?`,
-      a: `Motosikletiniz kayar kasa üzerindeki özel ön tekerlek kilitleme aparatına oturtulur ve grenajlara zarar vermeyen yumuşak spanzetlerle 4 noktadan dik olarak sabitlenir. Devrilme ve çizilme riski sıfırdır.`,
-    },
-    {
-      q: `${district} motosiklet çekici fiyatı ne kadar?`,
-      a: `${district} motosiklet taşıma ücretleri binek araçlara göre daha ekonomik ve avantajlı tarifeyle hesaplanır. 0536 676 28 66 numaramızdan anında net fiyat alabilirsiniz.`,
-    },
-    {
-      q: `Scooter, Chopper ve Racing motorlar için uygun mu?`,
-      a: `Evet; scooter, maxi-scooter, alçak chopper ve hassas grenajlı racing/touring motorların tümüne uygun sabitleme aparatlarımız mevcuttur.`,
-    },
-  ] : isCommercial ? [
-    {
-      q: `${district} ağır ticari çekici hangi araçları taşır?`,
-      a: `Panelvan, minibüs, kamyonet, kamyon ve uzun şasi ticari araçların transferi ve arıza/kaza çekici hizmetini güvenle sağlıyoruz.`,
-    },
-    {
-      q: `${district} ağır ticari çekici fiyatları nasıl belirlenir?`,
-      a: `Aracın tonajı, dingil uzunluğu, tekerlek durumu ve taşınacağı mesafe dikkate alınarak net ve sabit fiyat teklifi verilir.`,
-    },
-    {
-      q: `Yüklü ticari araç çekilebilir mi?`,
-      a: `Evet; yük durumu ve araç tonajı belirtildiğinde yüksek taşıma kapasiteli uygun kayar kasa veya vinçli kurtarıcı sevk edilir.`,
-    },
-  ] : isHeavy ? [
-    {
-      q: `${district} ağır vasıta kurtarma hangi araçlar içindir?`,
-      a: `Tır, kırkayak kamyon, mikser, körüklü otobüs ve şantiye iş makineleri için özel ağır kurtarma araçlarımızla hizmet verilir.`,
-    },
-    {
-      q: `Otoyol ve virajlı yollarda vinçli kurtarma yapılıyor mu?`,
-      a: `Evet, otoyol, viyadük, şarampol ve viraj gibi riskli bölgelerde çift tamburlu vinç ve ahtapot vinç sistemleriyle kontrollü kurtarma yapılır.`,
-    },
-    {
-      q: `${district} ağır vasıta çekiciye 7/24 ulaşılabilir mi?`,
-      a: `Evet, 7 gün 24 saat ${MAIN_PHONE} acil çağrı hattımız üzerinden ağır vasıta kurtarma ekibimize ulaşabilirsiniz.`,
-    },
-  ] : [
-    {
-      q: `${district} çekici ne kadar sürede gelir?`,
-      a: `${district} ve çevresindeki ana arterlerde bekleyen nöbetçi ekiplerimiz çağrınız sonrası ortalama 15-20 dakika içinde konumunuza ulaşır.`,
-    },
-    {
-      q: `${district} çekici fiyatları nasıl hesaplanır?`,
-      a: `${district} çekici ücreti; aracın bulunduğu nokta, gideceği servis mesafesi ve araç türü dikkate alınarak telefonda şeffaf ve sabit fiyat prensibiyle belirlenir.`,
-    },
-    {
-      q: `${district} en yakın çekici telefon numarası nedir?`,
-      a: `7 gün 24 saat ${MAIN_PHONE} numarasını arayarak veya WhatsApp üzerinden konum ileterek en yakın ${district} çekici ekibini hemen çağırabilirsiniz.`,
-    },
-  ]);
-
-  return { service, district, detail, seoTitle, heading, searchQuery, isTowing, isElectric, isMoto, isCommercial, isHeavy, description, faqs };
+  ];
+  return { service, isHub, regionSlug, district, detail, heading, title, description, faqs };
 }
 
-export async function generateStaticParams() {
-  return getAllStaticSlugs();
-}
+export function generateStaticParams() { return getAllStaticSlugs(); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const { service, seoTitle, description } = pageData(slug);
-
+  const { service, title, description } = pageData(slug);
   return {
-    title: { absolute: seoTitle },
-    description,
-    alternates: { canonical: `/${slug}` },
-    openGraph: {
-      title: `${seoTitle} | İzmir Çekici`,
-      description,
-      url: `/${slug}`,
-      images: [{ url: service.image, alt: seoTitle }],
-    },
+    title: { absolute: title }, description, alternates: { canonical: `/${slug}` },
+    openGraph: { type: "website", locale: "tr_TR", title, description, url: `/${slug}`, images: [{ url: service.image, alt: service.imageAlt }] },
+    twitter: { card: "summary_large_image", title, description, images: [service.image] },
   };
 }
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { service, district, detail, seoTitle, heading, searchQuery, isTowing, isElectric, isMoto, isCommercial, isHeavy, description, faqs } = pageData(slug);
-
+  const { service, isHub, regionSlug, district, detail, heading, description, faqs } = pageData(slug);
   const breadcrumbs = [
     { name: "Ana Sayfa", url: "/" },
-    { name: "Hizmet Bölgeleri", url: "/hizmet-bolgeleri" },
-    { name: isTowing ? `${district} Çekici` : `${district} ${service.title}`, url: `/${slug}` },
+    ...(isHub ? [] : [{ name: `İzmir ${service.title}`, url: `/${service.slug}` }]),
+    { name: heading, url: `/${slug}` },
   ];
-
-  return (
-    <>
-      <Header />
-      <JsonLd
-        name={`${district} ${service.title} - İzmir Çekici`}
-        description={description}
-        path={`/${slug}`}
-        serviceName={isTowing ? searchQuery : service.title}
-        district={district}
-        lat={detail?.lat ?? 38.4237}
-        lng={detail?.lng ?? 27.1428}
-        faqs={faqs}
-        breadcrumbs={breadcrumbs}
-      />
-      <main>
-        {/* Breadcrumb Bar */}
-        <nav aria-label="Breadcrumb" className="border-b border-slate-800 bg-slate-900 py-3 text-xs text-slate-300">
-          <div className="container mx-auto flex max-w-6xl items-center gap-2 px-4">
-            <Link href="/" className="hover:text-amber-400 transition">Ana Sayfa</Link>
-            <span className="text-slate-500">/</span>
-            <Link href="/hizmet-bolgeleri" className="hover:text-amber-400 transition">Hizmet Bölgeleri</Link>
-            <span className="text-slate-500">/</span>
-            <span className="font-bold text-amber-300">{isTowing ? `${district} Çekici` : `${district} ${service.title}`}</span>
+  const message = encodeURIComponent(`${district} ${service.title} için destek istiyorum. Konumum ve araç bilgilerim: `);
+  return <>
+    <Header />
+    <JsonLd name={heading} description={description} path={`/${slug}`} serviceName={service.title} district={district} faqs={faqs} breadcrumbs={breadcrumbs} />
+    <main>
+      <nav aria-label="Sayfa yolu" className="border-b border-slate-800 bg-slate-900 py-3 text-xs text-slate-300">
+        <ol className="container mx-auto flex max-w-6xl flex-wrap gap-2 px-4">
+          {breadcrumbs.map((item, index) => <li key={item.url} className="flex gap-2">
+            {index > 0 && <span aria-hidden="true">/</span>}
+            {index === breadcrumbs.length - 1 ? <span aria-current="page" className="text-amber-300">{item.name}</span> : <Link href={item.url}>{item.name}</Link>}
+          </li>)}
+        </ol>
+      </nav>
+      <section className="relative overflow-hidden bg-slate-950 text-white">
+        <Image src={service.image} alt={service.imageAlt} fill priority sizes="100vw" className="object-cover" />
+        <div className="absolute inset-0 bg-slate-950/85" />
+        <div className="relative container mx-auto max-w-6xl px-4 py-24">
+          <p className="text-sm font-bold text-amber-300">{district} • 7/24 destek hattı</p>
+          <h1 className="mt-5 max-w-3xl font-heading text-4xl font-black md:text-6xl">{heading}{isHub ? " Hizmet Rehberi" : ""}</h1>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">{service.intro}</p>
+          {isHub && <p className="mt-4 max-w-2xl leading-8 text-slate-300">Bu rehberde hizmetin kapsamını ve müdahale koşullarını inceleyebilir, aşağıdaki bölge listesinden bulunduğunuz konuma ait sayfaya geçebilirsiniz.</p>}
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a href={`tel:${MAIN_PHONE_RAW}`} className="inline-flex items-center gap-2 bg-amber-400 px-7 py-4 font-black text-slate-950"><Phone className="h-5 w-5" />{MAIN_PHONE}</a>
+            <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`} className="border border-amber-300 px-7 py-4 font-bold text-amber-300">WhatsApp ile konum gönder</a>
           </div>
-        </nav>
-
-        {/* Hero Section */}
-        <section className="relative overflow-hidden bg-slate-950 text-white">
-          <Image
-            src={service.image}
-            alt={isTowing ? `${district} çekici ve oto kurtarma` : `${district} ${service.title}`}
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-slate-950/85" />
-          <div className="relative container mx-auto max-w-6xl px-4 py-24">
-            <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-400/10 px-4 py-1.5 text-xs font-black uppercase tracking-wider text-amber-300">
-              <Clock className="h-3.5 w-3.5" />
-              {detail ? `Ortalama Varış: ${detail.estimatedTime}` : `${district} • 7/24 Acil Destek`}
-            </div>
-            <h1 className="mt-5 max-w-3xl font-heading text-4xl font-black md:text-6xl">{heading}</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              {isTowing ? (
-                <>
-                  <strong className="text-amber-300 font-bold">{district} çekici</strong> ve{" "}
-                  <strong className="text-white font-bold">{district} oto çekici</strong> arayışınızda 7/24 yanınızdayız.{" "}
-                  {detail
-                    ? detail.localOverview
-                    : `${district} merkez, mahalleler ve bağlantı yollarında yolda kalan binek, SUV ve hafif ticari araçlarınız için en yakın kayar kasa kurtarıcımız dakikalar içinde konumunuza yönlendirilir.`}
-                </>
-              ) : isElectric ? (
-                <>
-                  <strong className="text-amber-300 font-bold">{district} oto elektrik</strong> ve{" "}
-                  <strong className="text-white font-bold">nöbetçi oto elektrikçi</strong> servisimizle 7/24 yanınızdayız.{" "}
-                  {district} genelinde marş basmama, akü bitmesi, şarj dinamosu arızası ve yerinde elektrik problemlerine gezici mobil servis aracımızla dakikalar içinde müdahale ediyoruz.
-                </>
-              ) : isMoto ? (
-                <>
-                  <strong className="text-amber-300 font-bold">{district} motosiklet çekici</strong> ve{" "}
-                  <strong className="text-white font-bold">motor kurtarma</strong> hizmetimizle 7/24 yoldayız.{" "}
-                  Scooter, chopper, enduro ve racing motorlarınız için özel ön teker sabitleme takozu ve 4 noktalı yumuşak bağlama sapanlarıyla çiziksiz ve devrilme riski olmadan güvenli nakil sağlıyoruz.
-                </>
-              ) : isCommercial ? (
-                <>
-                  <strong className="text-amber-300 font-bold">{district} ağır ticari çekici</strong> ve{" "}
-                  <strong className="text-white font-bold">ticari araç kurtarma</strong> ekibimizle 7/24 sahadayız.{" "}
-                  Panelvan, kamyon, minibüs ve ticari filolar için yüksek tonaj kapasiteli çekicilerimizle sanayi sitelerine, yetkili servislere veya istediğiniz adrese güvenli transfer sağlıyoruz.
-                </>
-              ) : isHeavy ? (
-                <>
-                  <strong className="text-amber-300 font-bold">{district} ağır vasıta kurtarma</strong> ve{" "}
-                  <strong className="text-white font-bold">tır çekici</strong> hizmetimizle 7/24 yol yardım desteği sunuyoruz.{" "}
-                  Tır, kamyon, otobüs ve iş makineleri için güçlü vinç ve donanımlı ağır kurtarıcı filomuzla otoyol ve çevre yollarında acil müdahale sağlıyoruz.
-                </>
-              ) : detail ? (
-                `${detail.localOverview}`
-              ) : (
-                `${service.intro} ${district} merkez, ana yollar ve çevre bölgelerde konumunuza en uygun kurtarıcı anında yönlendirilir.`
-              )}
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href={`tel:${MAIN_PHONE_RAW}`}
-                className="inline-flex items-center gap-2 bg-amber-400 px-7 py-4 font-black text-slate-950 hover:bg-amber-300 transition"
-              >
-                <Phone className="h-5 w-5" />
-                {MAIN_PHONE}
-              </a>
-              <span className="text-sm font-semibold text-slate-300">7/24 Nöbetçi Çekici Ekibi</span>
-            </div>
+        </div>
+      </section>
+      <section className="container mx-auto grid max-w-6xl gap-10 px-4 py-20 lg:grid-cols-2">
+        <div>
+          <h2 className="section-title">{heading} için gerekli bilgiler</h2>
+          <p className="mt-6 leading-8 text-slate-600">{service.guidance}</p>
+          <h3 className="mt-8 font-heading text-2xl font-black">Yerinde müdahalenin sınırları</h3>
+          <p className="mt-4 leading-8 text-slate-600">{service.limit}</p>
+        </div>
+        <aside className="bg-slate-950 p-8 text-white">
+          <h2 className="font-heading text-3xl font-black">Hizmet nasıl planlanır?</h2>
+          <ul className="mt-6 space-y-5">{service.scope.map((item) => <li key={item} className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-amber-300" />{item}</li>)}</ul>
+          <p className="mt-6 text-sm leading-7 text-slate-300">Konum ve araç bilgisi alındıktan sonra uygun ekipman, tahmini varış ve işlem kapsamı görüşmede netleştirilir.</p>
+        </aside>
+      </section>
+      {detail && <section className="bg-amber-50 py-16">
+        <div className="container mx-auto max-w-6xl px-4">
+          <h2 className="section-title">{district} konum ve erişim rehberi</h2>
+          <p className="mt-4 max-w-3xl leading-8 text-slate-600">{heading} talebinde yalnızca bölge adı yerine cadde, yön ve giriş bilgisini paylaşın. Aşağıdaki güzergâh ve çevre yerleşim adları konumunuzu tarif etmenize yardımcı olabilir.</p>
+          <div className="mt-8 grid gap-8 md:grid-cols-2">
+            <div><h3 className="font-heading text-xl font-black">Ana güzergâhlar</h3><ul className="mt-4 space-y-2">{detail.popularArteries.map((name) => <li key={name}>{name}</li>)}</ul></div>
+            <div><h3 className="font-heading text-xl font-black">Çevre yerleşimler ve referans noktaları</h3><ul className="mt-4 space-y-2">{detail.neighborhoods.map((name) => <li key={name}>{name}</li>)}</ul></div>
           </div>
-        </section>
-
-        {/* Local Area Details Section for Districts */}
-        {detail && (
-          <section className="border-b border-slate-200 bg-amber-50/50 py-16">
-            <div className="container mx-auto max-w-6xl px-4">
-              <p className="text-sm font-bold uppercase tracking-widest text-amber-700">
-                {district} Bölge Bilgisi & Güzergâhlar
-              </p>
-              <h2 className="section-title mt-2">
-                {district} Çevresinde Hizmet Verilen Kritik Noktalar
-              </h2>
-              <div className="mt-8 grid gap-8 md:grid-cols-2">
-                <div className="border border-amber-200 bg-white p-7 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <Navigation className="h-6 w-6 text-amber-600" />
-                    <h3 className="font-heading text-xl font-black">Önemli Arterler ve Bağlantı Yolları</h3>
-                  </div>
-                  <p className="mt-3 text-sm text-slate-600">
-                    Aşağıdaki ana güzergâhlarda aracınız arızalandığında veya kaza yaptığında en yakın çekicimiz dakikalar içinde yanınızdadır:
-                  </p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {detail.popularArteries.map((artery) => (
-                      <span
-                        key={artery}
-                        className="rounded-md border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-bold text-slate-800"
-                      >
-                        {artery}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="border border-amber-200 bg-white p-7 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-6 w-6 text-amber-600" />
-                    <h3 className="font-heading text-xl font-black">{district} Mahalleleri</h3>
-                  </div>
-                  <p className="mt-3 text-sm text-slate-600">
-                    {district} sınırları içerisindeki tüm mahallelere ve sanayi sitelerine kesintisiz ulaşım sağlıyoruz:
-                  </p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {detail.neighborhoods.map((neighborhood) => (
-                      <span
-                        key={neighborhood}
-                        className="rounded-md border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-700"
-                      >
-                        {neighborhood}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Standard Service Intro */}
-        <section className="container mx-auto grid max-w-6xl gap-12 px-4 py-20 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-widest text-amber-600">{district} hizmet bilgisi</p>
-            <h2 className="section-title mt-3">
-              {isTowing ? `${district} Çekici ve 7/24 Yol Yardım` : `${district} için profesyonel yol yardım çözümü`}
-            </h2>
-            <p className="mt-6 leading-8 text-slate-600">
-              {isTowing ? (
-                <>
-                  <strong>{district} çekici</strong> ekibimiz; arıza, kaza, akü bitmesi veya lastik patlaması durumlarında günün her saati bir telefon uzağınızdadır. <strong>{district} en yakın çekici</strong> ekibimiz aracınızı bulunduğu noktadan hidrolik kayar kasaya hasarsız yükleyerek dilediğiniz servise ya da adrese güvenle ulaştırır.
-                </>
-              ) : (
-                `Araç bilgisi, tam konum ve ihtiyaç değerlendirilerek doğru ekipman seçilir. Güvenli yükleme, açık bilgilendirme ve talep edilen adrese kontrollü transfer hizmet sürecimizin temelidir.`
-              )}
-            </p>
-            <p className="mt-4 leading-8 text-slate-600">
-              {isTowing
-                ? `${district} çekici fiyatları için aradığınız anda net ve sabit fiyat teklifi verilir. Sürpriz ücret olmadan şeffaf ve güvenilir kurtarma hizmeti alırsınız.`
-                : `Binek araçlardan ticari araçlara kadar her tondan araç için hidrolik kayar kasa ve vinçli kurtarma alternatifleri sunuyoruz.`}
-            </p>
+        </div>
+      </section>}
+      <LocalAreaGuide slug={regionSlug} district={district} serviceTitle={service.title} />
+      <section className="bg-slate-100 py-16">
+        <div className="container mx-auto max-w-6xl px-4">
+          <p className="text-sm font-bold text-amber-700">Örnek durum • Gerçek operasyon kaydı değildir</p>
+          <h2 className="section-title mt-3">{service.scenario.title}</h2>
+          <p className="mt-5 max-w-3xl leading-8 text-slate-600">{service.scenario.body}</p>
+          <p className="mt-4 max-w-3xl leading-8 text-slate-600">{district} için benzer bir talepte konumu paylaşmanız, yol ve erişim koşullarının ayrıca değerlendirilmesini sağlar.</p>
+        </div>
+      </section>
+      <section className="container mx-auto max-w-6xl px-4 py-20">
+        <h2 className="section-title">{heading} hakkında sık sorulan sorular</h2>
+        <div className="mt-8 grid gap-5 md:grid-cols-2">{faqs.map((faq) => <article key={faq.q} className="border border-slate-200 bg-slate-50 p-6">
+          <h3 className="font-heading text-xl font-black">{faq.q}</h3><p className="mt-3 text-sm leading-7 text-slate-600">{faq.a}</p>
+        </article>)}</div>
+      </section>
+      <section className="bg-slate-100 py-16">
+        <div className="container mx-auto max-w-6xl px-4">
+          <h2 className="section-title">{isHub ? `İzmir ${service.title} hizmet bölgeleri` : `${district} için diğer hizmetler`}</h2>
+          <p className="mt-4 text-slate-600">İhtiyacınıza uygun hizmeti ve konumu seçerek ilgili sayfanın açıklamalarını inceleyebilirsiniz.</p>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {isHub ? REFERENCE_REGIONS.map((region) => <Link prefetch={false} key={region.slug} href={`/${region.slug}-${service.slug}`} className="border border-slate-200 bg-white p-4 text-sm font-bold hover:text-amber-700">{region.name} {service.title}</Link>)
+              : SERVICES.filter((item) => item.slug !== service.slug).map((item) => <Link prefetch={false} key={item.slug} href={`/${regionSlug}-${item.slug}`} className="border border-slate-200 bg-white p-4 text-sm font-bold hover:text-amber-700">{district} {item.title}</Link>)}
           </div>
-          <div className="bg-slate-950 p-8 text-white">
-            <h2 className="font-heading text-3xl font-black">Hizmet Kapsamımız</h2>
-            {[
-              `${district} çekici ile ortalama 15-20 dakikada adrese ulaşım`,
-              "Kayar kasa, vinç veya ahtapot kurtarıcı donanımı",
-              "Kaskolu, sigortalı ve faturalı araç transferi",
-              "Gece, gündüz ve tatil günleri 7/24 nöbetçi kurtarma hattı",
-            ].map((item) => (
-              <p key={item} className="mt-5 flex gap-3 text-slate-200">
-                <CheckCircle2 className="h-5 w-5 shrink-0 text-amber-300" />
-                {item}
-              </p>
-            ))}
+          <div className="mt-8 flex flex-wrap gap-6 font-bold text-amber-700">
+            {!isHub && <Link href={`/${service.slug}`}>Tüm {service.title} bölgeleri →</Link>}
+            <Link href="/hizmet-bolgeleri">Tüm hizmetler ve bölgeler →</Link><Link href="/iletisim">İletişim ve konum paylaşımı →</Link>
           </div>
-        </section>
-
-        {/* Service SEO Content */}
-        <ServiceSeoContent
-          district={district}
-          serviceSlug={service.slug}
-          serviceTitle={isTowing ? `${searchQuery} / ${district} Oto Çekici` : service.title}
-        />
-
-        {/* Local Area Guide */}
-        <LocalAreaGuide slug={slug} district={district} serviceTitle={service.title} />
-
-        {/* Localized FAQ Section */}
-        <section className="border-t border-slate-200 bg-white py-20">
-          <div className="container mx-auto max-w-6xl px-4">
-            <p className="text-sm font-bold uppercase tracking-widest text-amber-600">
-              {district} Sıkça Sorulan Sorular
-            </p>
-            <h2 className="section-title mt-3">
-              {district} {isTowing ? "Çekici ve Oto Kurtarma" : service.title} Hakkında Merak Edilenler
-            </h2>
-            <div className="mt-8 grid gap-5 md:grid-cols-2">
-              {faqs.map((faq) => (
-                <article key={faq.q} className="border border-slate-200 bg-slate-50 p-6">
-                  <div className="flex items-start gap-3">
-                    <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-amber-600" />
-                    <div>
-                      <h3 className="font-heading text-lg font-black text-slate-900">{faq.q}</h3>
-                      <p className="mt-3 text-sm leading-7 text-slate-600">{faq.a}</p>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <LocalServiceJourney district={district} serviceSlug={service.slug} serviceTitle={service.title} />
-
-        <section className="bg-slate-100 py-16">
-          <div className="container mx-auto max-w-6xl px-4">
-            <h2 className="section-title">Diğer hizmet bölgeleri</h2>
-            <Link href="/hizmet-bolgeleri" className="mt-5 inline-flex font-bold text-amber-700 hover:text-amber-800">
-              Tüm İzmir hizmet bölgelerini inceleyin →
-            </Link>
-          </div>
-        </section>
-      </main>
-      <Footer />
-      <StickyCallBar />
-    </>
-  );
+        </div>
+      </section>
+    </main>
+    <Footer /><StickyCallBar />
+  </>;
 }
-

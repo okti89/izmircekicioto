@@ -19,24 +19,8 @@ const coreAreas = [
   ["Buca Gölet Çekici", "/buca-golet-cekici"],
 ];
 
-const faqs = [
-  [
-    "İzmir'de oto çekici ne zaman gerekir?",
-    "Araç arızası, kaza, akü bitmesi, lastik sorunu veya güvenli servis transferi gereken durumlarda uygun ekipmanla çekici yönlendirilir.",
-  ],
-  [
-    "Otoyol ve çevre yollarında çekici ne kadar sürede gelir?",
-    "İzmir Çevre Yolu, İzmir-Aydın ve İzmir-Çeşme otoyolu ile Sabuncubeli ve Belkahve güzergâhlarında nöbetçi ekiplerimiz ortalama 15-20 dakikada emniyet şeridine ulaşır.",
-  ],
-  [
-    "Oto sanayi sitelerine araç transferi yapıyor musunuz?",
-    "Evet, 1., 2., 3., 4., 5., 6., 7. Sanayi Siteleri ve Kısıkköy Sanayi Sitesi'ndeki yetkili ve özel servislere güvenli araç nakli sağlıyoruz.",
-  ],
-  [
-    "İzmir çekici fiyatları nasıl hesaplanır?",
-    "Şehir içi çekici fiyatları aracın tipi (binek, SUV, hafif ticari), arıza durumu ve kat edilen mesafeye (km) göre şeffaf tarifeyle belirlenir. Fiyatlar sayfamızdan güncel tarifeyi inceleyebilirsiniz.",
-  ],
-];
+import { HOME_FAQS } from "@/data/homeFaqs";
+const faqs = HOME_FAQS.map(({ q, a }) => [q, a]);
 
 export default function HomeSeoContent() {
   return (

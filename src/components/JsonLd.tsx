@@ -1,16 +1,11 @@
-type FaqItem = { q: string; a: string };
-type BreadcrumbItem = { name: string; url: string };
-
 type JsonLdProps = {
   name?: string;
   description?: string;
   path?: string;
   serviceName?: string;
   district?: string;
-  lat?: number;
-  lng?: number;
-  faqs?: FaqItem[];
-  breadcrumbs?: BreadcrumbItem[];
+  faqs?: { q: string; a: string }[];
+  breadcrumbs?: { name: string; url: string }[];
 };
 
 const siteUrl = "https://izmircekicioto.com";
@@ -18,112 +13,37 @@ const siteUrl = "https://izmircekicioto.com";
 export default function JsonLd({
   name = "İzmir Çekici",
   description = "İzmir genelinde 7/24 oto çekici, yol yardım, akü takviye ve oto kurtarma hizmeti.",
-  path = "/",
-  serviceName = "Oto çekici ve yol yardım",
-  district = "İzmir",
-  lat = 38.4237,
-  lng = 27.1428,
-  faqs,
-  breadcrumbs,
+  path = "/", serviceName, district = "İzmir", faqs, breadcrumbs,
 }: JsonLdProps) {
   const pageUrl = new URL(path, siteUrl).toString();
-
-  const businessSchema: Record<string, unknown> = {
-    "@context": "https://schema.org",
-    "@type": ["AutomotiveBusiness", "EmergencyService"],
-    name,
-    url: pageUrl,
-    image: new URL("/og.png", siteUrl).toString(),
-    telephone: "+905366762866",
-    priceRange: "₺₺",
-    description,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: district,
-      addressRegion: "İzmir",
-      addressCountry: "TR",
+  const providerId = `${siteUrl}/#organization`;
+  // A service area is not a branch address. Do not invent a physical location.
+  const graph: Record<string, unknown>[] = [
+    {
+      "@type": "Organization", "@id": providerId, name: "İzmir Çekici",
+      url: `${siteUrl}/`, telephone: "+905366762866",
+      logo: `${siteUrl}/izmir-cekici-logo.png`,
+      contactPoint: { "@type": "ContactPoint", telephone: "+905366762866", contactType: "customer service", availableLanguage: "Turkish" },
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: lat,
-      longitude: lng,
+    { "@type": "WebSite", "@id": `${siteUrl}/#website`, url: `${siteUrl}/`, name: "İzmir Çekici", inLanguage: "tr-TR", publisher: { "@id": providerId } },
+    {
+      "@type": "WebPage", "@id": `${pageUrl}#webpage`, url: pageUrl, name, description, inLanguage: "tr-TR",
+      isPartOf: { "@id": `${siteUrl}/#website` },
+      ...(serviceName ? { mainEntity: { "@id": `${pageUrl}#service` } } : {}),
     },
-    areaServed: {
-      "@type": "AdministrativeArea",
-      name: district === "İzmir" ? "İzmir" : `${district}, İzmir`,
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
-      },
-    ],
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Yol yardım ve oto çekici hizmetleri",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: serviceName,
-            areaServed: district,
-          },
-        },
-      ],
-    },
-  };
-
-  const schemas: Record<string, unknown>[] = [businessSchema];
-
-  if (breadcrumbs && breadcrumbs.length > 0) {
-    schemas.push({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: breadcrumbs.map((item, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: item.name,
-        item: item.url.startsWith("http") ? item.url : new URL(item.url, siteUrl).toString(),
-      })),
-    });
-  }
-
-  if (faqs && faqs.length > 0) {
-    schemas.push({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.a,
-        },
-      })),
-    });
-  }
-
-  return (
-    <>
-      {schemas.map((schema, i) => (
-        <script
-          key={i}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      ))}
-    </>
-  );
+  ];
+  if (serviceName) graph.push({
+    "@type": "Service", "@id": `${pageUrl}#service`, name, serviceType: serviceName,
+    description, url: pageUrl, provider: { "@id": providerId },
+    areaServed: { "@type": "Place", name: district },
+  });
+  if (breadcrumbs?.length) graph.push({
+    "@type": "BreadcrumbList", "@id": `${pageUrl}#breadcrumb`,
+    itemListElement: breadcrumbs.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, item: new URL(item.url, siteUrl).toString() })),
+  });
+  if (faqs?.length) graph.push({
+    "@type": "FAQPage", "@id": `${pageUrl}#faq`,
+    mainEntity: faqs.map((faq) => ({ "@type": "Question", name: faq.q, acceptedAnswer: { "@type": "Answer", text: faq.a } })),
+  });
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c") }} />;
 }
-
