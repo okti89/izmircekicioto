@@ -2,1519 +2,2437 @@
   {
     "slug": "adatepe",
     "name": "Adatepe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ahmetbeyli",
     "name": "Ahmetbeyli",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "akcakoy",
     "name": "Akçaköy",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "akincilar",
     "name": "Akıncılar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "aktepe",
     "name": "Aktepe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "alacati",
     "name": "Alaçatı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "aliaga",
     "name": "Aliağa",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "altindag",
     "name": "Altındağ",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://bornova.bel.tr/kent-market-0003"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "altinevler",
     "name": "Altınevler",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "altintas",
     "name": "Altıntaş",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "atakoy",
     "name": "Ataköy",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "aydin-mahallesi",
     "name": "Aydın Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "aydin-otoban",
     "name": "Aydın Otoban",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ayrancilar",
     "name": "Ayrancılar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bahcelerarasi",
     "name": "Bahçelerarası",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bahcelievler",
     "name": "Bahçelievler",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "balcova",
     "name": "Balçova",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "balikli-ova",
     "name": "Balıklı Ova",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "barbaros-mahallesi",
     "name": "Barbaros Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "basin-sitesi",
     "name": "Basın Sitesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "basmane",
     "name": "Basmane",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://izmir.bel.tr/tr/Haberler/kamuoyunu-bilgilendirme/59344/156"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bayrakli",
     "name": "Bayraklı",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "belevi",
     "name": "Belevi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "beton-yol",
     "name": "Beton Yol",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "beyazevler",
     "name": "Beyazevler",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bornova",
     "name": "Bornova",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bostanli",
     "name": "Bostanlı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bozyaka",
     "name": "Bozyaka",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "buca",
     "name": "Buca",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bulgurca",
     "name": "Bulgurca",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cennet-cesme",
     "name": "Cennet Çeşme",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cennetoglu",
     "name": "Cennetoğlu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cam-tepe",
     "name": "Çam Tepe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "camdibi",
     "name": "Çamdibi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://bornova.bel.tr/kent-market-0003"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "camkoy",
     "name": "Çamköy",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "camlikule",
     "name": "Çamlıkule",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "camonu",
     "name": "Çamönü",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cankaya",
     "name": "Çankaya",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "catalca",
     "name": "Çatalca",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "catalkaya",
     "name": "Çatalkaya",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cataltepe",
     "name": "Çataltepe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cesme",
     "name": "Çeşme",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cesme-otoyolu",
     "name": "Çeşme Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cinarli",
     "name": "Çınarlı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ciceklikoy",
     "name": "Çiçekliköy",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cigli",
     "name": "Çiğli",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cile",
     "name": "Çile",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "cileme",
     "name": "Çileme",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "degirmendere",
     "name": "Değirmendere",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "develi",
     "name": "Develi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "doganlar",
     "name": "Doğanlar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "egemenlik",
     "name": "Egemenlik",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "erzene-mahallesi",
     "name": "Erzene Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "esendere",
     "name": "Esendere",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "esenkent",
     "name": "Esenkent",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "esentepe",
     "name": "Esentepe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "evka1",
     "name": "Evka1",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.buca.bel.tr/uploads/strategic-reports/Buca-2022-faaliyet-raporu.pdf"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "evka2",
     "name": "Evka2",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "evka3",
     "name": "Evka3",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "evka4",
     "name": "Evka4",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "evka5",
     "name": "Evka5",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "evka6",
     "name": "Evka6",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "evka7",
     "name": "Evka7",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "fahrettin-altay",
     "name": "Fahrettin Altay",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "gaziemir",
     "name": "Gaziemir",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "gediz",
     "name": "Gediz",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "gokdere",
     "name": "Gökdere",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "goksu",
     "name": "Göksu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "gorece",
     "name": "Görece",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "goztepe",
     "name": "Göztepe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "gulbahce",
     "name": "Gülbahçe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "gulyaka",
     "name": "Gülyaka",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "gumuldur",
     "name": "Gümüldür",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "gunaltay",
     "name": "Günaltay",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "guzelbahce",
     "name": "Güzelbahçe",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "guzelyali",
     "name": "Güzelyalı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "havalimani",
     "name": "Havalimanı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://cdn.adnanmenderesairport.com/files/evident-redemptionstatement-20240718153906-irec.pdf"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ilica",
     "name": "Ilıca",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "irmak-mahallesi",
     "name": "Irmak Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "isikkent",
     "name": "Işıkkent",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://bornova.bel.tr/kent-market-0003"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "icmeler",
     "name": "İçmeler",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "inciralti",
     "name": "İnciraltı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "inonu",
     "name": "İnönü",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "izmir",
     "name": "İzmir",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "karabaglar",
     "name": "Karabağlar",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "karaburun",
     "name": "Karaburun",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "karatas",
     "name": "Karataş",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "karsiyaka",
     "name": "Karşıyaka",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kavaklidere",
     "name": "Kavaklıdere",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kaynaklar",
     "name": "Kaynaklar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.buca.bel.tr/uploads/strategic-reports/Buca-Belediyesi-2025-Performans-Program%C4%B1.pdf"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kazimdirik",
     "name": "Kazımdirik",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kemalpasa",
     "name": "Kemalpaşa",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kisik",
     "name": "Kısık",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "konak",
     "name": "Konak",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kozagac",
     "name": "Kozağaç",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kurucesme",
     "name": "Kuruçeşme",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kucuk-park",
     "name": "Küçük Park",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kucukyali",
     "name": "Küçükyalı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kuner",
     "name": "Küner",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "laka-mahallesi",
     "name": "Laka Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "liman-reis",
     "name": "Liman Reis",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "limontepe",
     "name": "Limontepe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "maltepe",
     "name": "Maltepe",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "manavkuyu",
     "name": "Manavkuyu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "mavisehir",
     "name": "Mavişehir",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "menderes",
     "name": "Menderes",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "menderes-mahallesi",
     "name": "Menderes Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "menemen",
     "name": "Menemen",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "mevlana-mahallesi",
     "name": "Mevlana Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "naldoken",
     "name": "Naldöken",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "narbel",
     "name": "Narbel",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "narli",
     "name": "Narlı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "narlidere",
     "name": "Narlıdere",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "oglananasi",
     "name": "Oğlananası",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "onur-mahallesi",
     "name": "Onur Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ozbek",
     "name": "Özbek",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ozdere",
     "name": "Özdere",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ozkanlar",
     "name": "Özkanlar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "payamli",
     "name": "Payamlı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "peker-mahallesi",
     "name": "Peker Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "pinarbasi",
     "name": "Pınarbaşı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "poligon",
     "name": "Poligon",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sarnic",
     "name": "Sarnıç",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.izmir.bel.tr/tr/KararDetayi/32659"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "seferihisar",
     "name": "Seferihisar",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "selcuk",
     "name": "Selçuk",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "selway",
     "name": "Selway",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sigacik",
     "name": "Sığacık",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "siteler",
     "name": "Siteler",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sasal",
     "name": "Şaşal",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "semikler",
     "name": "Şemikler",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sirinyer",
     "name": "Şirinyer",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "tekeli-turkmen",
     "name": "Tekeli Türkmen",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "teleferik",
     "name": "Teleferik",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali",
     "name": "Torbalı",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "tuna",
     "name": "Tuna",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ulamis",
     "name": "Ulamış",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ulucak",
     "name": "Ulucak",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "urla",
     "name": "Urla",
-    "hasRegionalDetail": true,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "urla-iskele",
     "name": "Urla İskele",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://izmir.bel.tr/tr/MekanDetay/80/230"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "uzundere",
     "name": "Uzundere",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ucyol",
     "name": "Üçyol",
-    "hasRegionalDetail": true,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "urkmez",
     "name": "Ürkmez",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.izmir.bel.tr/tr/Haberler/seferihisar-ve-kirazda-iztasit-ile-yola-devam/48239/156"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yaka-koyu",
     "name": "Yaka Köyü",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yaka-mahallesi",
     "name": "Yaka Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yali",
     "name": "Yalı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yali-mahallesi",
     "name": "Yalı Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yenikale",
     "name": "Yenikale",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yenikoy",
     "name": "Yeniköy",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yesilova",
     "name": "Yeşilova",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yesilyurt",
     "name": "Yeşilyurt",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yildiz-mahallesi",
     "name": "Yıldız Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "zeytinler",
     "name": "Zeytinler",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kisikkoy",
     "name": "Kısıkköy",
-    "hasRegionalDetail": true,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": true,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "uckuyular",
     "name": "Üçkuyular",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "eskiizmir",
     "name": "Eskiizmir",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sahilevleri",
     "name": "Sahilevleri",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sirince",
     "name": "Şirince",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bayindir",
     "name": "Bayındır",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bergama",
     "name": "Bergama",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kinik",
     "name": "Kınık",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kiraz",
     "name": "Kiraz",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "odemis",
     "name": "Ödemiş",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "tire",
     "name": "Tire",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "1-sanayi",
     "name": "1. Sanayi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "2-sanayi",
     "name": "2. Sanayi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "3-sanayi",
     "name": "3. Sanayi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "4-sanayi",
     "name": "4. Sanayi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "5-sanayi",
     "name": "5. Sanayi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "belkahve",
     "name": "Belkahve",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sabuncubeli",
     "name": "Sabuncubeli",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=22"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "buca-golet",
     "name": "Buca Gölet",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.buca.bel.tr/uploads/strategic-reports/Buca-Belediyesi-2022-Performans-Program%C4%B1.pdf"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "belenbasi",
     "name": "Belenbaşı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "altinkum",
     "name": "Altınkum",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "boyalik",
     "name": "Boyalık",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ildir",
     "name": "Ildır",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kuzey-cevre-yolu",
     "name": "Kuzey Çevre Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "guney-cevre-yolu",
     "name": "Güney Çevre Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bayrakli-tunelleri",
     "name": "Bayraklı Tünelleri",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Istatistikler/KopruveTunelBilgileri/TehMadTuneller.pdf"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "konak-tuneli",
     "name": "Konak Tüneli",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.izmir.bel.tr/tr/Haberler/konak-tuneli-nin-sorumlulugu-buyuksehir-de/41259/156"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "manisa-yolu",
     "name": "Manisa Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=22"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "16-eylul",
     "name": "16 Eylül",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sifne",
     "name": "Şifne",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "karakoy",
     "name": "Karaköy",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ovacik",
     "name": "Ovacık",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ataturk-mahallesi",
     "name": "Atatürk Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "celebi-mahallesi",
     "name": "Çelebi Mahallesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kahramandere",
     "name": "Kahramandere",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yelki",
     "name": "Yelki",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "camli",
     "name": "Çamlı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kucukkaya",
     "name": "Küçükkaya",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "eserkent",
     "name": "Eserkent",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "6-sanayi",
     "name": "6. Sanayi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "7-sanayi",
     "name": "7. Sanayi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "zeytinkoy",
     "name": "Zeytinköy",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "acarlar",
     "name": "Acarlar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "barutcu",
     "name": "Barutçu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-19-mayis",
     "name": "Torbalı 19 Mayıs",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.torbali.bel.tr/muhtarlar"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-ahmetli",
     "name": "Torbalı Ahmetli",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-arslanlar",
     "name": "Torbalı Arslanlar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-atalan",
     "name": "Torbalı Atalan",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-ataturk",
     "name": "Torbalı Atatürk",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-ayrancilar",
     "name": "Torbalı Ayrancılar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-bahcelievler",
     "name": "Torbalı Bahçelievler",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-bozkoy",
     "name": "Torbalı Bozköy",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-bulbuldere",
     "name": "Torbalı Bülbüldere",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-cumhuriyet",
     "name": "Torbalı Cumhuriyet",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-cakirbeyli",
     "name": "Torbalı Çakırbeyli",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-camlica",
     "name": "Torbalı Çamlıca",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-capak",
     "name": "Torbalı Çapak",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-caybasi",
     "name": "Torbalı Çaybaşı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-dagkizilca",
     "name": "Torbalı Dağkızılca",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-demirci",
     "name": "Torbalı Demirci",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-ertugrul",
     "name": "Torbalı Ertuğrul",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-fevzi-cakmak",
     "name": "Torbalı Fevzi Çakmak",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-golluce",
     "name": "Torbalı Göllüce",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-helvaci",
     "name": "Torbalı Helvacı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-istiklal",
     "name": "Torbalı İstiklal",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.torbali.bel.tr/muhtarlar"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-kaplancik",
     "name": "Torbalı Kaplancık",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-karakizlar",
     "name": "Torbalı Karakızlar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-karakuyu",
     "name": "Torbalı Karakuyu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-karsiyaka",
     "name": "Torbalı Karşıyaka",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-kuscuburun",
     "name": "Torbalı Kuşçuburun",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-pamukyazi",
     "name": "Torbalı Pamukyazı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-pancar",
     "name": "Torbalı Pancar",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.torbali.bel.tr/muhtarlar"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-saglik",
     "name": "Torbalı Sağlık",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-subasi",
     "name": "Torbalı Subaşı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-tulum",
     "name": "Torbalı Tulum",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-yazibasi",
     "name": "Torbalı Yazıbaşı",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-yogurtcular",
     "name": "Torbalı Yoğurtçular",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "nazilli",
     "name": "Nazilli",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bornova-cevre-yolu",
     "name": "Bornova Çevre Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "karsiyaka-cevre-yolu",
     "name": "Karşıyaka Çevre Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "izmir-otoyolu",
     "name": "İzmir Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "liman-yolu",
     "name": "Liman Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "otogar-otoyolu",
     "name": "Otogar Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "altinyol-sahil-yolu",
     "name": "Altınyol Sahil Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "sabuncubeli-tuneli",
     "name": "Sabuncubeli Tüneli",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=22"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ankara-yolu",
     "name": "Ankara Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "istanbul-yolu",
     "name": "İstanbul Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bursa-yolu",
     "name": "Bursa Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "belkahve-rampasi",
     "name": "Belkahve Rampası",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "belkahve-tunelleri",
     "name": "Belkahve Tünelleri",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "ankara-otoyolu",
     "name": "Ankara Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "istanbul-otoyolu",
     "name": "İstanbul Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "bursa-otoyolu",
     "name": "Bursa Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "torbali-otoyolu",
     "name": "Torbalı Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "dalyan",
     "name": "Dalyan",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "yaka",
     "name": "Yaka",
-    "hasRegionalDetail": false,
+    "sourceStatus": "ambiguous",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "limanreis",
     "name": "Limanreis",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "kisikkoy-sanayi-sitesi",
     "name": "Kısıkköy Sanayi Sitesi",
-    "hasRegionalDetail": false,
+    "sourceStatus": "needs-review",
+    "sourceUrls": [],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "izmir-cevre-yolu",
     "name": "İzmir Çevre Yolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Istatistikler/KopruveTunelBilgileri/TehMadTuneller.pdf"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "izmir-aydin-otoyolu",
     "name": "İzmir-Aydın Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   },
   {
     "slug": "izmir-cesme-otoyolu",
     "name": "İzmir-Çeşme Otoyolu",
-    "hasRegionalDetail": false,
+    "sourceStatus": "sourced",
+    "sourceUrls": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "hasLegacyDetail": false,
     "operationEvidence": "Owner verification and photo mapping required"
   }
 ]

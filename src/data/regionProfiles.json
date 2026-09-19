@@ -1,0 +1,6052 @@
+[
+  {
+    "slug": "adatepe",
+    "name": "Adatepe",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Buca"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "Adatepe",
+        "referenceStreet": "Kıbrıs"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ahmetbeyli",
+    "name": "Ahmetbeyli",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Ahmetbeyli",
+        "referenceStreet": "4062"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "akcakoy",
+    "name": "Akçaköy",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Akçaköy",
+        "referenceStreet": "7202"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "akincilar",
+    "name": "Akıncılar",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Buca",
+      "Ödemiş"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "Akıncılar",
+        "referenceStreet": "551"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Akıncılar",
+        "referenceStreet": "Hürriyet"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "aktepe",
+    "name": "Aktepe",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Beydağ",
+      "Gaziemir"
+    ],
+    "places": [
+      {
+        "district": "Beydağ",
+        "neighborhood": "Aktepe",
+        "referenceStreet": "Köprübaşı Mevkii"
+      },
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Aktepe",
+        "referenceStreet": "126"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "alacati",
+    "name": "Alaçatı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Alaçatı",
+        "referenceStreet": "11002"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "aliaga",
+    "name": "Aliağa",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Aliağa"
+    ],
+    "places": [
+      {
+        "district": "Aliağa",
+        "neighborhood": "Aşağışakran",
+        "referenceStreet": "11/27"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Atatürk"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "B.hayrettin Paşa",
+        "referenceStreet": "Mustafa Kemal Atatürk"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Bahçedere",
+        "referenceStreet": "Bahçedere"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Bozköy",
+        "referenceStreet": "Şahin"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Çakmaklı",
+        "referenceStreet": "Çakmaklı Atatürk"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Çaltılıdere",
+        "referenceStreet": "Çaltılıdere Yalı"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Çıtak",
+        "referenceStreet": "Çıtak Cumhuriyet"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "altindag",
+    "name": "Altındağ",
+    "kind": "area",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Serintepe",
+        "referenceStreet": "4327 Sokak"
+      }
+    ],
+    "sources": [
+      "https://bornova.bel.tr/kent-market-0003"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Altındağ için Serintepe Mahallesi ve Kandere Parkı, belediyenin yerel hizmet noktaları arasında geçer. Çağrıda hangi mahalle ve sokakta olduğunuzu ayrıca belirtin."
+  },
+  {
+    "slug": "altinevler",
+    "name": "Altınevler",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "altintas",
+    "name": "Altıntaş",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Konak",
+      "Urla"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "Altıntaş",
+        "referenceStreet": "İnönü"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Altıntaş",
+        "referenceStreet": "Zafer"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "atakoy",
+    "name": "Ataköy",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Ataköy",
+        "referenceStreet": "Mustafa Kemal"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "aydin-mahallesi",
+    "name": "Aydın Mahallesi",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Aydın",
+        "referenceStreet": "4275"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "aydin-otoban",
+    "name": "Aydın Otoban",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "İzmir–Aydın Otoyolu üzerindeki konumu, İzmir veya Aydın yönü ve en yakın kavşak bilgisiyle tarif edin. Şehir içi yol ile otoyol bağlantısını ayırmak ekip yönlendirmesinde önemlidir."
+  },
+  {
+    "slug": "ayrancilar",
+    "name": "Ayrancılar",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Ayrancılar",
+        "referenceStreet": "55"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bahcelerarasi",
+    "name": "Bahçelerarası",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Balçova"
+    ],
+    "places": [
+      {
+        "district": "Balçova",
+        "neighborhood": "Bahçelerarası",
+        "referenceStreet": "Yıldız"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bahcelievler",
+    "name": "Bahçelievler",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Karşıyaka",
+      "Karabağlar",
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Bahçelievler",
+        "referenceStreet": "Cevdet Bilsay"
+      },
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Bahçelievler",
+        "referenceStreet": "490"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Bahçelievler",
+        "referenceStreet": "9104"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "balcova",
+    "name": "Balçova",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Balçova"
+    ],
+    "places": [
+      {
+        "district": "Balçova",
+        "neighborhood": "Bahçelerarası",
+        "referenceStreet": "Yıldız"
+      },
+      {
+        "district": "Balçova",
+        "neighborhood": "Çetin Emeç",
+        "referenceStreet": "Ata"
+      },
+      {
+        "district": "Balçova",
+        "neighborhood": "Eğitim",
+        "referenceStreet": "Gazi Osman Paşa"
+      },
+      {
+        "district": "Balçova",
+        "neighborhood": "Fevzi Çakmak",
+        "referenceStreet": "Cengiz Topel"
+      },
+      {
+        "district": "Balçova",
+        "neighborhood": "İnciraltı",
+        "referenceStreet": "İnciraltı"
+      },
+      {
+        "district": "Balçova",
+        "neighborhood": "Korutürk",
+        "referenceStreet": "Poyraz"
+      },
+      {
+        "district": "Balçova",
+        "neighborhood": "Onur",
+        "referenceStreet": "Mine"
+      },
+      {
+        "district": "Balçova",
+        "neighborhood": "Teleferik",
+        "referenceStreet": "Enverpaşa"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "balikli-ova",
+    "name": "Balıklı Ova",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Urla"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Balıklıova",
+        "referenceStreet": "Balıklıova"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "barbaros-mahallesi",
+    "name": "Barbaros Mahallesi",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Konak",
+      "Bornova",
+      "Urla"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "Barbaros",
+        "referenceStreet": "339"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Barbaros",
+        "referenceStreet": "5301/1"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Barbaros",
+        "referenceStreet": "Barbaros Köy"
+      },
+      {
+        "district": "Konak",
+        "neighborhood": "Barbaros",
+        "referenceStreet": "331"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "basin-sitesi",
+    "name": "Basın Sitesi",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Basın Sitesi",
+        "referenceStreet": "159"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "basmane",
+    "name": "Basmane",
+    "kind": "area",
+    "status": "sourced",
+    "districts": [
+      "Konak"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "İsmet Kaptan",
+        "referenceStreet": ""
+      }
+    ],
+    "sources": [
+      "https://izmir.bel.tr/tr/Haberler/kamuoyunu-bilgilendirme/59344/156"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Basmane, Konak içinde kullanılan bir semt adıdır. İsmet Kaptan çevresini tarif ederken semt adına ek olarak cadde ve bulunduğunuz girişi belirtin; Basmane adı tek bir sokak anlamına gelmez."
+  },
+  {
+    "slug": "bayrakli",
+    "name": "Bayraklı",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Bayraklı"
+    ],
+    "places": [
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Adalet",
+        "referenceStreet": "Manas"
+      },
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Alpaslan",
+        "referenceStreet": "1620/11"
+      },
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Bayraklı",
+        "referenceStreet": "Zeki Yavaş"
+      },
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Cengizhan",
+        "referenceStreet": "1615/17"
+      },
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Çay",
+        "referenceStreet": "2108/13"
+      },
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Çiçek",
+        "referenceStreet": "1635/1"
+      },
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Doğançay",
+        "referenceStreet": "7190"
+      },
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Emek",
+        "referenceStreet": "7290"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "belevi",
+    "name": "Belevi",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Selçuk"
+    ],
+    "places": [
+      {
+        "district": "Selçuk",
+        "neighborhood": "Belevi",
+        "referenceStreet": "Belevi Cumhuriyet"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "beton-yol",
+    "name": "Beton Yol",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "beyazevler",
+    "name": "Beyazevler",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Gaziemir"
+    ],
+    "places": [
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Beyazevler",
+        "referenceStreet": "514"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bornova",
+    "name": "Bornova",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "853"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Barbaros",
+        "referenceStreet": "5301/1"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Beşyol",
+        "referenceStreet": "Beşyol"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Birlik",
+        "referenceStreet": "4233"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Çamiçi",
+        "referenceStreet": "Çamiçi"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Çamkule",
+        "referenceStreet": "4712"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Çınar",
+        "referenceStreet": "Yıldırım Beyazıt"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Çiçekli",
+        "referenceStreet": "Çiçekli"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bostanli",
+    "name": "Bostanlı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karşıyaka"
+    ],
+    "places": [
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Bostanlı",
+        "referenceStreet": "Cengiz Kocatoros"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bozyaka",
+    "name": "Bozyaka",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Bozyaka",
+        "referenceStreet": "3112"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "buca",
+    "name": "Buca",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Buca"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "Adatepe",
+        "referenceStreet": "Kıbrıs"
+      },
+      {
+        "district": "Buca",
+        "neighborhood": "Akıncılar",
+        "referenceStreet": "551"
+      },
+      {
+        "district": "Buca",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "207"
+      },
+      {
+        "district": "Buca",
+        "neighborhood": "Murathan",
+        "referenceStreet": "Kırgızistan"
+      },
+      {
+        "district": "Buca",
+        "neighborhood": "Barış",
+        "referenceStreet": "Adnan Kahveci"
+      },
+      {
+        "district": "Buca",
+        "neighborhood": "Belenbaşı",
+        "referenceStreet": "Hürriyet"
+      },
+      {
+        "district": "Buca",
+        "neighborhood": "Buca Koop",
+        "referenceStreet": "1403"
+      },
+      {
+        "district": "Buca",
+        "neighborhood": "Cumhuriyet",
+        "referenceStreet": "1256"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bulgurca",
+    "name": "Bulgurca",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Bulgurca",
+        "referenceStreet": "6845"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cennet-cesme",
+    "name": "Cennet Çeşme",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Cennetçeşme",
+        "referenceStreet": "3991"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cennetoglu",
+    "name": "Cennetoğlu",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Cennetoğlu",
+        "referenceStreet": "5709"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cam-tepe",
+    "name": "Çam Tepe",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Seferihisar",
+      "Narlıdere"
+    ],
+    "places": [
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Çamtepe",
+        "referenceStreet": "Çamtepe Köy Yolu"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Çamtepe",
+        "referenceStreet": "Gülmüş"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "camdibi",
+    "name": "Çamdibi",
+    "kind": "area",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Çamdibi Atatürk Parkı çevresi",
+        "referenceStreet": ""
+      }
+    ],
+    "sources": [
+      "https://bornova.bel.tr/kent-market-0003"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Çamdibi Atatürk Parkı belediyenin yerel hizmet noktalarından biridir. Park çevresindeyseniz giriş tarafını, başka bir noktadaysanız mahalle ve sokak adını paylaşın."
+  },
+  {
+    "slug": "camkoy",
+    "name": "Çamköy",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bergama"
+    ],
+    "places": [
+      {
+        "district": "Bergama",
+        "neighborhood": "Çamköy",
+        "referenceStreet": "Çamköy"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "camlikule",
+    "name": "Çamlıkule",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Buca"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "Çamlıkule",
+        "referenceStreet": "290/6"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "camonu",
+    "name": "Çamönü",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Çamönü",
+        "referenceStreet": "İzmir"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cankaya",
+    "name": "Çankaya",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Konak"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "Çankaya",
+        "referenceStreet": "141"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "catalca",
+    "name": "Çatalca",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Çatalca",
+        "referenceStreet": "7419"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "catalkaya",
+    "name": "Çatalkaya",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cataltepe",
+    "name": "Çataltepe",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cesme",
+    "name": "Çeşme",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Alaçatı",
+        "referenceStreet": "11002"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Altınkum",
+        "referenceStreet": "200"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Altınyunus",
+        "referenceStreet": "3215"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Ardıç",
+        "referenceStreet": "5438"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Boyalık",
+        "referenceStreet": "3209"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Celal Bayar",
+        "referenceStreet": "5152"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Dalyan",
+        "referenceStreet": "4218"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Çakabey",
+        "referenceStreet": "2234"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cesme-otoyolu",
+    "name": "Çeşme Otoyolu",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "İzmir–Çeşme Otoyolu için gidiş yönünü, son geçtiğiniz çıkışı ve kilometre bilgisini paylaşın. Çeşme ilçe merkezi ile otoyol üzerindeki araç aynı erişim noktasında değildir."
+  },
+  {
+    "slug": "cinarli",
+    "name": "Çınarlı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Konak"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "Çınarlı",
+        "referenceStreet": "1577"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ciceklikoy",
+    "name": "Çiçekliköy",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cigli",
+    "name": "Çiğli",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Çiğli"
+    ],
+    "places": [
+      {
+        "district": "Çiğli",
+        "neighborhood": "Ahmet Efendi",
+        "referenceStreet": "1114"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "Ahmet Taner Kışlalı",
+        "referenceStreet": "6762"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "Ataşehir",
+        "referenceStreet": "8010"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "8809/23"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "Aydınlıkevler",
+        "referenceStreet": "6791"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "Balatçık",
+        "referenceStreet": "8789"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "Cumhuriyet",
+        "referenceStreet": "Nazmi Kahya"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "Çağdaş",
+        "referenceStreet": "8819"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cile",
+    "name": "Çile",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Çile",
+        "referenceStreet": "Bırandamı"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "cileme",
+    "name": "Çileme",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Çileme",
+        "referenceStreet": "Adnan Menderes"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "degirmendere",
+    "name": "Değirmendere",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menemen"
+    ],
+    "places": [
+      {
+        "district": "Menemen",
+        "neighborhood": "Değirmendere",
+        "referenceStreet": "Demirtaş"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "develi",
+    "name": "Develi",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Develi",
+        "referenceStreet": "9126"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "doganlar",
+    "name": "Doğanlar",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Doğanlar",
+        "referenceStreet": "1530"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "egemenlik",
+    "name": "Egemenlik",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Egemenlik",
+        "referenceStreet": "Alp"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "erzene-mahallesi",
+    "name": "Erzene Mahallesi",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Erzene",
+        "referenceStreet": "8"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "esendere",
+    "name": "Esendere",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "esenkent",
+    "name": "Esenkent",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "esentepe",
+    "name": "Esentepe",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Çiğli",
+      "Dikili"
+    ],
+    "places": [
+      {
+        "district": "Çiğli",
+        "neighborhood": "Esentepe",
+        "referenceStreet": "8809/40"
+      },
+      {
+        "district": "Dikili",
+        "neighborhood": "Esentepe",
+        "referenceStreet": "Esentepe 4"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "evka1",
+    "name": "Evka1",
+    "kind": "area",
+    "status": "sourced",
+    "districts": ["Buca"],
+    "places": [],
+    "sources": ["https://www.buca.bel.tr/uploads/strategic-reports/Buca-2022-faaliyet-raporu.pdf"],
+    "checkedAt": "2026-09-18",
+    "note": "Buca Belediyesi faaliyet raporunda EVKA 1 Kent Konseyi Murathan konumunda listelenir. EVKA 1 adı tek başına aracın bulunduğu sokağı belirtmez; Murathan ya da farklı mahalledeki tam adresi ve konum bağlantısını paylaşın."
+  },
+  {
+    "slug": "evka2",
+    "name": "Evka2",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çiğli"
+    ],
+    "places": [
+      {
+        "district": "Çiğli",
+        "neighborhood": "Evka-2",
+        "referenceStreet": "6853"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "evka3",
+    "name": "Evka3",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Evka 3",
+        "referenceStreet": "Şehitler"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "evka4",
+    "name": "Evka4",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Evka 4",
+        "referenceStreet": "Ahmet Arvasi"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "evka5",
+    "name": "Evka5",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çiğli"
+    ],
+    "places": [
+      {
+        "district": "Çiğli",
+        "neighborhood": "Evka-5",
+        "referenceStreet": "8930"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "evka6",
+    "name": "Evka6",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çiğli"
+    ],
+    "places": [
+      {
+        "district": "Çiğli",
+        "neighborhood": "Evka-6",
+        "referenceStreet": "6820"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "evka7",
+    "name": "Evka7",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "fahrettin-altay",
+    "name": "Fahrettin Altay",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Fahrettin Altay",
+        "referenceStreet": "65/17"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "gaziemir",
+    "name": "Gaziemir",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Gaziemir"
+    ],
+    "places": [
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Aktepe",
+        "referenceStreet": "126"
+      },
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "1039"
+      },
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Atıfbey",
+        "referenceStreet": "Prof. Dr. Türkan Saylan"
+      },
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Beyazevler",
+        "referenceStreet": "514"
+      },
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Binbaşı Reşatbey",
+        "referenceStreet": "351"
+      },
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Dokuz Eylül",
+        "referenceStreet": "Önder"
+      },
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Emrez",
+        "referenceStreet": "Altan Aydın"
+      },
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Fatih",
+        "referenceStreet": "Sanayi"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "gediz",
+    "name": "Gediz",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "gokdere",
+    "name": "Gökdere",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Gökdere",
+        "referenceStreet": "Akgül"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "goksu",
+    "name": "Göksu",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Buca"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "Göksu",
+        "referenceStreet": "679/24"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "gorece",
+    "name": "Görece",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menemen"
+    ],
+    "places": [
+      {
+        "district": "Menemen",
+        "neighborhood": "Görece",
+        "referenceStreet": "910"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "goztepe",
+    "name": "Göztepe",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Konak"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "Göztepe",
+        "referenceStreet": "103"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "gulbahce",
+    "name": "Gülbahçe",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Urla"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Gülbahçe",
+        "referenceStreet": "12107"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "gulyaka",
+    "name": "Gülyaka",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Gülyaka",
+        "referenceStreet": "3035"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "gumuldur",
+    "name": "Gümüldür",
+    "kind": "area",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Gümüldür Fevzi Çakmak",
+        "referenceStreet": "Gümüldür İzmir"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Gümüldür Cumhuriyet",
+        "referenceStreet": "6449"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Gümüldür İnönü",
+        "referenceStreet": "Gümüldür İzmir"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "gunaltay",
+    "name": "Günaltay",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Günaltay",
+        "referenceStreet": "4865"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "guzelbahce",
+    "name": "Güzelbahçe",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Çelebi",
+        "referenceStreet": "Erler"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Çamlı",
+        "referenceStreet": "Çamlıca"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Çelebi",
+        "referenceStreet": "387"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Kahramandere",
+        "referenceStreet": "Ata"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Küçükkaya",
+        "referenceStreet": "Çamlı"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Maltepe",
+        "referenceStreet": "Mithatpaşa"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Mustafa Kemal Paşa",
+        "referenceStreet": "Atatürk"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Payamlı",
+        "referenceStreet": "Vali Kazım Dirik"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "guzelyali",
+    "name": "Güzelyalı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Konak"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "Güzelyalı",
+        "referenceStreet": "39"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "havalimani",
+    "name": "Havalimanı",
+    "kind": "transfer",
+    "status": "sourced",
+    "districts": [
+      "Gaziemir"
+    ],
+    "places": [],
+    "sources": [
+      "https://cdn.adnanmenderesairport.com/files/evident-redemptionstatement-20240718153906-irec.pdf"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Adnan Menderes Havalimanı iç ve dış hatlar terminalleri Gaziemir'dedir. Terminal, otopark katı veya açık park alanı, kapı ve giriş yüksekliği bilgilerini paylaşın. Terminal önü ile otopark içi erişim aynı şekilde planlanmaz."
+  },
+  {
+    "slug": "ilica",
+    "name": "Ilıca",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Çeşme",
+      "Narlıdere"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Ilıca",
+        "referenceStreet": "5133"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Ilıca",
+        "referenceStreet": "Palandöken"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "irmak-mahallesi",
+    "name": "Irmak Mahallesi",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Gaziemir",
+      "Menemen"
+    ],
+    "places": [
+      {
+        "district": "Gaziemir",
+        "neighborhood": "Irmak",
+        "referenceStreet": "31"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Irmak",
+        "referenceStreet": "9516"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "isikkent",
+    "name": "Işıkkent",
+    "kind": "industrial",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Işıklar",
+        "referenceStreet": "Alp Caddesi"
+      }
+    ],
+    "sources": [
+      "https://bornova.bel.tr/kent-market-0003"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Işıkkent için Işıklar Mahallesi ve Alp Caddesi belediye kayıtlarında yer alan referanslardır. İşletme veya sanayi girişi için kapı ve giriş yolunu ayrıca belirtin."
+  },
+  {
+    "slug": "icmeler",
+    "name": "İçmeler",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Urla"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "İçmeler",
+        "referenceStreet": "Göçmen"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "inciralti",
+    "name": "İnciraltı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Balçova"
+    ],
+    "places": [
+      {
+        "district": "Balçova",
+        "neighborhood": "İnciraltı",
+        "referenceStreet": "İnciraltı"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "inonu",
+    "name": "İnönü",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Buca",
+      "Ödemiş",
+      "Bornova",
+      "Çiğli",
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "İnönü",
+        "referenceStreet": "682/2"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "İnönü",
+        "referenceStreet": "Kanuni"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "İnönü",
+        "referenceStreet": "756"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "İnönü",
+        "referenceStreet": "9202"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "İnönü",
+        "referenceStreet": "129"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "izmir",
+    "name": "İzmir",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "İzmir"
+    ],
+    "places": [],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "İzmir genelindeki taleplerde ilçe bilgisi önemlidir. Aynı mahalle adı farklı ilçelerde bulunabildiği için ilçe, mahalle ve konum bağlantısını birlikte paylaşın."
+  },
+  {
+    "slug": "karabaglar",
+    "name": "Karabağlar",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Abdi İpekçi",
+        "referenceStreet": "3694"
+      },
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Adnan Süvari",
+        "referenceStreet": "108/32"
+      },
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Ali Fuat Cebesoy",
+        "referenceStreet": "9135/2"
+      },
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Ali Fuat Erden",
+        "referenceStreet": "Öğretmen Rasime Şeyhoğlu"
+      },
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Arap Hasan",
+        "referenceStreet": "237"
+      },
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Aşık Veysel",
+        "referenceStreet": "5821"
+      },
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Aydın",
+        "referenceStreet": "4275"
+      },
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Bahar",
+        "referenceStreet": "2915"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "karaburun",
+    "name": "Karaburun",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Karaburun"
+    ],
+    "places": [
+      {
+        "district": "Karaburun",
+        "neighborhood": "Anbarseki",
+        "referenceStreet": "Anbarseki"
+      },
+      {
+        "district": "Karaburun",
+        "neighborhood": "Bozköy",
+        "referenceStreet": "Gazi Mustafa Kemal"
+      },
+      {
+        "district": "Karaburun",
+        "neighborhood": "Eğlenhoca",
+        "referenceStreet": "5003"
+      },
+      {
+        "district": "Karaburun",
+        "neighborhood": "Hasseki",
+        "referenceStreet": "Hasseki"
+      },
+      {
+        "district": "Karaburun",
+        "neighborhood": "İnecik",
+        "referenceStreet": "İnecik"
+      },
+      {
+        "district": "Karaburun",
+        "neighborhood": "İskele",
+        "referenceStreet": "Hükümet Konağı"
+      },
+      {
+        "district": "Karaburun",
+        "neighborhood": "Kösedere",
+        "referenceStreet": "Ağalarseki"
+      },
+      {
+        "district": "Karaburun",
+        "neighborhood": "Küçükbahçe",
+        "referenceStreet": "Küçükbahçe"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "karatas",
+    "name": "Karataş",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "karsiyaka",
+    "name": "Karşıyaka",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Karşıyaka"
+    ],
+    "places": [
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Aksoy",
+        "referenceStreet": "1748"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Alaybey",
+        "referenceStreet": "Mehmet İhsan Zeyrek"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Atakent",
+        "referenceStreet": "Bestekar Sadi Hoşses"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Bahariye",
+        "referenceStreet": "Hidayet Erzeybek"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Bahçelievler",
+        "referenceStreet": "Cevdet Bilsay"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Bahriye Üçok",
+        "referenceStreet": "Rüştü Şerdağ"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Bostanlı",
+        "referenceStreet": "Cengiz Kocatoros"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Cumhuriyet",
+        "referenceStreet": "6653"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kavaklidere",
+    "name": "Kavaklıdere",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Kavaklıdere",
+        "referenceStreet": "Kavaklıdere"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kaynaklar",
+    "name": "Kaynaklar",
+    "kind": "area",
+    "status": "sourced",
+    "districts": ["Buca"],
+    "places": [],
+    "sources": ["https://www.buca.bel.tr/uploads/strategic-reports/Buca-Belediyesi-2025-Performans-Program%C4%B1.pdf"],
+    "checkedAt": "2026-09-18",
+    "note": "Buca Belediyesi kayıtlarında Kaynaklar Merkez adı geçer. Kaynaklar içinde yardım isterken mahalle, tesis girişi veya yol üzerindeki güvenli bekleme noktasını ve canlı konum bağlantısını belirtin."
+  },
+  {
+    "slug": "kazimdirik",
+    "name": "Kazımdirik",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Foça",
+      "Aliağa",
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Foça",
+        "neighborhood": "Kazım Dirik",
+        "referenceStreet": "408"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Kazım Dirik",
+        "referenceStreet": "Atatürk"
+      },
+      {
+        "district": "Foça",
+        "neighborhood": "Kazım Dirik",
+        "referenceStreet": "Foça İzmir Karayolu"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Kazımdirik",
+        "referenceStreet": "180/2"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Kazım Dirik",
+        "referenceStreet": "Cumhuriyet"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kemalpasa",
+    "name": "Kemalpaşa",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Kemalpaşa"
+    ],
+    "places": [
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Akalan",
+        "referenceStreet": "1528"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Ansızca",
+        "referenceStreet": "Ansızca Köy Yolu"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Aşağı Yenmiş",
+        "referenceStreet": "Sancak"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Aşağıkızılca",
+        "referenceStreet": "2001"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "67/1"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Bağyurdu 29 Ekim",
+        "referenceStreet": "Cumhuriyet Alanı"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Bayramlı",
+        "referenceStreet": "Bayramlı Yolu"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Beşpınar",
+        "referenceStreet": "Beşpınar Köyiçi"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kisik",
+    "name": "Kısık",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Kısık",
+        "referenceStreet": "7700"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "konak",
+    "name": "Konak",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Konak"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "Ballıkuyu",
+        "referenceStreet": "Ballıkuyu"
+      },
+      {
+        "district": "Konak",
+        "neighborhood": "Akdeniz",
+        "referenceStreet": "Necatibey"
+      },
+      {
+        "district": "Konak",
+        "neighborhood": "Akın Simav",
+        "referenceStreet": "Halil Rıfatpaşa"
+      },
+      {
+        "district": "Konak",
+        "neighborhood": "Akıncı",
+        "referenceStreet": "Anafartalar"
+      },
+      {
+        "district": "Konak",
+        "neighborhood": "Ali Reis",
+        "referenceStreet": "793"
+      },
+      {
+        "district": "Konak",
+        "neighborhood": "Alsancak",
+        "referenceStreet": "Kıbrıs Şehitleri"
+      },
+      {
+        "district": "Konak",
+        "neighborhood": "Altay",
+        "referenceStreet": "746"
+      },
+      {
+        "district": "Konak",
+        "neighborhood": "Faik Paşa",
+        "referenceStreet": "967"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kozagac",
+    "name": "Kozağaç",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Buca"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "Kozağaç",
+        "referenceStreet": "231/2"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kurucesme",
+    "name": "Kuruçeşme",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Buca"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "Kuruçeşme",
+        "referenceStreet": "205"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kucuk-park",
+    "name": "Küçük Park",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kucukyali",
+    "name": "Küçükyalı",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kuner",
+    "name": "Küner",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Küner",
+        "referenceStreet": "Küner"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "laka-mahallesi",
+    "name": "Laka Mahallesi",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Laka",
+        "referenceStreet": "Gül"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "liman-reis",
+    "name": "Liman Reis",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Narlıdere"
+    ],
+    "places": [
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Limanreis",
+        "referenceStreet": "Kıbrıs"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "limontepe",
+    "name": "Limontepe",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Limontepe",
+        "referenceStreet": "9701"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "maltepe",
+    "name": "Maltepe",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Çiğli",
+      "Güzelbahçe",
+      "Bergama"
+    ],
+    "places": [
+      {
+        "district": "Çiğli",
+        "neighborhood": "Maltepe",
+        "referenceStreet": "8090"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Maltepe",
+        "referenceStreet": "Mithatpaşa"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Maltepe",
+        "referenceStreet": "Kaymakam Kemalbey"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "manavkuyu",
+    "name": "Manavkuyu",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bayraklı"
+    ],
+    "places": [
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Manavkuyu",
+        "referenceStreet": "275/2"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "mavisehir",
+    "name": "Mavişehir",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karşıyaka"
+    ],
+    "places": [
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Mavişehir",
+        "referenceStreet": "Aziz Nesin"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "menderes",
+    "name": "Menderes",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Ahmetbeyli",
+        "referenceStreet": "4062"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Akçaköy",
+        "referenceStreet": "7202"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Mithatpaşa",
+        "referenceStreet": "Hükümet"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Ata",
+        "referenceStreet": "Yazar Namık Kemal"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Ataköy",
+        "referenceStreet": "Mustafa Kemal"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Cüneytbey",
+        "referenceStreet": "İbrahim Turan"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Bulgurca",
+        "referenceStreet": "6845"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Mithatpaşa",
+        "referenceStreet": "Armutluk"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "menderes-mahallesi",
+    "name": "Menderes Mahallesi",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Ahmetbeyli",
+        "referenceStreet": "4062"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Akçaköy",
+        "referenceStreet": "7202"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Mithatpaşa",
+        "referenceStreet": "Hükümet"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Ata",
+        "referenceStreet": "Yazar Namık Kemal"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Ataköy",
+        "referenceStreet": "Mustafa Kemal"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Cüneytbey",
+        "referenceStreet": "İbrahim Turan"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Bulgurca",
+        "referenceStreet": "6845"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Mithatpaşa",
+        "referenceStreet": "Armutluk"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "menemen",
+    "name": "Menemen",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Menemen"
+    ],
+    "places": [
+      {
+        "district": "Menemen",
+        "neighborhood": "Ahıhıdır",
+        "referenceStreet": "İzmir"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Alaniçi",
+        "referenceStreet": "Alaniçi"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "1528"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Ayvacık",
+        "referenceStreet": "Ayvacık"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Bağcılar",
+        "referenceStreet": "Bağcılar"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Belen",
+        "referenceStreet": "708"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Bozalan",
+        "referenceStreet": "Bozalan"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Buruncuk",
+        "referenceStreet": "400"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "mevlana-mahallesi",
+    "name": "Mevlana Mahallesi",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Mevlana",
+        "referenceStreet": "1751"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "naldoken",
+    "name": "Naldöken",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Naldöken",
+        "referenceStreet": "1218"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "narbel",
+    "name": "Narbel",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "narli",
+    "name": "Narlı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Narlıdere"
+    ],
+    "places": [
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Narlı",
+        "referenceStreet": "Koçyiğit"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Narlı",
+        "referenceStreet": "İlkay"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "narlidere",
+    "name": "Narlıdere",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Narlıdere"
+    ],
+    "places": [
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Altıevler",
+        "referenceStreet": "Gürler"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Seyran"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Çamtepe",
+        "referenceStreet": "Gülmüş"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Narlı",
+        "referenceStreet": "Koçyiğit"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Huzur",
+        "referenceStreet": "Yapıcılar"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Ilıca",
+        "referenceStreet": "Palandöken"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Limanreis",
+        "referenceStreet": "Kıbrıs"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Narlı",
+        "referenceStreet": "İlkay"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "oglananasi",
+    "name": "Oğlananası",
+    "kind": "area",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Oğlananası Atatürk",
+        "referenceStreet": "Fevzi Çakmak"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "onur-mahallesi",
+    "name": "Onur Mahallesi",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Bayraklı",
+      "Balçova"
+    ],
+    "places": [
+      {
+        "district": "Bayraklı",
+        "neighborhood": "Onur",
+        "referenceStreet": "7364/1"
+      },
+      {
+        "district": "Balçova",
+        "neighborhood": "Onur",
+        "referenceStreet": "Mine"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ozbek",
+    "name": "Özbek",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Urla"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Özbek",
+        "referenceStreet": "6002"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ozdere",
+    "name": "Özdere",
+    "kind": "area",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Özdere Cumhuriyet",
+        "referenceStreet": "3086"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ozkanlar",
+    "name": "Özkanlar",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "payamli",
+    "name": "Payamlı",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Güzelbahçe",
+      "Seferihisar"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Payamlı",
+        "referenceStreet": "Vali Kazım Dirik"
+      },
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Payamlı",
+        "referenceStreet": "Kuşadası Seferihisar Yolu"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "peker-mahallesi",
+    "name": "Peker Mahallesi",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "pinarbasi",
+    "name": "Pınarbaşı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Kiraz"
+    ],
+    "places": [
+      {
+        "district": "Kiraz",
+        "neighborhood": "Pınarbaşı",
+        "referenceStreet": "Hacıaliler"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "poligon",
+    "name": "Poligon",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Poligon",
+        "referenceStreet": "124"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sarnic",
+    "name": "Sarnıç",
+    "kind": "area",
+    "status": "sourced",
+    "districts": [
+      "Gaziemir"
+    ],
+    "places": [],
+    "sources": [
+      "https://www.izmir.bel.tr/tr/KararDetayi/32659"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Sarnıç, Gaziemir içinde birden fazla mahalleyle tarif edilen bir bölgedir. Atatürk, Hürriyet ve Menderes mahalleleri belediyenin Sarnıç planlama kaydında yer alır. Bulunduğunuz mahalleyi ve giriş yolunu açıkça belirtin."
+  },
+  {
+    "slug": "seferihisar",
+    "name": "Seferihisar",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Seferihisar"
+    ],
+    "places": [
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Akarca",
+        "referenceStreet": "Akarca"
+      },
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Kuşadası Seferihisar Yolu"
+      },
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Bengiler",
+        "referenceStreet": "6201"
+      },
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Beyler",
+        "referenceStreet": "8010"
+      },
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Camikebir",
+        "referenceStreet": "İnönü"
+      },
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Cumhuriyet",
+        "referenceStreet": "Kuşadası Seferihisar Yolu"
+      },
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Çamtepe",
+        "referenceStreet": "Çamtepe Köy Yolu"
+      },
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Çolak İbrahim Bey",
+        "referenceStreet": "Mektep"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "selcuk",
+    "name": "Selçuk",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Selçuk"
+    ],
+    "places": [
+      {
+        "district": "Selçuk",
+        "neighborhood": "Acarlar",
+        "referenceStreet": "Okul"
+      },
+      {
+        "district": "Selçuk",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Şehabettin Dede"
+      },
+      {
+        "district": "Selçuk",
+        "neighborhood": "Barutçu",
+        "referenceStreet": "Barutçu Atatürk"
+      },
+      {
+        "district": "Selçuk",
+        "neighborhood": "Belevi",
+        "referenceStreet": "Belevi Cumhuriyet"
+      },
+      {
+        "district": "Selçuk",
+        "neighborhood": "Çamlık",
+        "referenceStreet": "Cumhuriyet"
+      },
+      {
+        "district": "Selçuk",
+        "neighborhood": "Gökçealan",
+        "referenceStreet": "Gökçealan Atatürk"
+      },
+      {
+        "district": "Selçuk",
+        "neighborhood": "Havutçulu",
+        "referenceStreet": "Havutçulu Atatürk"
+      },
+      {
+        "district": "Selçuk",
+        "neighborhood": "Sultaniye",
+        "referenceStreet": "Eyice"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "selway",
+    "name": "Selway",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sigacik",
+    "name": "Sığacık",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Seferihisar"
+    ],
+    "places": [
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Sığacık",
+        "referenceStreet": "Şadırvan"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "siteler",
+    "name": "Siteler",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Aliağa",
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Aliağa",
+        "neighborhood": "Siteler",
+        "referenceStreet": "437"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Siteler",
+        "referenceStreet": "241"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sasal",
+    "name": "Şaşal",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Menderes",
+        "neighborhood": "Şaşal",
+        "referenceStreet": "7904"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "semikler",
+    "name": "Şemikler",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karşıyaka"
+    ],
+    "places": [
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Şemikler",
+        "referenceStreet": "Ordu"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sirinyer",
+    "name": "Şirinyer",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "tekeli-turkmen",
+    "name": "Tekeli Türkmen",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "teleferik",
+    "name": "Teleferik",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Balçova"
+    ],
+    "places": [
+      {
+        "district": "Balçova",
+        "neighborhood": "Teleferik",
+        "referenceStreet": "Enverpaşa"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali",
+    "name": "Torbalı",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Ahmetli",
+        "referenceStreet": "15."
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Alpkent",
+        "referenceStreet": "1020"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Arslanlar",
+        "referenceStreet": "Arslanlar"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Atalan",
+        "referenceStreet": "Tire"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "1553"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Ayrancılar",
+        "referenceStreet": "55"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Bahçelievler",
+        "referenceStreet": "9104"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Bozköy",
+        "referenceStreet": "Bozköy Köy"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "tuna",
+    "name": "Tuna",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bornova",
+        "neighborhood": "Tuna",
+        "referenceStreet": "5639/1"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ulamis",
+    "name": "Ulamış",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Seferihisar"
+    ],
+    "places": [
+      {
+        "district": "Seferihisar",
+        "neighborhood": "Ulamış",
+        "referenceStreet": "1401"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ulucak",
+    "name": "Ulucak",
+    "kind": "area",
+    "status": "sourced",
+    "districts": [
+      "Kemalpaşa"
+    ],
+    "places": [
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Ulucak İstiklal",
+        "referenceStreet": "9173"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Ulucak Mustafa Kemal Atatürk",
+        "referenceStreet": "9171"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Ulucak İstiklal",
+        "referenceStreet": "Şehit Jnd.uz.çvş.ramazan Salbaş"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Ulucak Cumhuriyet",
+        "referenceStreet": "Sıtkı Aydınel"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "urla",
+    "name": "Urla",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Urla"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Altıntaş",
+        "referenceStreet": "Zafer"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Neyzen Tevfik"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Bademler",
+        "referenceStreet": "Bademler"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Balıklıova",
+        "referenceStreet": "Balıklıova"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Barbaros",
+        "referenceStreet": "Barbaros Köy"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Birgi",
+        "referenceStreet": "Savran Kule"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Yelaltı",
+        "referenceStreet": "75.yıl Cumhuriyet"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Çamlıçay",
+        "referenceStreet": "5221"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "urla-iskele",
+    "name": "Urla İskele",
+    "kind": "area",
+    "status": "sourced",
+    "districts": ["Urla"],
+    "places": [],
+    "sources": ["https://izmir.bel.tr/tr/MekanDetay/80/230"],
+    "checkedAt": "2026-09-18",
+    "note": "İzmir Büyükşehir Belediyesi, Urla İskele Mahallesi'ndeki Limantepe'yi yerel bir konum olarak tanımlar. İskele adıyla yardım isterken sahil, sokak veya otopark girişini ve aracın tam konumunu ayrıca paylaşın."
+  },
+  {
+    "slug": "uzundere",
+    "name": "Uzundere",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Karabağlar",
+      "Ödemiş"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Uzundere",
+        "referenceStreet": "3966/4"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Uzundere",
+        "referenceStreet": "Uzundere"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ucyol",
+    "name": "Üçyol",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "urkmez",
+    "name": "Ürkmez",
+    "kind": "area",
+    "status": "sourced",
+    "districts": ["Seferihisar"],
+    "places": [],
+    "sources": ["https://www.izmir.bel.tr/tr/Haberler/seferihisar-ve-kirazda-iztasit-ile-yola-devam/48239/156"],
+    "checkedAt": "2026-09-18",
+    "note": "İzmir Büyükşehir Belediyesi Ürkmez–Seferihisar güzergâhını ayrı bir yerel hat olarak belirtir. Ürkmez içinde veya bağlantı yolunda kaldıysanız yönü, en yakın kavşağı ve güvenli bekleme noktasını konum bağlantısıyla birlikte paylaşın."
+  },
+  {
+    "slug": "yaka-koyu",
+    "name": "Yaka Köyü",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Urla",
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Yaka",
+        "referenceStreet": "Şen"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Yaka",
+        "referenceStreet": "642"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yaka-mahallesi",
+    "name": "Yaka Mahallesi",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Urla",
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Yaka",
+        "referenceStreet": "Şen"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Yaka",
+        "referenceStreet": "642"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yali",
+    "name": "Yalı",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Güzelbahçe",
+      "Karşıyaka",
+      "Aliağa",
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Yalı",
+        "referenceStreet": "101"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Yalı",
+        "referenceStreet": "6418"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Yalı",
+        "referenceStreet": "180"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Yalı",
+        "referenceStreet": "6184"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yali-mahallesi",
+    "name": "Yalı Mahallesi",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Güzelbahçe",
+      "Karşıyaka",
+      "Aliağa",
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Yalı",
+        "referenceStreet": "101"
+      },
+      {
+        "district": "Karşıyaka",
+        "neighborhood": "Yalı",
+        "referenceStreet": "6418"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Yalı",
+        "referenceStreet": "180"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Yalı",
+        "referenceStreet": "6184"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yenikale",
+    "name": "Yenikale",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Narlıdere"
+    ],
+    "places": [
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Yenikale",
+        "referenceStreet": "Ömür"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yenikoy",
+    "name": "Yeniköy",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Ödemiş",
+      "Torbalı",
+      "Kiraz",
+      "Foça",
+      "Menderes"
+    ],
+    "places": [
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Yeniköy",
+        "referenceStreet": "Yeniköy"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Yeniköy",
+        "referenceStreet": "Gazi Paşa"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Yeniköy",
+        "referenceStreet": "Yeniköy"
+      },
+      {
+        "district": "Foça",
+        "neighborhood": "Yeniköy",
+        "referenceStreet": "Yeniköy Köyü Küme Evler"
+      },
+      {
+        "district": "Menderes",
+        "neighborhood": "Yeniköy",
+        "referenceStreet": "7963"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yesilova",
+    "name": "Yeşilova",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Bayındır",
+      "Bornova"
+    ],
+    "places": [
+      {
+        "district": "Bayındır",
+        "neighborhood": "Yeşilova",
+        "referenceStreet": "Orta"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Yeşilova",
+        "referenceStreet": "4051"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yesilyurt",
+    "name": "Yeşilyurt",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Kemalpaşa"
+    ],
+    "places": [
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Yeşilyurt",
+        "referenceStreet": "Yeşilyurt Yolu"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yildiz-mahallesi",
+    "name": "Yıldız Mahallesi",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Konak",
+      "Buca"
+    ],
+    "places": [
+      {
+        "district": "Konak",
+        "neighborhood": "Yıldız",
+        "referenceStreet": "442"
+      },
+      {
+        "district": "Buca",
+        "neighborhood": "Yıldız",
+        "referenceStreet": "206/5"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "zeytinler",
+    "name": "Zeytinler",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Urla"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Zeytinler",
+        "referenceStreet": "Kurtuluş"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kisikkoy",
+    "name": "Kısıkköy",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "uckuyular",
+    "name": "Üçkuyular",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Karabağlar"
+    ],
+    "places": [
+      {
+        "district": "Karabağlar",
+        "neighborhood": "Üçkuyular",
+        "referenceStreet": "12/1"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "eskiizmir",
+    "name": "Eskiizmir",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sahilevleri",
+    "name": "Sahilevleri",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Narlıdere"
+    ],
+    "places": [
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Sahilevleri",
+        "referenceStreet": "Meltem"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sirince",
+    "name": "Şirince",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Selçuk"
+    ],
+    "places": [
+      {
+        "district": "Selçuk",
+        "neighborhood": "Şirince",
+        "referenceStreet": "220"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bayindir",
+    "name": "Bayındır",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Bayındır"
+    ],
+    "places": [
+      {
+        "district": "Bayındır",
+        "neighborhood": "Alankıyı",
+        "referenceStreet": "Pomak"
+      },
+      {
+        "district": "Bayındır",
+        "neighborhood": "Alanköy",
+        "referenceStreet": "Şehit Halil Aktaş"
+      },
+      {
+        "district": "Bayındır",
+        "neighborhood": "Arıkbaşı",
+        "referenceStreet": "Okul"
+      },
+      {
+        "district": "Bayındır",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Kazım Dirik"
+      },
+      {
+        "district": "Bayındır",
+        "neighborhood": "Balcılar",
+        "referenceStreet": "Balcılar Yolu"
+      },
+      {
+        "district": "Bayındır",
+        "neighborhood": "Bıyıklar",
+        "referenceStreet": "Boğaziçi"
+      },
+      {
+        "district": "Bayındır",
+        "neighborhood": "Buruncuk",
+        "referenceStreet": "Buruncuk"
+      },
+      {
+        "district": "Bayındır",
+        "neighborhood": "Camii",
+        "referenceStreet": "Atatürk"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bergama",
+    "name": "Bergama",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Bergama"
+    ],
+    "places": [
+      {
+        "district": "Bergama",
+        "neighborhood": "Ahmetbeyler",
+        "referenceStreet": "Ahmetbeyler"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Akçenger",
+        "referenceStreet": "Akçenger"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Alacalar",
+        "referenceStreet": "Alacalar"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Alhatlı",
+        "referenceStreet": "Alhatlı Merkez"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Alibeyli",
+        "referenceStreet": "Alibeyli"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Armağanlar",
+        "referenceStreet": "Armağanlar"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Aşağıbey",
+        "referenceStreet": "Abdulgani"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Aşağıcuma",
+        "referenceStreet": "Aşağıcuma"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kinik",
+    "name": "Kınık",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Kınık"
+    ],
+    "places": [
+      {
+        "district": "Kınık",
+        "neighborhood": "Arpadere",
+        "referenceStreet": "Burçak"
+      },
+      {
+        "district": "Kınık",
+        "neighborhood": "Arpaseki",
+        "referenceStreet": "Mezarlıkbaşı"
+      },
+      {
+        "district": "Kınık",
+        "neighborhood": "Aşağı",
+        "referenceStreet": "13 Eylül"
+      },
+      {
+        "district": "Kınık",
+        "neighborhood": "Aziziye",
+        "referenceStreet": "Dedeli"
+      },
+      {
+        "district": "Kınık",
+        "neighborhood": "Bademalan",
+        "referenceStreet": "Körfez"
+      },
+      {
+        "district": "Kınık",
+        "neighborhood": "Bağalan",
+        "referenceStreet": "Bağalan Atatürk"
+      },
+      {
+        "district": "Kınık",
+        "neighborhood": "Balaban",
+        "referenceStreet": "Ata"
+      },
+      {
+        "district": "Kınık",
+        "neighborhood": "Büyükoba",
+        "referenceStreet": "Kuşkaya"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kiraz",
+    "name": "Kiraz",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Kiraz"
+    ],
+    "places": [
+      {
+        "district": "Kiraz",
+        "neighborhood": "Ahmetler",
+        "referenceStreet": "Ahmetler"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Akpınar",
+        "referenceStreet": "Girne"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Altınoluk",
+        "referenceStreet": "Altınoluk"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Arkacılar",
+        "referenceStreet": "Arkacılar"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Avunduruk",
+        "referenceStreet": "Avunduruk"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Aydoğdu",
+        "referenceStreet": "Aydoğdu"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Bahçearası",
+        "referenceStreet": "Bal Yakası"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Başaran",
+        "referenceStreet": "Başaran"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "odemis",
+    "name": "Ödemiş",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Ödemiş"
+    ],
+    "places": [
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Akıncılar",
+        "referenceStreet": "Hürriyet"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Alaşarlı",
+        "referenceStreet": "Alaşarlı"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Anafartalar",
+        "referenceStreet": "Göksenin"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Artıcak",
+        "referenceStreet": "Artıcak Yaylası"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Atatürk"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Bademli",
+        "referenceStreet": "Çarşıiçi 1"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Balabanlı",
+        "referenceStreet": "Atam"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Bayırlı",
+        "referenceStreet": "Boğaz"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "tire",
+    "name": "Tire",
+    "kind": "district",
+    "status": "sourced",
+    "districts": [
+      "Tire"
+    ],
+    "places": [
+      {
+        "district": "Tire",
+        "neighborhood": "Yeni",
+        "referenceStreet": "1.tahtakale"
+      },
+      {
+        "district": "Tire",
+        "neighborhood": "Akçaşehir",
+        "referenceStreet": "Akçaşehir Cami"
+      },
+      {
+        "district": "Tire",
+        "neighborhood": "Akkoyunlu",
+        "referenceStreet": "Azmakaltı"
+      },
+      {
+        "district": "Tire",
+        "neighborhood": "Akmescit",
+        "referenceStreet": "Kuzyaka"
+      },
+      {
+        "district": "Tire",
+        "neighborhood": "Akyurt",
+        "referenceStreet": "Akyurt Merkez"
+      },
+      {
+        "district": "Tire",
+        "neighborhood": "Alacalı",
+        "referenceStreet": "Güpdere"
+      },
+      {
+        "district": "Tire",
+        "neighborhood": "Alaylı",
+        "referenceStreet": "Ovaüstü"
+      },
+      {
+        "district": "Tire",
+        "neighborhood": "Armutlu",
+        "referenceStreet": "Mersindere"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "1-sanayi",
+    "name": "1. Sanayi",
+    "kind": "industrial",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "2-sanayi",
+    "name": "2. Sanayi",
+    "kind": "industrial",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "3-sanayi",
+    "name": "3. Sanayi",
+    "kind": "industrial",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "4-sanayi",
+    "name": "4. Sanayi",
+    "kind": "industrial",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "5-sanayi",
+    "name": "5. Sanayi",
+    "kind": "industrial",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "belkahve",
+    "name": "Belkahve",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sabuncubeli",
+    "name": "Sabuncubeli",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=22"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Sabuncubeli Tüneli, İzmir–Manisa devlet yolu bağlantısındadır. Tünel içi, giriş veya çıkış konumunu ve İzmir ya da Manisa yönünde olduğunuzu belirtin. Eski yol ile tünel güzergâhı aynı buluşma noktası değildir."
+  },
+  {
+    "slug": "buca-golet",
+    "name": "Buca Gölet",
+    "kind": "area",
+    "status": "sourced",
+    "districts": ["Buca"],
+    "places": [],
+    "sources": ["https://www.buca.bel.tr/uploads/strategic-reports/Buca-Belediyesi-2022-Performans-Program%C4%B1.pdf"],
+    "checkedAt": "2026-09-18",
+    "note": "Buca Belediyesi performans programı Gölet tesisini Kaynaklar Merkez konumunda listeler. Yardım talebinde tesisin hangi girişinde veya çevresindeki hangi yolda bulunduğunuzu ve aracın erişim koşullarını belirtin."
+  },
+  {
+    "slug": "belenbasi",
+    "name": "Belenbaşı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Buca"
+    ],
+    "places": [
+      {
+        "district": "Buca",
+        "neighborhood": "Belenbaşı",
+        "referenceStreet": "Hürriyet"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "altinkum",
+    "name": "Altınkum",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Altınkum",
+        "referenceStreet": "200"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "boyalik",
+    "name": "Boyalık",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Boyalık",
+        "referenceStreet": "3209"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ildir",
+    "name": "Ildır",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Ildır",
+        "referenceStreet": "Ildır Gazi Mustafa Kemal"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kuzey-cevre-yolu",
+    "name": "Kuzey Çevre Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "guney-cevre-yolu",
+    "name": "Güney Çevre Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bayrakli-tunelleri",
+    "name": "Bayraklı Tünelleri",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Istatistikler/KopruveTunelBilgileri/TehMadTuneller.pdf"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Bayraklı 1 ve Bayraklı 2 tünelleri İzmir Çevre Otoyolu üzerindedir. Hangi tünelde veya tünel girişinde olduğunuzu ve gidiş yönünü belirtin; yalnızca Bayraklı adıyla yönlendirme istemeyin."
+  },
+  {
+    "slug": "konak-tuneli",
+    "name": "Konak Tüneli",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.izmir.bel.tr/tr/Haberler/konak-tuneli-nin-sorumlulugu-buyuksehir-de/41259/156"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Konak Tüneli, Konak Meydanı ile Yeşildere Caddesi arasındaki bağlantıdır. Konak tarafında mı, Yeşildere tarafında mı yoksa tünelin içinde mi olduğunuzu bildirin; yön bilgisi giriş seçimini etkiler."
+  },
+  {
+    "slug": "manisa-yolu",
+    "name": "Manisa Yolu",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=22"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Sabuncubeli Tüneli, İzmir–Manisa devlet yolu bağlantısındadır. Tünel içi, giriş veya çıkış konumunu ve İzmir ya da Manisa yönünde olduğunuzu belirtin. Eski yol ile tünel güzergâhı aynı buluşma noktası değildir."
+  },
+  {
+    "slug": "16-eylul",
+    "name": "16 Eylül",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "16 Eylül",
+        "referenceStreet": "3001"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sifne",
+    "name": "Şifne",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Şifne",
+        "referenceStreet": "6460"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "karakoy",
+    "name": "Karaköy",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Çeşme",
+      "Aliağa"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Karaköy",
+        "referenceStreet": "Karaköy Cumhuriyet"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Karaköy",
+        "referenceStreet": "Karaköy Hükümet"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ovacik",
+    "name": "Ovacık",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Urla",
+      "Kemalpaşa",
+      "Bergama",
+      "Kiraz",
+      "Çeşme",
+      "Ödemiş"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Ovacık",
+        "referenceStreet": "Ovacık"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Ovacık",
+        "referenceStreet": "Merkez Yolu"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Ovacık",
+        "referenceStreet": "Ovacık"
+      },
+      {
+        "district": "Kiraz",
+        "neighborhood": "Ovacık",
+        "referenceStreet": "Ovacık"
+      },
+      {
+        "district": "Çeşme",
+        "neighborhood": "Ovacık",
+        "referenceStreet": "7000"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Ovacık",
+        "referenceStreet": "Ovacık"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ataturk-mahallesi",
+    "name": "Atatürk Mahallesi",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Bergama",
+      "Çiğli",
+      "Bayındır",
+      "Narlıdere",
+      "Kemalpaşa",
+      "Urla",
+      "Aliağa",
+      "Beydağ",
+      "Bornova",
+      "Ödemiş",
+      "Torbalı",
+      "Menemen",
+      "Seferihisar",
+      "Buca",
+      "Gaziemir",
+      "Selçuk",
+      "Foça"
+    ],
+    "places": [
+      {
+        "district": "Bergama",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Aslan"
+      },
+      {
+        "district": "Çiğli",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "8809/23"
+      },
+      {
+        "district": "Bayındır",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Kazım Dirik"
+      },
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Seyran"
+      },
+      {
+        "district": "Kemalpaşa",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "67/1"
+      },
+      {
+        "district": "Urla",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Neyzen Tevfik"
+      },
+      {
+        "district": "Aliağa",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Atatürk"
+      },
+      {
+        "district": "Beydağ",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Güler"
+      },
+      {
+        "district": "Bornova",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "853"
+      },
+      {
+        "district": "Ödemiş",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "Atatürk"
+      },
+      {
+        "district": "Torbalı",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "1553"
+      },
+      {
+        "district": "Menemen",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "1528"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "celebi-mahallesi",
+    "name": "Çelebi Mahallesi",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Çelebi",
+        "referenceStreet": "Erler"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Çelebi",
+        "referenceStreet": "387"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kahramandere",
+    "name": "Kahramandere",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Kahramandere",
+        "referenceStreet": "Ata"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yelki",
+    "name": "Yelki",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Yelki",
+        "referenceStreet": "2251"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "camli",
+    "name": "Çamlı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Çamlı",
+        "referenceStreet": "Çamlıca"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kucukkaya",
+    "name": "Küçükkaya",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Güzelbahçe",
+      "Bergama"
+    ],
+    "places": [
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Küçükkaya",
+        "referenceStreet": "Çamlı"
+      },
+      {
+        "district": "Bergama",
+        "neighborhood": "Küçükkaya",
+        "referenceStreet": "Atatürk"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "eserkent",
+    "name": "Eserkent",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "6-sanayi",
+    "name": "6. Sanayi",
+    "kind": "industrial",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "7-sanayi",
+    "name": "7. Sanayi",
+    "kind": "industrial",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "zeytinkoy",
+    "name": "Zeytinköy",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Selçuk"
+    ],
+    "places": [
+      {
+        "district": "Selçuk",
+        "neighborhood": "Zeytinköy",
+        "referenceStreet": "Akpınar"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "acarlar",
+    "name": "Acarlar",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Selçuk"
+    ],
+    "places": [
+      {
+        "district": "Selçuk",
+        "neighborhood": "Acarlar",
+        "referenceStreet": "Okul"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "barutcu",
+    "name": "Barutçu",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Selçuk"
+    ],
+    "places": [
+      {
+        "district": "Selçuk",
+        "neighborhood": "Barutçu",
+        "referenceStreet": "Barutçu Atatürk"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-19-mayis",
+    "name": "Torbalı 19 Mayıs",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "19 Mayıs (Subaşı)",
+        "referenceStreet": ""
+      }
+    ],
+    "sources": [
+      "https://www.torbali.bel.tr/muhtarlar"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-ahmetli",
+    "name": "Torbalı Ahmetli",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Ahmetli",
+        "referenceStreet": "15."
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-arslanlar",
+    "name": "Torbalı Arslanlar",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Arslanlar",
+        "referenceStreet": "Arslanlar"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-atalan",
+    "name": "Torbalı Atalan",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Atalan",
+        "referenceStreet": "Tire"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-ataturk",
+    "name": "Torbalı Atatürk",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Atatürk",
+        "referenceStreet": "1553"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-ayrancilar",
+    "name": "Torbalı Ayrancılar",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Ayrancılar",
+        "referenceStreet": "55"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-bahcelievler",
+    "name": "Torbalı Bahçelievler",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Bahçelievler",
+        "referenceStreet": "9104"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-bozkoy",
+    "name": "Torbalı Bozköy",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Bozköy",
+        "referenceStreet": "Bozköy Köy"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-bulbuldere",
+    "name": "Torbalı Bülbüldere",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Bülbüldere",
+        "referenceStreet": "819"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-cumhuriyet",
+    "name": "Torbalı Cumhuriyet",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Cumhuriyet",
+        "referenceStreet": "Haluk Alpsü"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-cakirbeyli",
+    "name": "Torbalı Çakırbeyli",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Çakırbeyli",
+        "referenceStreet": "Gazi Mustafa Kemal"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-camlica",
+    "name": "Torbalı Çamlıca",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Çamlıca",
+        "referenceStreet": "Çamlıca Yolu"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-capak",
+    "name": "Torbalı Çapak",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Çapak",
+        "referenceStreet": "2540"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-caybasi",
+    "name": "Torbalı Çaybaşı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Çaybaşı",
+        "referenceStreet": "Menderes"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-dagkizilca",
+    "name": "Torbalı Dağkızılca",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Dağkızılca",
+        "referenceStreet": "6180"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-demirci",
+    "name": "Torbalı Demirci",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Demirci",
+        "referenceStreet": "6250"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-ertugrul",
+    "name": "Torbalı Ertuğrul",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Ertuğrul",
+        "referenceStreet": "Torbalı"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-fevzi-cakmak",
+    "name": "Torbalı Fevzi Çakmak",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Fevzi Çakmak",
+        "referenceStreet": "Barış Manço"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-golluce",
+    "name": "Torbalı Göllüce",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Göllüce",
+        "referenceStreet": "Büyük Menderes"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-helvaci",
+    "name": "Torbalı Helvacı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Helvacı",
+        "referenceStreet": "6280"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-istiklal",
+    "name": "Torbalı İstiklal",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "İstiklal (Yazıbaşı)",
+        "referenceStreet": ""
+      }
+    ],
+    "sources": [
+      "https://www.torbali.bel.tr/muhtarlar"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-kaplancik",
+    "name": "Torbalı Kaplancık",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Kaplancık",
+        "referenceStreet": "6300"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-karakizlar",
+    "name": "Torbalı Karakızlar",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Karakızlar",
+        "referenceStreet": "Karakızlar"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-karakuyu",
+    "name": "Torbalı Karakuyu",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Karakuyu",
+        "referenceStreet": "Fatih"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-karsiyaka",
+    "name": "Torbalı Karşıyaka",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Karşıyaka",
+        "referenceStreet": "7320"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-kuscuburun",
+    "name": "Torbalı Kuşçuburun",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Kuşçuburun",
+        "referenceStreet": "Yazıbaşı İzmir"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-pamukyazi",
+    "name": "Torbalı Pamukyazı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Pamukyazı",
+        "referenceStreet": "8"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-pancar",
+    "name": "Torbalı Pancar",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Pancar",
+        "referenceStreet": ""
+      }
+    ],
+    "sources": [
+      "https://www.torbali.bel.tr/muhtarlar"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-saglik",
+    "name": "Torbalı Sağlık",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Sağlık",
+        "referenceStreet": "6350"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-subasi",
+    "name": "Torbalı Subaşı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Subaşı",
+        "referenceStreet": "Osman Dirik"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-tulum",
+    "name": "Torbalı Tulum",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Tulum",
+        "referenceStreet": "6398"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-yazibasi",
+    "name": "Torbalı Yazıbaşı",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Yazıbaşı",
+        "referenceStreet": "Atatürk"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "torbali-yogurtcular",
+    "name": "Torbalı Yoğurtçular",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Torbalı"
+    ],
+    "places": [
+      {
+        "district": "Torbalı",
+        "neighborhood": "Yoğurtçular",
+        "referenceStreet": "6449"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "nazilli",
+    "name": "Nazilli",
+    "kind": "area",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bornova-cevre-yolu",
+    "name": "Bornova Çevre Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "karsiyaka-cevre-yolu",
+    "name": "Karşıyaka Çevre Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "izmir-otoyolu",
+    "name": "İzmir Otoyolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "liman-yolu",
+    "name": "Liman Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "otogar-otoyolu",
+    "name": "Otogar Otoyolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "altinyol-sahil-yolu",
+    "name": "Altınyol Sahil Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "sabuncubeli-tuneli",
+    "name": "Sabuncubeli Tüneli",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=22"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Sabuncubeli Tüneli, İzmir–Manisa devlet yolu bağlantısındadır. Tünel içi, giriş veya çıkış konumunu ve İzmir ya da Manisa yönünde olduğunuzu belirtin. Eski yol ile tünel güzergâhı aynı buluşma noktası değildir."
+  },
+  {
+    "slug": "ankara-yolu",
+    "name": "Ankara Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "istanbul-yolu",
+    "name": "İstanbul Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "bursa-yolu",
+    "name": "Bursa Yolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "belkahve-rampasi",
+    "name": "Belkahve Rampası",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "belkahve-tunelleri",
+    "name": "Belkahve Tünelleri",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "ankara-otoyolu",
+    "name": "Ankara Otoyolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "istanbul-otoyolu",
+    "name": "İstanbul Otoyolu",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Gebze–Orhangazi–İzmir Otoyolu için yalnızca varış şehrini söylemek yeterli değildir. Otoyol adını, bulunduğunuz kesimi, gidiş yönünü ve kilometre bilgisini aktarın; otoyol ile devlet yolunu birbirinden ayırın."
+  },
+  {
+    "slug": "bursa-otoyolu",
+    "name": "Bursa Otoyolu",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "Gebze–Orhangazi–İzmir Otoyolu için yalnızca varış şehrini söylemek yeterli değildir. Otoyol adını, bulunduğunuz kesimi, gidiş yönünü ve kilometre bilgisini aktarın; otoyol ile devlet yolunu birbirinden ayırın."
+  },
+  {
+    "slug": "torbali-otoyolu",
+    "name": "Torbalı Otoyolu",
+    "kind": "route",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "dalyan",
+    "name": "Dalyan",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Çeşme"
+    ],
+    "places": [
+      {
+        "district": "Çeşme",
+        "neighborhood": "Dalyan",
+        "referenceStreet": "4218"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "yaka",
+    "name": "Yaka",
+    "kind": "neighborhood",
+    "status": "ambiguous",
+    "districts": [
+      "Urla",
+      "Güzelbahçe"
+    ],
+    "places": [
+      {
+        "district": "Urla",
+        "neighborhood": "Yaka",
+        "referenceStreet": "Şen"
+      },
+      {
+        "district": "Güzelbahçe",
+        "neighborhood": "Yaka",
+        "referenceStreet": "642"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "limanreis",
+    "name": "Limanreis",
+    "kind": "neighborhood",
+    "status": "sourced",
+    "districts": [
+      "Narlıdere"
+    ],
+    "places": [
+      {
+        "district": "Narlıdere",
+        "neighborhood": "Limanreis",
+        "referenceStreet": "Kıbrıs"
+      }
+    ],
+    "sources": [
+      "https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "kisikkoy-sanayi-sitesi",
+    "name": "Kısıkköy Sanayi Sitesi",
+    "kind": "industrial",
+    "status": "needs-review",
+    "districts": [],
+    "places": [],
+    "sources": [],
+    "checkedAt": "2026-09-18",
+    "note": ""
+  },
+  {
+    "slug": "izmir-cevre-yolu",
+    "name": "İzmir Çevre Yolu",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Istatistikler/KopruveTunelBilgileri/TehMadTuneller.pdf"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "İzmir Çevre Otoyolu üzerindeki Bayraklı tünelleri farklı konumları ifade eder. Yol yardımı için kavşak veya tünel adı, kilometre ve seyir yönünü konum bağlantısına ekleyin."
+  },
+  {
+    "slug": "izmir-aydin-otoyolu",
+    "name": "İzmir-Aydın Otoyolu",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "İzmir–Aydın Otoyolu üzerindeki konumu, İzmir veya Aydın yönü ve en yakın kavşak bilgisiyle tarif edin. Şehir içi yol ile otoyol bağlantısını ayırmak ekip yönlendirmesinde önemlidir."
+  },
+  {
+    "slug": "izmir-cesme-otoyolu",
+    "name": "İzmir-Çeşme Otoyolu",
+    "kind": "route",
+    "status": "sourced",
+    "districts": [],
+    "places": [],
+    "sources": [
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Otoyollar/UcretlerYeni.aspx"
+    ],
+    "checkedAt": "2026-09-18",
+    "note": "İzmir–Çeşme Otoyolu için gidiş yönünü, son geçtiğiniz çıkışı ve kilometre bilgisini paylaşın. Çeşme ilçe merkezi ile otoyol üzerindeki araç aynı erişim noktasında değildir."
+  }
+]

@@ -1,9 +1,16 @@
 {
-  "generatedAt": "2026-09-18T19:48:28.622Z",
+  "generatedAt": "2026-09-19T23:15:54.791Z",
   "sitemapUrls": 2036,
   "auditedPages": 2036,
   "reachablePages": 2036,
   "homepageBytes": 188791,
   "errors": [],
-  "warnings": []
+  "warnings": [],
+  "regions": {
+    "total": 253,
+    "sourced": 178,
+    "ambiguous": 28,
+    "pendingReview": 47,
+    "verifiedOperations": 0
+  }
 }

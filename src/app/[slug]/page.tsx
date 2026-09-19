@@ -6,11 +6,13 @@ import { CheckCircle2, Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
-import LocalAreaGuide from "@/components/LocalAreaGuide";
+import RegionalServiceGuide from "@/components/RegionalServiceGuide";
 import StickyCallBar from "@/components/StickyCallBar";
+import VerifiedOperations from "@/components/VerifiedOperations";
 import { getAllStaticSlugs, MAIN_PHONE, MAIN_PHONE_RAW, WHATSAPP_NUMBER } from "@/data/districts";
 import { getDistrictDetail } from "@/data/districtDetails";
 import { REFERENCE_REGIONS } from "@/data/referenceRegions";
+import { getRegionalFaq, getRegionOverview, getRegionProfile } from "@/data/regionContent";
 import { SERVICES } from "@/data/services";
 
 export const dynamicParams = false;
@@ -24,26 +26,23 @@ function pageData(slug: string) {
   const region = REFERENCE_REGIONS.find((item) => item.slug === regionSlug);
   if (!isHub && !region) notFound();
   const district = region?.name ?? "İzmir";
+  const profile = getRegionProfile(regionSlug);
+  if (!profile) notFound();
   const detail = getDistrictDetail(regionSlug);
   const heading = `${district} ${service.title}`;
   const title = isHub ? `${heading} | Hizmet Kapsamı ve Bölgeler` : `${heading} | 7/24 ${service.slug === "cekici" ? "Oto Çekici ve Yol Yardım" : "Yol Yardım"}`;
   const description = isHub
     ? `İzmir ${service.title.toLocaleLowerCase("tr-TR")} rehberi: hizmet kapsamı, müdahale koşulları ve bölge sayfaları. Konumunuzu seçerek ilgili hizmet bilgilerine ulaşın.`
-    : `${heading} hizmeti. ${service.intro} Konum ve araç bilgisiyle destek isteyin.`;
+    : `${heading} hizmeti. ${profile.status === "sourced" && profile.districts.length === 1 && profile.districts[0] !== "İzmir" ? `${profile.districts[0]} ilçesinde konum ve erişim rehberi. ` : ""}${service.intro} Konum ve araç bilgisiyle destek isteyin.`;
   const faqs = [
     ...service.faqs,
-    {
-      q: `${district} için ${service.title.toLocaleLowerCase("tr-TR")} talebinde konumu nasıl paylaşmalıyım?`,
-      a: detail
-        ? `WhatsApp konumuna cadde, giriş ve yön bilgisini ekleyin. ${detail.popularArteries.slice(0, 2).join(" veya ")} yakınındaysanız bulunduğunuz tarafı da belirtin. Araç modeli ve mevcut sorunu birlikte iletin.`
-        : `${district} için WhatsApp konumunuza ilçe, cadde ve yakın bir referans noktası ekleyin. Aynı adlı yerlerin karışmaması için yalnızca bölge adıyla yetinmeyin. Araç modeli ve mevcut sorunu birlikte iletin.`,
-    },
+    getRegionalFaq(profile, service),
     {
       q: `${district} için varış süresi nasıl belirlenir?`,
       a: "Uygun ekibin konumu, trafik, yol erişimi ve gereken ekipman değerlendirildikten sonra tahmini süre görüşmede paylaşılır. Her konum için geçerli sabit bir varış süresi yoktur.",
     },
   ];
-  return { service, isHub, regionSlug, district, detail, heading, title, description, faqs };
+  return { service, isHub, regionSlug, district, detail, profile, heading, title, description, faqs };
 }
 
 export function generateStaticParams() { return getAllStaticSlugs(); }
@@ -60,7 +59,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { service, isHub, regionSlug, district, detail, heading, description, faqs } = pageData(slug);
+  const { service, isHub, regionSlug, district, detail, profile, heading, description, faqs } = pageData(slug);
   const breadcrumbs = [
     { name: "Ana Sayfa", url: "/" },
     ...(isHub ? [] : [{ name: `İzmir ${service.title}`, url: `/${service.slug}` }]),
@@ -86,6 +85,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p className="text-sm font-bold text-amber-300">{district} • 7/24 destek hattı</p>
           <h1 className="mt-5 max-w-3xl font-heading text-4xl font-black md:text-6xl">{heading}{isHub ? " Hizmet Rehberi" : ""}</h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">{service.intro}</p>
+          {!isHub && <p className="mt-4 max-w-2xl leading-7 text-slate-300">{getRegionOverview(profile)}</p>}
           {isHub && <p className="mt-4 max-w-2xl leading-8 text-slate-300">Bu rehberde hizmetin kapsamını ve müdahale koşullarını inceleyebilir, aşağıdaki bölge listesinden bulunduğunuz konuma ait sayfaya geçebilirsiniz.</p>}
           <div className="mt-8 flex flex-wrap gap-4">
             <a href={`tel:${MAIN_PHONE_RAW}`} className="inline-flex items-center gap-2 bg-amber-400 px-7 py-4 font-black text-slate-950"><Phone className="h-5 w-5" />{MAIN_PHONE}</a>
@@ -106,6 +106,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p className="mt-6 text-sm leading-7 text-slate-300">Konum ve araç bilgisi alındıktan sonra uygun ekipman, tahmini varış ve işlem kapsamı görüşmede netleştirilir.</p>
         </aside>
       </section>
+      <RegionalServiceGuide profile={profile} service={service} showOverview={isHub} />
       {detail && <section className="bg-amber-50 py-16">
         <div className="container mx-auto max-w-6xl px-4">
           <h2 className="section-title">{district} konum ve erişim rehberi</h2>
@@ -116,7 +117,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
       </section>}
-      <LocalAreaGuide slug={regionSlug} district={district} serviceTitle={service.title} />
+      <VerifiedOperations regionSlug={regionSlug} serviceSlug={service.slug} />
       <section className="bg-slate-100 py-16">
         <div className="container mx-auto max-w-6xl px-4">
           <p className="text-sm font-bold text-amber-700">Örnek durum • Gerçek operasyon kaydı değildir</p>

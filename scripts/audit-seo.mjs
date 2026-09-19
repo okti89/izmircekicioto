@@ -68,7 +68,27 @@ fs.mkdirSync("artifacts", { recursive: true });
 const regionsSource = fs.readFileSync("src/data/referenceRegions.ts", "utf8");
 const detailSource = fs.readFileSync("src/data/districtDetails.ts", "utf8");
 const detailedRegions = new Set([...detailSource.matchAll(/^  ([a-z0-9-]+): \{/gm)].map((match) => match[1]));
-const contentCoverage = [...regionsSource.matchAll(/\{ slug: "([^"]+)", name: "([^"]+)" \}/g)].map(([, slug, name]) => ({ slug, name, hasRegionalDetail: detailedRegions.has(slug), operationEvidence: "Owner verification and photo mapping required" }));
+const referenceRegions = [...regionsSource.matchAll(/\{ slug: "([^"]+)", name: "([^"]+)" \}/g)].map(([, slug, name]) => ({ slug, name }));
+const profiles = JSON.parse(fs.readFileSync("src/data/regionProfiles.json", "utf8"));
+const profileMap = new Map(profiles.map((profile) => [profile.slug, profile]));
+if (profiles.length !== referenceRegions.length || profileMap.size !== referenceRegions.length) report.errors.push("Region profiles must match the exact reference region set");
+const contentCoverage = referenceRegions.map(({ slug, name }) => {
+  const profile = profileMap.get(slug);
+  if (!profile) report.errors.push(`Missing region profile: ${slug}`);
+  else {
+    if (profile.name !== name) report.errors.push(`Region name mismatch: ${slug}`);
+    if (profile.status === "sourced" && profile.sources.length === 0) report.errors.push(`Sourced region without citation: ${slug}`);
+    if (profile.status === "ambiguous" && profile.districts.length < 2) report.errors.push(`Ambiguous region without alternatives: ${slug}`);
+  }
+  return { slug, name, sourceStatus: profile?.status ?? "missing", sourceUrls: profile?.sources ?? [], hasLegacyDetail: detailedRegions.has(slug), operationEvidence: "Owner verification and photo mapping required" };
+});
+report.regions = {
+  total: contentCoverage.length,
+  sourced: contentCoverage.filter((region) => region.sourceStatus === "sourced").length,
+  ambiguous: contentCoverage.filter((region) => region.sourceStatus === "ambiguous").length,
+  pendingReview: contentCoverage.filter((region) => region.sourceStatus === "needs-review").length,
+  verifiedOperations: 0,
+};
 fs.writeFileSync("artifacts/content-coverage.json", JSON.stringify(contentCoverage, null, 2));
 fs.writeFileSync("artifacts/seo-audit.json", JSON.stringify(report, null, 2));
 console.log(JSON.stringify(report, null, 2));
