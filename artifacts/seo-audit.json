@@ -1,9 +1,17 @@
 {
-  "generatedAt": "2026-09-19T23:15:54.791Z",
-  "sitemapUrls": 2036,
-  "auditedPages": 2036,
-  "reachablePages": 2036,
-  "homepageBytes": 188791,
+  "generatedAt": "2026-09-21T19:20:27.392Z",
+  "generatedPages": 2036,
+  "sitemapUrls": 1660,
+  "auditedPages": 1660,
+  "excludedNoindex": 376,
+  "reachablePages": 1660,
+  "homepageBytes": 189445,
+  "schemaCounts": {
+    "Organization": 1660,
+    "Service": 1659,
+    "FAQPage": 9,
+    "LocalBusiness": 0
+  },
   "errors": [],
   "warnings": [],
   "regions": {

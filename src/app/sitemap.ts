@@ -1,7 +1,17 @@
 import { MetadataRoute } from "next";
 import { getAllStaticSlugs } from "@/data/districts";
+import { getRegionProfile } from "@/data/regionContent";
+import { SERVICES } from "@/data/services";
 
 const baseUrl = "https://izmircekicioto.com";
+const serviceSlugs = [...SERVICES].sort((a, b) => b.slug.length - a.slug.length).map((service) => service.slug);
+
+function isIndexableServiceSlug(slug: string) {
+  const serviceSlug = serviceSlugs.find((service) => slug === service || slug.endsWith(`-${service}`));
+  if (!serviceSlug || slug === serviceSlug) return true;
+  const regionSlug = slug.slice(0, -serviceSlug.length - 1);
+  return getRegionProfile(regionSlug)?.status !== "needs-review";
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -25,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    ...getAllStaticSlugs().map(({ slug }) => ({
+    ...getAllStaticSlugs().filter(({ slug }) => isIndexableServiceSlug(slug)).map(({ slug }) => ({
       url: `${baseUrl}/${slug}`,
       changeFrequency: "weekly" as const,
       priority: slug.endsWith("-cekici") || slug === "cekici" ? 0.8 : 0.6,

@@ -49,9 +49,11 @@ export function generateStaticParams() { return getAllStaticSlugs(); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const { service, title, description } = pageData(slug);
+  const { service, title, description, isHub, profile } = pageData(slug);
+  const shouldIndex = isHub || profile.status !== "needs-review";
   return {
     title: { absolute: title }, description, alternates: { canonical: `/${slug}` },
+    robots: { index: shouldIndex, follow: true },
     openGraph: { type: "website", locale: "tr_TR", title, description, url: `/${slug}`, images: [{ url: service.image, alt: service.imageAlt }] },
     twitter: { card: "summary_large_image", title, description, images: [service.image] },
   };
@@ -68,7 +70,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const message = encodeURIComponent(`${district} ${service.title} için destek istiyorum. Konumum ve araç bilgilerim: `);
   return <>
     <Header />
-    <JsonLd name={heading} description={description} path={`/${slug}`} serviceName={service.title} district={district} faqs={faqs} breadcrumbs={breadcrumbs} />
+    <JsonLd name={heading} description={description} path={`/${slug}`} serviceName={service.title} district={district} faqs={isHub ? faqs : undefined} breadcrumbs={breadcrumbs} />
     <main>
       <nav aria-label="Sayfa yolu" className="border-b border-slate-800 bg-slate-900 py-3 text-xs text-slate-300">
         <ol className="container mx-auto flex max-w-6xl flex-wrap gap-2 px-4">

@@ -1,293 +1,48 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle2, DollarSign, HelpCircle, Phone, ShieldCheck, Truck, MapPin, ShieldAlert, Wrench } from "lucide-react";
+import { CheckCircle2, MapPin, MessageCircle, Phone, Truck } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyCallBar from "@/components/StickyCallBar";
 import JsonLd from "@/components/JsonLd";
 import { MAIN_PHONE, MAIN_PHONE_RAW, WHATSAPP_NUMBER } from "@/data/districts";
-import {
-  HIGHWAY_TUNNEL_LINKS,
-  INDUSTRIAL_SITES_LINKS,
-  CESME_PENINSULA_LINKS,
-  TORBALI_REGION_LINKS,
-} from "@/data/navigationCategories";
 
 export const metadata: Metadata = {
-  title: { absolute: "İzmir Çekici Fiyatları 2026 | Sabit ve Şeffaf Çekici Ücreti" },
-  description:
-    "İzmir oto çekici fiyatları ve kilometre başına araç kurtarma ücretleri. Sürpriz ek maliyet olmadan şeffaf, sabit ve faturalı çekici hizmeti. 7/24 anında fiyat öğrenin.",
+  title: { absolute: "İzmir Çekici Hizmet Planlama | Teklif İçin Gerekli Bilgiler" },
+  description: "İzmir çekici talebinde konum, araç, erişim ve teslim bilgilerini nasıl paylaşacağınızı öğrenin. İşlem kapsamı görüşmede netleştirilir.",
   alternates: { canonical: "/fiyatlar" },
 };
 
-const priceFaqs = [
-  {
-    q: "İzmir çekici fiyatları neye göre hesaplanır?",
-    a: "Çekici ücreti; aracınızın bulunduğu konum, götürüleceği servis veya adres mesafesi (km) ve aracın tipine (binek, SUV, hafif ticari, minibüs) göre belirlenir. Telefonda teyit edilen fiyat sabittir.",
-  },
-  {
-    q: "Telefonda verilen çekici fiyatı sonradan değişir mi?",
-    a: "Hayır. İzmir Çekici olarak şeffaf fiyat politikası uygularız. Konum ve araç durumunu paylaştığınızda belirtilen ücret ne ise sadece o ücreti ödersiniz; sonradan sürpriz ek masraf talep edilmez.",
-  },
-  {
-    q: "Gece veya pazar günü ekstra çekici ücreti alınıyor mu?",
-    a: "7 gün 24 saat aynı dürüst ve ekonomik fiyat tarifesiyle hizmet veriyoruz. Gece yarısı veya resmi tatillerde fahiş fiyat artışı uygulanmaz.",
-  },
-  {
-    q: "Şehirlerarası veya ilçeler arası çekici fiyatı nasıl öğrenilir?",
-    a: "İzmir'den Çeşme, Urla, Aydın, Manisa veya İstanbul gibi şehirlere araç nakliyesi için mesafeye özel indirimli kilometre tarifelerimiz mevcuttur. 0536 676 28 66 numaramızdan anında teklif alabilirsiniz.",
-  },
+const factors = [
+  ["Başlangıç ve teslim konumu", "Aracın bulunduğu nokta, gidilecek servis veya adres ve kullanılacak güzergâh birlikte değerlendirilir."],
+  ["Araç ve mevcut durum", "Araç sınıfı, tekerleklerin hareketi, vites durumu ve görünen hasar uygun ekipmanın belirlenmesini sağlar."],
+  ["Erişim koşulları", "Kapalı otopark, dar sokak, eğim, otoyol emniyet şeridi veya yumuşak zemin gibi koşullar işlem planını değiştirir."],
 ];
 
-const pricingFactors = [
-  {
-    title: "Mesafe (Kilometre)",
-    desc: "Aracın teslim alınacağı nokta ile varış adresi arasındaki gerçek karayolu mesafesi hesaplanır.",
-  },
-  {
-    title: "Araç Türü ve Tonajı",
-    desc: "Standart binek otomobil, yerden yüksek SUV, alçak spor araba veya ticari panelvan araçların taşıma ekipmanı farklılık gösterir.",
-  },
-  {
-    title: "Yürür Aksam Durumu",
-    desc: "Kaza sonrası tekeri kilitlenen, şarampolde kalan veya elektrik arızası olan araçlar için vinç veya özel aparatlı kayar kasa yönlendirilir.",
-  },
+const faqs = [
+  { q: "Hizmet kapsamı nasıl belirlenir?", a: "Konum, araç tipi, mevcut sorun, yol ve teslim bilgileri görüşmede değerlendirilir. Eksik bilgi varsa işlem başlamadan önce ayrıntı istenir." },
+  { q: "Telefonda hangi bilgileri paylaşmalıyım?", a: "Canlı konum bağlantısını, araç marka ve modelini, tekerleklerin hareket edip etmediğini ve teslim noktasını paylaşın." },
+  { q: "Otoyolda konum nasıl tarif edilir?", a: "Yolun adını, gidiş yönünü, mümkünse kilometre veya çıkış bilgisini ve güvenli bekleme noktasını bildirin." },
+  { q: "Kesin varış süresi veriliyor mu?", a: "Trafik, ekibin mevcut konumu, yol erişimi ve gereken ekipman değişebildiği için tahmini süre bilgiler alındıktan sonra paylaşılır." },
 ];
 
-const sampleRoutes = [
-  { route: "Gaziemir - Bornova Sanayi", time: "15-20 Dk", note: "Sabit ekonomik mesafe tarifesi" },
-  { route: "Buca - Karşıyaka / Çiğli", time: "20-25 Dk", note: "Çevre yolu üzerinden kontrollü transfer" },
-  { route: "Konak / Alsancak - 3. Sanayi", time: "15 Dk", note: "Merkez bölge hızlı servis teslimatı" },
-  { route: "Çeşme / Alaçatı - İzmir Merkez", time: "45 Dk", note: "Otoyol şehirlerarası indirimli tarife" },
-  { route: "Torbalı / Kısıkköy - İzmir Sanayi", time: "20 Dk", note: "Sanayi ve ticari araç taşıma" },
-];
-
-export default function PricingPage() {
-  const breadcrumbs = [
-    { name: "Ana Sayfa", url: "/" },
-    { name: "Çekici Fiyatları", url: "/fiyatlar" },
-  ];
-
-  return (
-    <>
-      <Header />
-      <JsonLd
-        name="İzmir Çekici Fiyatları - Şeffaf ve Sabit Çekici Ücreti"
-        description="İzmir genelinde 7/24 sabit, şeffaf ve ekonomik oto çekici fiyatlandırması."
-        path="/fiyatlar"
-        serviceName="İzmir Çekici Fiyatları"
-        district="İzmir"
-        faqs={priceFaqs}
-        breadcrumbs={breadcrumbs}
-      />
-      <main>
-        {/* Breadcrumb Bar */}
-        <nav aria-label="Breadcrumb" className="border-b border-slate-800 bg-slate-900 py-3 text-xs text-slate-300">
-          <div className="container mx-auto flex max-w-6xl items-center gap-2 px-4">
-            <Link href="/" className="hover:text-amber-400 transition">Ana Sayfa</Link>
-            <span className="text-slate-500">/</span>
-            <span className="font-bold text-amber-300">İzmir Çekici Fiyatları</span>
-          </div>
-        </nav>
-
-        {/* Hero Section */}
-        <section className="bg-slate-950 py-20 text-white border-b-4 border-amber-500">
-          <div className="container mx-auto max-w-6xl px-4">
-            <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-400/10 px-4 py-1.5 text-xs font-black uppercase tracking-wider text-amber-300">
-              <DollarSign className="h-4 w-4" />
-              Şeffaf • Sabit • Sürprizsiz Fiyat Garantisi
-            </div>
-            <h1 className="mt-5 max-w-3xl font-heading text-4xl font-black md:text-6xl">
-              İzmir Çekici Fiyatları & 7/24 Sabit Çekici Ücreti
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              Yolda kaldığınızda sürpriz faturalarla karşılaşmayın. Konumunuzu ve aracınızı bildirin, telefonda net çekici fiyatınızı öğrenin ve onayınız sonrası ekibimiz hemen yola çıksın.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href={`tel:${MAIN_PHONE_RAW}`}
-                className="inline-flex items-center gap-2 bg-amber-400 px-7 py-4 font-black text-slate-950 hover:bg-amber-300 transition"
-              >
-                <Phone className="h-5 w-5" />
-                Hemen Fiyat Öğren: {MAIN_PHONE}
-              </a>
-              <a
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Merhaba, çekici fiyatı öğrenmek istiyorum.")}`}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 border border-emerald-400 px-7 py-4 font-bold text-emerald-300 hover:bg-emerald-950/40 transition"
-              >
-                WhatsApp’tan Fiyat Al
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Price Calculation Factors */}
-        <section className="container mx-auto max-w-6xl px-4 py-20">
-          <p className="text-sm font-bold uppercase tracking-widest text-amber-600">Fiyatlandırma Kriterleri</p>
-          <h2 className="section-title mt-2">Çekici Ücreti Nasıl Belirlenir?</h2>
-          <p className="mt-4 max-w-3xl leading-8 text-slate-600">
-            İzmir çekici ücreti belirlenirken üç temel değişken göz önüne alınır. Bu sayede her müşterimize hakkaniyetli, sabit ve en uygun fiyat sunulur:
-          </p>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {pricingFactors.map((item, idx) => (
-              <div key={item.title} className="border border-slate-200 bg-white p-7 shadow-sm">
-                <span className="inline-block rounded-md bg-amber-400 px-3 py-1 font-heading text-lg font-black text-slate-950">
-                  0{idx + 1}
-                </span>
-                <h3 className="mt-4 font-heading text-xl font-black text-slate-900">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Sample Routes Table */}
-        <section className="bg-slate-50 border-y border-slate-200 py-20">
-          <div className="container mx-auto max-w-6xl px-4">
-            <p className="text-sm font-bold uppercase tracking-widest text-amber-600">Örnek Güzergâhlar</p>
-            <h2 className="section-title mt-2">Popüler Çekici Hatlarında Ortalama Süreler</h2>
-            <div className="mt-8 overflow-x-auto">
-              <table className="w-full text-left border-collapse border border-slate-200 bg-white text-sm">
-                <thead>
-                  <tr className="bg-slate-900 text-white">
-                    <th className="p-4 font-bold">Güzergâh / Hat</th>
-                    <th className="p-4 font-bold">Ortalama Varış</th>
-                    <th className="p-4 font-bold">Hizmet Kapsamı</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-200">
-                  {sampleRoutes.map((row) => (
-                    <tr key={row.route} className="hover:bg-amber-50/50 transition">
-                      <td className="p-4 font-bold text-slate-900 flex items-center gap-2">
-                        <Truck className="h-4 w-4 text-amber-600 shrink-0" />
-                        {row.route}
-                      </td>
-                      <td className="p-4 text-slate-700 font-semibold">{row.time}</td>
-                      <td className="p-4 text-slate-600">{row.note}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="mt-4 text-xs text-slate-500">
-              * Kesin fiyat bilgisi için WhatsApp veya telefonla bulunduğunuz konumu ve teslim noktasını iletiniz.
-            </p>
-          </div>
-        </section>
-
-        {/* Bölgesel Çekici Hatları Bağlantıları */}
-        <section className="container mx-auto max-w-6xl px-4 py-16">
-          <p className="text-sm font-bold uppercase tracking-widest text-amber-600">Bölgesel Çekici Hatları</p>
-          <h2 className="section-title mt-2">Otoyol, Sanayi ve İlçe Çekici Sayfalarımız</h2>
-          
-          <div className="mt-8 grid gap-8 md:grid-cols-3">
-            {/* Otoyol & Tüneller */}
-            <div className="border border-slate-200 p-6 bg-white shadow-sm">
-              <div className="flex items-center gap-2 text-amber-600 font-bold mb-4">
-                <ShieldAlert className="h-5 w-5" />
-                <h3 className="font-heading text-lg font-black text-slate-950">Otoyol & Tüneller</h3>
-              </div>
-              <div className="grid gap-2 text-xs">
-                {HIGHWAY_TUNNEL_LINKS.slice(0, 6).map((item) => (
-                  <Link key={item.slug} href={item.href} className="text-slate-700 hover:text-amber-600 font-semibold flex items-center gap-1.5">
-                    <MapPin className="h-3 w-3 text-amber-500 shrink-0" />
-                    {item.name} Çekici
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Sanayi Siteleri */}
-            <div className="border border-slate-200 p-6 bg-white shadow-sm">
-              <div className="flex items-center gap-2 text-amber-600 font-bold mb-4">
-                <Wrench className="h-5 w-5" />
-                <h3 className="font-heading text-lg font-black text-slate-950">Sanayi Siteleri</h3>
-              </div>
-              <div className="grid gap-2 text-xs">
-                {INDUSTRIAL_SITES_LINKS.map((item) => (
-                  <Link key={item.slug} href={item.href} className="text-slate-700 hover:text-amber-600 font-semibold flex items-center gap-1.5">
-                    <MapPin className="h-3 w-3 text-amber-500 shrink-0" />
-                    {item.name} Çekici
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            {/* Popüler İlçeler & Çeşme & Torbalı */}
-            <div className="border border-slate-200 p-6 bg-white shadow-sm">
-              <div className="flex items-center gap-2 text-amber-600 font-bold mb-4">
-                <MapPin className="h-5 w-5" />
-                <h3 className="font-heading text-lg font-black text-slate-950">Çeşme & Torbalı</h3>
-              </div>
-              <div className="grid gap-2 text-xs">
-                {CESME_PENINSULA_LINKS.slice(0, 4).map((item) => (
-                  <Link key={item.slug} href={item.href} className="text-slate-700 hover:text-amber-600 font-semibold flex items-center gap-1.5">
-                    <MapPin className="h-3 w-3 text-amber-500 shrink-0" />
-                    {item.name}
-                  </Link>
-                ))}
-                {TORBALI_REGION_LINKS.slice(0, 4).map((item) => (
-                  <Link key={item.slug} href={item.href} className="text-slate-700 hover:text-amber-600 font-semibold flex items-center gap-1.5">
-                    <MapPin className="h-3 w-3 text-amber-500 shrink-0" />
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Assurance Cards */}
-        <section className="bg-slate-950 py-16 text-white">
-          <div className="container mx-auto grid max-w-6xl gap-8 px-4 md:grid-cols-3">
-            <div className="flex gap-4 items-start">
-              <ShieldCheck className="h-8 w-8 text-amber-300 shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg">Kaskolu Taşıma Güvencesi</h3>
-                <p className="text-sm text-slate-300 mt-1">Aracınız yükleme anından teslime kadar taşıma sigortası kapsamındadır.</p>
-              </div>
-            </div>
-            <div className="flex gap-4 items-start">
-              <CheckCircle2 className="h-8 w-8 text-amber-300 shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg">Sabit Fiyat Taahhüdü</h3>
-                <p className="text-sm text-slate-300 mt-1">Telefonda anlaşılan ücret dışında ekstra hiçbir gizli maliyet çıkarılmaz.</p>
-              </div>
-            </div>
-            <div className="flex gap-4 items-start">
-              <Truck className="h-8 w-8 text-amber-300 shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg">7/24 Kesintisiz Hizmet</h3>
-                <p className="text-sm text-slate-300 mt-1">Gece, gündüz ve tatil günleri nöbetçi kurtarıcı filomuz her an hazırdır.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQs */}
-        <section className="container mx-auto max-w-6xl px-4 py-20">
-          <p className="text-sm font-bold uppercase tracking-widest text-amber-600">Sıkça Sorulan Sorular</p>
-          <h2 className="section-title mt-2">Çekici Fiyatları Hakkında Merak Edilenler</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-2">
-            {priceFaqs.map((faq) => (
-              <article key={faq.q} className="border border-slate-200 bg-slate-50 p-6">
-                <div className="flex items-start gap-3">
-                  <HelpCircle className="mt-1 h-5 w-5 shrink-0 text-amber-600" />
-                  <div>
-                    <h3 className="font-heading text-lg font-black text-slate-900">{faq.q}</h3>
-                    <p className="mt-3 text-sm leading-7 text-slate-600">{faq.a}</p>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-      </main>
-      <Footer />
-      <StickyCallBar />
-    </>
-  );
+export default function ServicePlanningPage() {
+  const message = encodeURIComponent("Merhaba, çekici hizmeti için konum ve araç bilgilerimi paylaşmak istiyorum.");
+  return <>
+    <Header />
+    <JsonLd name="İzmir çekici hizmet planlama" description="Çekici talebi öncesinde gerekli konum, araç ve teslim bilgileri." path="/fiyatlar" breadcrumbs={[{ name: "Ana Sayfa", url: "/" }, { name: "Hizmet Planlama", url: "/fiyatlar" }]} />
+    <main>
+      <nav aria-label="Sayfa yolu" className="border-b border-slate-800 bg-slate-900 py-3 text-xs text-slate-300"><div className="container mx-auto flex max-w-6xl gap-2 px-4"><Link href="/">Ana Sayfa</Link><span>/</span><span className="text-amber-300">Hizmet Planlama</span></div></nav>
+      <section className="border-b-4 border-amber-500 bg-slate-950 py-20 text-white"><div className="container mx-auto max-w-6xl px-4">
+        <p className="text-sm font-bold uppercase tracking-widest text-amber-300">Konum • Araç • Erişim • Teslim</p>
+        <h1 className="mt-5 max-w-4xl font-heading text-4xl font-black md:text-6xl">Çekici talebinden önce hangi bilgiler gerekir?</h1>
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">Her talebin mesafesi, araç durumu ve erişim koşulu farklıdır. Bu nedenle sabit veya gerçeği yansıtmayan bir tarife yayımlamak yerine hizmet kapsamını verdiğiniz bilgilere göre netleştiriyoruz.</p>
+        <div className="mt-8 flex flex-wrap gap-4"><a href={`tel:${MAIN_PHONE_RAW}`} className="inline-flex items-center gap-2 bg-amber-400 px-7 py-4 font-black text-slate-950"><Phone className="h-5 w-5" />{MAIN_PHONE}</a><a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`} className="inline-flex items-center gap-2 border border-emerald-400 px-7 py-4 font-bold text-emerald-300"><MessageCircle className="h-5 w-5" />Konum ve araç bilgisi gönder</a></div>
+      </div></section>
+      <section className="container mx-auto max-w-6xl px-4 py-20"><h2 className="section-title">Hizmet planını etkileyen bilgiler</h2><div className="mt-9 grid gap-6 md:grid-cols-3">{factors.map(([title, body], index) => <article key={title} className="border border-slate-200 bg-white p-7"><span className="font-heading text-xl font-black text-amber-600">0{index + 1}</span><h3 className="mt-4 font-heading text-xl font-black">{title}</h3><p className="mt-3 text-sm leading-7 text-slate-600">{body}</p></article>)}</div></section>
+      <section className="bg-slate-100 py-16"><div className="container mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-2"><div><MapPin className="h-9 w-9 text-amber-600"/><h2 className="section-title mt-4">Konumu doğru paylaşın</h2><p className="mt-5 leading-8 text-slate-600">Canlı konuma ek olarak yolun yönünü, yakın çıkışı, otopark katını veya tesis girişini yazın. Yalnızca semt adı, özellikle aynı adın birden fazla ilçede bulunduğu yerlerde yeterli olmayabilir.</p></div><div className="bg-slate-950 p-8 text-white"><Truck className="h-9 w-9 text-amber-300"/><h2 className="mt-4 font-heading text-2xl font-black">Araç durumunu açıklayın</h2><ul className="mt-6 space-y-4 text-sm text-slate-200">{["Araç türü, marka ve model", "Arıza, kaza veya taşıma ihtiyacı", "Tekerlek, direksiyon ve vites durumu", "Teslim edilecek servis veya adres"].map(item => <li key={item} className="flex gap-3"><CheckCircle2 className="h-5 w-5 shrink-0 text-amber-300" />{item}</li>)}</ul></div></div></section>
+      <section className="container mx-auto max-w-6xl px-4 py-20"><h2 className="section-title">Hizmet planlama hakkında sorular</h2><div className="mt-8 grid gap-5 md:grid-cols-2">{faqs.map(faq => <article key={faq.q} className="border border-slate-200 bg-slate-50 p-6"><h3 className="font-heading text-xl font-black">{faq.q}</h3><p className="mt-3 text-sm leading-7 text-slate-600">{faq.a}</p></article>)}</div></section>
+    </main>
+    <Footer /><StickyCallBar />
+  </>;
 }

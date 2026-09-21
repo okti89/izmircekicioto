@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AlertTriangle, CarFront, ClipboardCheck, MapPinned, Wrench, ShieldAlert } from "lucide-react";
+import { AlertTriangle, CarFront, ClipboardCheck, MapPinned, Wrench } from "lucide-react";
 
 const guides = [
   [
@@ -35,7 +35,7 @@ const directLinks = [
   { name: "Kısıkköy Sanayi Çekici", href: "/kisikkoy-sanayi-sitesi-cekici" },
   { name: "Bergama Çekici", href: "/bergama-cekici" },
   { name: "Ödemiş Çekici", href: "/odemis-cekici" },
-  { name: "Çekici Fiyat Tarifesi", href: "/fiyatlar" },
+  { name: "Hizmet Planlama Rehberi", href: "/fiyatlar" },
 ];
 
 export default function HomeLongformContent() {
@@ -115,7 +115,7 @@ export default function HomeLongformContent() {
             İzmir ilçeleri, ana yollar ve bağlantı noktalarında destek
           </h2>
           <p className="mt-5 max-w-4xl leading-8 text-slate-600">
-            İzmir Çevre Yolu, Sabuncubeli, Belkahve, Ankara Caddesi, Altınyol, İzmir-Aydın ve İzmir-Çeşme otoyolları ile sanayi sitelerinde kesintisiz hazır ekipler. Doğrudan ilgili bölgeye ait hizmet sayfasını inceleyebilirsiniz:
+            İzmir Çevre Yolu, Sabuncubeli, Belkahve, Ankara Caddesi, Altınyol, İzmir-Aydın ve İzmir-Çeşme yolları ile sanayi siteleri için konum ve erişim rehberleri. İlgili bölge sayfasını inceleyebilirsiniz:
           </p>
           <div className="mt-8 flex flex-wrap gap-2.5">
             {directLinks.map((item) => (

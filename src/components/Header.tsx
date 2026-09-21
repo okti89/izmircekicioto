@@ -35,7 +35,7 @@ export default function Header() {
       <div className="hidden border-b border-slate-800 bg-slate-900 md:block">
         <div className="container mx-auto flex justify-between px-4 py-2 text-xs text-slate-300">
           <span>İzmir Tüm Bölgeler • 7/24 Acil Yol Yardım & Çekici</span>
-          <span>Konum gönderin, en yakın ekibi yönlendirelim.</span>
+          <span>Konum ve araç bilgisini gönderin, hizmeti birlikte planlayalım.</span>
         </div>
       </div>
 

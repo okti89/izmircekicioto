@@ -46,23 +46,23 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
       "Sarnıç (Cumhuriyet, Hürriyet, Fatih)",
     ],
     localOverview:
-      "Gaziemir, İzmir’in güney kapısı ve Adnan Menderes Havalimanı ile sanayi merkezlerinin kesişim noktasıdır. Akçay Caddesi, Optimum AVM çevresi ve İzmir-Aydın otoyol bağlantısında meydana gelen araç arızaları veya kaza durumlarında kayar kasa çekicilerimizle 15-20 dakika içinde yanınızdayız.",
+      "Gaziemir, Adnan Menderes Havalimanı ile sanayi alanlarının bağlantı güzergâhındadır. Akçay Caddesi ve İzmir-Aydın otoyol bağlantısındaki taleplerde yol yönü, araç durumu ve güvenli bekleme noktası birlikte değerlendirilir.",
     faqs: [
       {
         q: "Gaziemir'de çekici ortalama ne kadar sürede gelir?",
-        a: "Gaziemir merkez, Akçay Caddesi, Optimum AVM ve ESBAŞ bölgesinde hazır bekleyen nöbetçi ekiplerimizle çağrınızdan itibaren ortalama 15-20 dakika içerisinde konumunuza ulaşıyoruz.",
+        a: "Tahmini süre; ekibin mevcut konumu, trafik, yol erişimi ve gereken ekipman öğrenildikten sonra paylaşılır.",
       },
       {
         q: "Adnan Menderes Havalimanı ve otoyolda çekici hizmetiniz var mı?",
-        a: "Evet, Adnan Menderes Havalimanı otoparkları, iç-dış hatlar bağlantı yolları ve İzmir-Aydın Çevre Yolu Gaziemir kavşağında 7/24 kesintisiz çekici ve yol yardım sağlıyoruz.",
+        a: "Havalimanı veya otoyol bağlantısındaki taleplerde otopark girişi, yol yönü ve güvenli bekleme noktası paylaşılmalıdır. Hizmet uygunluğu bu bilgilerle görüşmede netleştirilir.",
       },
       {
-        q: "Gaziemir oto çekici fiyatları neye göre hesaplanır?",
-        a: "Çekici ücreti; aracınızın bulunduğu nokta (örneğin Sarnıç Sanayi veya Havalimanı), taşınacağı servis/adres mesafesi ve araç tipine (binek, SUV, minibüs) göre şeffaf bir şekilde telefonda belirlenir.",
+        q: "Gaziemir çekici talebinde hangi bilgiler gerekir?",
+        a: "Sarnıç Sanayi veya havalimanı gibi başlangıç noktası, teslim adresi, araç tipi ve erişim koşulları görüşmede paylaşılmalıdır.",
       },
       {
         q: "Sarnıç Sanayi Sitesi ve kapalı otoparklardan araç çekimi yapıyor musunuz?",
-        a: "Evet, alçak tavanlı kapalı otoparklar ve sanayi içi dar sokaklar için tekerlek kilidi açma ve özel aparatlı kurtarma araçlarımızla güvenle transfer yapıyoruz.",
+        a: "Kapalı otoparkın tavan yüksekliği, rampa ve araç çıkış koşulları paylaşılmalıdır. Uygun ekipman ve işlem yöntemi bu bilgilerden sonra değerlendirilir.",
       },
     ],
   },
@@ -96,15 +96,15 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
       "Evka 4",
     ],
     localOverview:
-      "Bornova, İzmir-İstanbul ve İzmir-Ankara otoyol çıkışlarının merkezinde yer alır. Ankara Asfaltı, sanayi siteleri ve üniversite kampüs bölgesinde yaşanan arızalarda acil nöbetçi çekicilerimiz hızla konumunuza yönlendirilir.",
+      "Bornova, İzmir-İstanbul ve İzmir-Ankara yol bağlantıları üzerindedir. Ankara Caddesi, sanayi siteleri ve kampüs çevresindeki taleplerde yol yönü ile güvenli bekleme noktası önemlidir.",
     faqs: [
       {
         q: "Bornova oto çekici ne kadar sürede ulaşır?",
-        a: "Ankara Caddesi, Özkanlar ve Çiçekliköy-Manisa yolu güzergahında bekleyen araçlarımızla ortalama 15-25 dakika içinde yanınızdayız.",
+        a: "Ankara Caddesi, Özkanlar ve Çiçekliköy-Manisa yolu taleplerinde tahmini süre trafik, erişim ve ekipman durumuna göre görüşmede belirlenir.",
       },
       {
         q: "Işıkkent ve Pınarbaşı sanayi bölgesinde ağır vasıta çekici var mı?",
-        a: "Evet, Işıkkent ve Pınarbaşı sanayi alanlarında minibüs, kamyonet ve ticari araçlar için özel aparatlı çekicilerimiz mevcuttur.",
+        a: "Işıkkent ve Pınarbaşı sanayi taleplerinde aracın tipi, ölçüsü, yükü ve tesis girişi paylaşılır; ekipman uygunluğu görüşmede değerlendirilir.",
       },
     ],
   },
@@ -135,11 +135,11 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
       "Kaynaklar",
     ],
     localOverview:
-      "Buca'nın kalabalık caddeleri, Şirinyer ve otoyol bağlantı noktalarında yaşanan debriyaj, akü veya motor arızalarında dar sokaklara uygun donanımlı kayar kasa araçlarımızla 7/24 hizmet veriyoruz.",
+      "Buca'nın kalabalık caddeleri, Şirinyer ve otoyol bağlantılarındaki taleplerde dar sokak, eğim ve aracın hareket durumu hizmet planında dikkate alınır.",
     faqs: [
       {
         q: "Buca dar sokaklarında araç çekimi mümkün mü?",
-        a: "Evet, Buca’nın tarihi ve dar sokaklarına girebilen kompakt çekicilerimizle aracınıza zarar vermeden yükleme yapıyoruz.",
+        a: "Dar sokakta yol genişliği, park durumu ve aracın yürür bilgisi paylaşılır; erişim ile uygun yükleme yöntemi görüşmede netleştirilir.",
       },
     ],
   },
@@ -171,11 +171,11 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
       "Nergiz",
     ],
     localOverview:
-      "Karşıyaka sahil boyu, Girne Caddesi ve Anadolu Caddesi üzerinde güvenli oto kurtarma ve çekici çözümleri sağlıyoruz. Bostanlı, Mavişehir ve Alaybey bölgelerinde aralıksız nöbetçi kurtarıcı ekibimiz bulunmaktadır.",
+      "Karşıyaka sahil boyu, Girne Caddesi ve Anadolu Caddesi taleplerinde trafik, yol yönü ve aracın bulunduğu şerit bilgisi değerlendirilir. Bostanlı, Mavişehir ve Alaybey için tam konum istenir.",
     faqs: [
       {
         q: "Karşıyaka sahil yolunda araç çekici çağırma süresi nedir?",
-        a: "Sahil şeridi ve Girne Bulvarı hattında bulunan araçlarımız ortalama 15-20 dakikada yanınızda olur.",
+        a: "Sahil şeridi ve Girne Bulvarı için konum, trafik ve uygun ekipman değerlendirildikten sonra tahmini süre paylaşılır.",
       },
     ],
   },
@@ -206,11 +206,11 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
       "Eşrefpaşa",
     ],
     localOverview:
-      "İzmir kent merkezinde Yeşildere, Alsancak Liman yolu ve sahil bulvarındaki arızalarda trafiği aksatmadan hızlı müdahale eden çekici filomuzla hizmetinizdeyiz.",
+      "İzmir kent merkezinde Yeşildere, Alsancak Liman yolu ve sahil bulvarındaki taleplerde yol yönü, aracın konumu ve trafiği etkileyen koşullar birlikte değerlendirilir.",
     faqs: [
       {
         q: "Yeşildere ve Konak Tüneli çıkışında arıza durumunda ne yapmalıyım?",
-        a: "Aracınızı güvenli emniyet şeridine çekip dörtlülerinizi yakın. Bize konum attığınızda nöbetçi acil çekici ekibimiz süratle yönlendirilir.",
+        a: "Mümkünse güvenli bekleme alanına geçip dörtlüleri yakın. Yol yönü ve konum paylaşıldıktan sonra uygun hizmet ile tahmini süre görüşmede değerlendirilir.",
       },
     ],
   },
@@ -239,7 +239,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
       "Köyiçi",
     ],
     localOverview:
-      "Çiğli Atatürk Organize Sanayi (İAOSB), Ata Sanayi ve Anadolu Caddesi boyunca binek ve ticari araçlar için 7/24 kayar kasa ve vinçli kurtarma hizmeti sağlıyoruz.",
+      "Çiğli Atatürk Organize Sanayi, Ata Sanayi ve Anadolu Caddesi taleplerinde binek veya ticari aracın ölçüsü, yükü ve tesis girişi birlikte değerlendirilir.",
     faqs: [
       {
         q: "İAOSB veya Ata Sanayi içine çekici yönlendiriliyor mu?",
@@ -276,7 +276,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Altınyol ve Adliye bölgesinde çekici bekleme süresi nedir?",
-        a: "Altınyol güzergahında hazır bekleyen ekibimiz yoğun saatlerde dahi en kısa sürede ulaşır.",
+        a: "Altınyol güzergâhında tahmini süre, trafik yoğunluğu, yol yönü ve uygun ekipman belirlendikten sonra paylaşılır.",
       },
     ],
   },
@@ -308,7 +308,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Çeşme'den İzmir merkez sanayilerine araç çekimi yapıyor musunuz?",
-        a: "Evet, Çeşme'den Bornova 3. Sanayi, Gaziemir veya yetkili servislere şehirlerarası standartta güvenli taşıma sağlıyoruz.",
+        a: "Çeşme çıkış noktası, teslim edilecek servis ve aracın durumu paylaşıldığında güzergâh ile ekipman uygunluğu değerlendirilir.",
       },
     ],
   },
@@ -340,7 +340,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Urla İskele ve sahil köylerine çekici geliyor mu?",
-        a: "Evet, Urla'nın tüm köyleri ve sahil bölgelerine tam donanımlı araçlarımız ulaşmaktadır.",
+        a: "Urla kırsalı veya sahil bölgesinde mahalle, yol durumu ve canlı konum paylaşılmalıdır; erişim uygunluğu görüşmede değerlendirilir.",
       },
     ],
   },
@@ -369,11 +369,11 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
       "Cennetçeşme",
     ],
     localOverview:
-      "Karabağlar Yeşillik Caddesi, mobilyacılar sitesi ve sanayi bölgesinde yoğun araç trafiğinde yaşanan arıza ve kazalarda kayar kasa çekicilerimiz dakikalar içinde yardıma hazır.",
+      "Karabağlar Yeşillik Caddesi, mobilyacılar sitesi ve sanayi bölgesindeki taleplerde yoğun trafik, tesis girişi ve aracın yürür durumu hizmet planına dâhil edilir.",
     faqs: [
       {
         q: "Yeşillik Caddesi ve sanayi bölgesinde çekici ne kadar sürede gelir?",
-        a: "Bölgedeki hazır ekiplerimizle ortalama 15-20 dakika içinde yanınızdayız.",
+        a: "Tahmini süre, konum ve trafik ile ihtiyaç duyulan ekipman değerlendirildikten sonra görüşmede paylaşılır.",
       },
     ],
   },
@@ -396,7 +396,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Balçova otoyol çıkışı ve İnciraltı'na çekici hizmeti var mı?",
-        a: "Evet, otoyol giriş-çıkışları ve İnciraltı sahil hattında 7/24 kesintisiz hizmet veriyoruz.",
+        a: "Otoyol giriş-çıkışı veya İnciraltı sahil hattında yol yönünü ve güvenli bekleme noktasını paylaşın; hizmet kapsamı görüşmede netleştirilir.",
       },
     ],
   },
@@ -410,7 +410,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     popularArteries: ["Mithatpaşa Caddesi Narlıdere Hattı", "Sahilevleri Yolu", "Otoyol Narlıdere Gişeleri"],
     neighborhoods: ["Sahilevleri", "Ilıca", "Huzur", "Limanreis", "Çatalkaya", "Yenikale"],
     localOverview:
-      "Narlıdere merkez ve Sahilevleri güzergahında arızalanan binek ve lüks araçlar için hasarsız yükleme garantili kayar kasa çekicilerimizle hizmetinizdeyiz.",
+      "Narlıdere merkez ve Sahilevleri güzergâhındaki binek araç taleplerinde aracın yerden yüksekliği, yürür durumu ve yükleme alanı önceden değerlendirilir.",
     faqs: [
       {
         q: "Sahilevleri ve sahil şeridine çekici yönlendiriliyor mu?",
@@ -428,7 +428,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     popularArteries: ["Mithatpaşa Caddesi Güzelbahçe Etabı", "Çeşme Otoyolu Güzelbahçe Çıkışı", "Seferihisar Yolu"],
     neighborhoods: ["Yalı", "Siteler", "Maltepe", "Kahramandere", "Yelki", "Çamlı"],
     localOverview:
-      "Güzelbahçe sahil yolu ve Yelki-Seferihisar bağlantısında güvenli çekici ve araç taşıma hizmeti sağlıyoruz.",
+      "Güzelbahçe sahil yolu ve Yelki-Seferihisar bağlantısındaki taleplerde yön, yakın kavşak ve aracın hareket durumu paylaşılmalıdır.",
     faqs: [
       {
         q: "Yelki ve Çamlı köylerine çekici geliyor mu?",
@@ -446,11 +446,11 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     popularArteries: ["Çanakkale Asfaltı (İzmir-Çanakkale Yolu)", "Menemen Çevre Yolu", "Ulukent Bağlantısı", "Menemen Sanayi Yolu"],
     neighborhoods: ["Ulukent", "Koyundere", "Seyrek", "Asarlık", "Kasımpaşa", "İsmet İnönü"],
     localOverview:
-      "Menemen Çanakkale Asfaltı, Ulukent ve Seyrek çevresinde arıza veya kaza yapan otomobil, kamyonet ve ticari araçlar için 7/24 nöbetçi çekici hizmeti.",
+      "Menemen Çanakkale Asfaltı, Ulukent ve Seyrek çevresindeki taleplerde otomobil, kamyonet veya ticari aracın tipi ile yol yönü birlikte değerlendirilir.",
     faqs: [
       {
         q: "Çanakkale Asfaltı Menemen kesiminde çekici bekleme süresi nedir?",
-        a: "Ana arter üzerinde bekleyen ekiplerimizle ortalama 15-20 dakikada yanınızdayız.",
+        a: "Ana arterdeki konum, trafik ve gereken ekipman netleştirildikten sonra tahmini süre görüşmede paylaşılır.",
       },
     ],
   },
@@ -468,7 +468,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Ayrancılar ve Pancar OSB sanayi bölgesine çekici yönlendirilir mi?",
-        a: "Evet, Ayrancılar ve organize sanayi bölgesindeki araçlar için günün her saati hazır çekicilerimiz mevcuttur.",
+        a: "Ayrancılar ve organize sanayi alanında tesis girişi, araç türü ve yük durumu paylaşılır; uygunluk görüşmede değerlendirilir.",
       },
     ],
   },
@@ -486,7 +486,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Kemalpaşa OSB sanayi alanında ağır vasıta çekici var mı?",
-        a: "Evet, sanayi alanlarında kamyon, tır ve binek araçlar için özel aparatlı kurtarıcılarımız mevcuttur.",
+        a: "Sanayi alanında araç sınıfı, toplam ağırlık, yük ve çalışma alanı bilgileri alınarak gereken ekipman değerlendirilir.",
       },
     ],
   },
@@ -504,7 +504,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Sığacık ve Ürkmez sahil beldelerine çekici geliyor mu?",
-        a: "Evet, Seferihisar'ın tüm turizm noktaları ve sahil sitelerine kesintisiz ulaşıyoruz.",
+        a: "Seferihisar kıyı veya site taleplerinde mahalle, site girişi ve canlı konum paylaşılır; erişim uygunluğu ayrıca değerlendirilir.",
       },
     ],
   },
@@ -522,7 +522,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Özdere ve Gümüldür sahillerinde çekici hizmeti var mı?",
-        a: "Evet, Menderes sahil şeridinde tatilciler ve yerel halk için sürekli nöbetçi araçlarımız bulunmaktadır.",
+        a: "Menderes sahil şeridinde mahalle, yol ve site girişi bilgilerini paylaşın; hizmet uygunluğu ve tahmini süre görüşmede belirlenir.",
       },
     ],
   },
@@ -540,7 +540,7 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     faqs: [
       {
         q: "Aliağa sanayi ve liman bölgesine ağır vasıta çekici sağlanıyor mu?",
-        a: "Evet, sanayi tesisleri ve tır parkları için ağır vasıta kurtarma araçlarımız yönlendirilir.",
+        a: "Sanayi tesisi veya tır parkında araç tonajı, yük, dorse ve çalışma alanı bilgileriyle ağır vasıta ekipmanı değerlendirilir.",
       },
     ],
   },
@@ -561,19 +561,19 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     ],
     neighborhoods: ["Bahçelievler", "Basın Sitesi", "Murat Reis", "Kılıç Reis", "Poligon", "Göztepe"],
     localOverview:
-      "Üçyol Meydanı, İnönü Caddesi ve Betonyol hattında yaşanan arıza veya kaza durumlarında dar sokaklara ve yoğun trafiğe uygun kompakt kayar kasa çekicilerimizle ortalama 10-15 dakikada yanınızdayız.",
+      "Üçyol Meydanı, İnönü Caddesi ve Betonyol hattındaki taleplerde dar sokak, eğim, trafik ve aracın yükleme alanına erişimi birlikte değerlendirilir.",
     faqs: [
       {
         q: "Üçyol çekici ne kadar sürede gelir?",
-        a: "Üçyol Meydanı ve İnönü Caddesi çevresinde hazır nöbetçi çekicimizle çağrınızdan itibaren ortalama 10-15 dakika içinde konumunuza ulaşıyoruz.",
+        a: "Üçyol Meydanı ve İnönü Caddesi çevresinde tahmini süre, çağrı anındaki trafik ve ekipman uygunluğuna göre paylaşılır.",
       },
       {
-        q: "Üçyol çekici fiyatları nasıl belirlenir?",
-        a: "Üçyol çekici ücreti; aracınızın bulunduğu nokta ve taşınacağı tamirhane veya yetkili servis mesafesine göre telefonda şeffaf olarak belirtilir.",
+        q: "Üçyol çekici talebinde hangi bilgiler gerekir?",
+        a: "Aracın bulunduğu sokak, yol eğimi, araç durumu ve teslim edilecek tamirhane veya servis bilgisi paylaşılmalıdır.",
       },
       {
         q: "Betonyol ve dar sokaklarda araç çekimi yapılıyor mu?",
-        a: "Evet, Üçyol'un dik yokuşlu ve dar sokaklarına girebilen manevra kabiliyeti yüksek hidrolik çekicilerimizle hasarsız yükleme yapıyoruz.",
+        a: "Üçyol'daki dik veya dar sokaklarda yol genişliği, eğim ve aracın konumu paylaşılır; yükleme imkânı bu bilgilere göre değerlendirilir.",
       },
     ],
   },
@@ -595,12 +595,12 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
       "Kısık ve Kısıkköy sanayi bölgesi ile İzmir-Aydın karayolu üzerinde arızalanan binek otomobil, kamyonet ve ticari araçlar için 7/24 hızlı kayar kasa kurtarıcı hizmeti sunuyoruz.",
     faqs: [
       {
-        q: "Kısık çekici kaç dakikada gelir?",
-        a: "İzmir-Aydın yolu ve Kısıkköy sanayi çevresinde hazır bekleyen ekiplerimizle ortalama 15-20 dakika içinde yanınızdayız.",
+        q: "Kısık çekici için tahmini süre nasıl belirlenir?",
+        a: "İzmir-Aydın yolu ve Kısıkköy sanayi çevresinde trafik, tesis girişi ve uygun ekipman değerlendirilerek tahmini süre görüşmede paylaşılır.",
       },
       {
         q: "Kısıkköy Mobilya Şehri ve sanayi sitelerine çekici yönlendiriliyor mu?",
-        a: "Evet, Kısıkköy sanayi içerisindeki tüm dükkanlar ve otoyol güzergahına 7/24 nöbetçi çekici yönlendiriyoruz.",
+        a: "Kısıkköy sanayi içinde işletme adı, kapı veya sokak bilgisi; otoyolda ise yön ve çıkış bilgisi paylaşılmalıdır. Hizmet uygunluğu görüşmede netleştirilir.",
       },
     ],
   },
@@ -618,11 +618,11 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
     ],
     neighborhoods: ["Kısıkköy Sanayi", "Menderes Sanayi", "Görece", "Tekeli"],
     localOverview:
-      "Kısıkköy sanayi siteleri, mobilya çarşısı ve İzmir-Aydın yolu üzerinde ticari ve binek araçlar için acil oto kurtarma ve çekici desteği sağlıyoruz.",
+      "Kısıkköy sanayi siteleri, mobilya çarşısı ve İzmir-Aydın yolu taleplerinde ticari veya binek aracın tipi, tesis girişi ve yol yönü paylaşılmalıdır.",
     faqs: [
       {
         q: "Kısıkköy çekici çağırmak için ne yapmalıyım?",
-        a: "0536 676 28 66 numaramızı arayarak veya WhatsApp'tan konumunuzu paylaşarak en yakın Kısıkköy çekici ekibimizi çağırabilirsiniz.",
+        a: "0536 676 28 66 numaramızı arayarak veya WhatsApp'tan konum, araç ve tesis girişi bilgilerini paylaşarak hizmet talebi oluşturabilirsiniz.",
       },
     ],
   },
@@ -631,4 +631,3 @@ export const DISTRICT_DETAILS: Record<string, LocalAreaDetail> = {
 export function getDistrictDetail(key: string): LocalAreaDetail | undefined {
   return DISTRICT_DETAILS[key.toLowerCase()];
 }
-

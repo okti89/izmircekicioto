@@ -14,7 +14,7 @@ import { MAIN_PHONE, MAIN_PHONE_RAW } from "@/data/districts";
 import { HOME_FAQS as homeFaqs } from "@/data/homeFaqs";
 
 export const metadata: Metadata = {
-  title: { absolute: "İzmir Çekici | 7/24 En Yakın Oto Çekici ve Yol Yardım" },
+  title: { absolute: "İzmir Oto Çekici ve Yol Yardım | Hizmet Rehberi" },
   description:
     "İzmir çekici ve 7/24 oto kurtarma hizmeti. Gaziemir, Bornova, Karşıyaka, Buca ve çevre bölgelerde araç taşıma ve yol yardım. Konumunuzu paylaşarak destek alın.",
   alternates: { canonical: "/" },
@@ -60,10 +60,10 @@ export default function HomePage() {
               7/24 İZMİR OTO ÇEKİCİ & ACİL YOL YARDIM
             </p>
             <h1 className="mt-5 max-w-3xl font-heading text-5xl font-black leading-tight md:text-7xl">
-              İzmir Oto Çekici | 7/24 En Yakın Acil Çekici ve Yol Yardım
+              İzmir Oto Çekici | 7/24 Çekici ve Yol Yardım
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              Oto çekici, akü takviye, mobil oto elektrik ve oto kurtarma hizmetleri için İzmir genelinde konumunuza en yakın kayar kasa ekibi anında yönlendiriyoruz.
+              Oto çekici, akü takviye, mobil oto elektrik ve oto kurtarma taleplerinde konum, araç ve yol bilgilerini değerlendirerek uygun hizmet planını oluşturuyoruz.
             </p>
             <a
               href={`tel:${MAIN_PHONE_RAW}`}
@@ -109,7 +109,7 @@ export default function HomePage() {
             </p>
             <p className="flex gap-3 items-center">
               <Truck className="h-6 w-6 text-amber-300 shrink-0" />
-              Kaskolu, sigortalı ve faturalı profesyonel araç taşıma
+              Araç durumu ve teslim bilgisine göre planlanan taşıma süreci
             </p>
           </div>
         </section>

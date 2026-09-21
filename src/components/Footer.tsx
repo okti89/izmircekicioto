@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Clock3, MapPin, MessageCircle, Phone, ShieldCheck, ShieldAlert, Wrench, DollarSign } from "lucide-react";
+import { Clock3, MapPin, MessageCircle, Phone, ShieldCheck, ShieldAlert, Wrench, ClipboardList } from "lucide-react";
 import { MAIN_PHONE, MAIN_PHONE_RAW, WHATSAPP_NUMBER } from "@/data/districts";
 import {
   HIGHWAY_TUNNEL_LINKS,
@@ -11,7 +11,7 @@ import {
 
 const SERVICES = [
   { name: "Çekici", href: "/cekici" },
-  { name: "Çekici Fiyat Tarifesi", href: "/fiyatlar", badge: "2026" },
+  { name: "Hizmet Planlama", href: "/fiyatlar" },
   { name: "Akü Takviye", href: "/aku-takviye" },
   { name: "Oto Elektrik", href: "/oto-elektrik" },
   { name: "Ağır Vasıta Kurtarma", href: "/agir-vasita-kurtarma" },
@@ -28,15 +28,15 @@ export default function Footer() {
         <div className="container mx-auto grid max-w-7xl gap-4 px-4 py-6 sm:grid-cols-2 md:grid-cols-4">
           <p className="flex items-center gap-3 text-sm font-medium">
             <Clock3 className="h-5 w-5 text-amber-400 shrink-0" />
-            7/24 Kesintisiz Nöbetçi Çekici
+            7/24 Talep ve Konum Hattı
           </p>
           <p className="flex items-center gap-3 text-sm font-medium">
             <ShieldCheck className="h-5 w-5 text-amber-400 shrink-0" />
-            Sigortalı ve Kaskolu Araç Nakli
+            Araç Durumuna Uygun Ekipman Planı
           </p>
           <p className="flex items-center gap-3 text-sm font-medium">
             <ShieldAlert className="h-5 w-5 text-amber-400 shrink-0" />
-            Otoyol ve Tünellerde Hızlı Müdahale
+            Otoyol ve Tüneller İçin Konum Rehberi
           </p>
           <p className="flex items-center gap-3 text-sm font-medium">
             <Wrench className="h-5 w-5 text-amber-400 shrink-0" />
@@ -82,8 +82,8 @@ export default function Footer() {
               href="/fiyatlar"
               className="mt-6 inline-flex items-center gap-1.5 rounded bg-amber-400/10 border border-amber-400/30 px-3 py-2 text-xs font-bold text-amber-300 hover:bg-amber-400 hover:text-slate-950 transition"
             >
-              <DollarSign className="h-3.5 w-3.5" />
-              Çekici Fiyatlarını İncele
+              <ClipboardList className="h-3.5 w-3.5" />
+              Hizmet Planlama Rehberi
             </Link>
           </div>
 
@@ -100,11 +100,6 @@ export default function Footer() {
                     className="flex items-center justify-between text-slate-300 transition hover:text-amber-400"
                   >
                     <span>{s.name}</span>
-                    {s.badge && (
-                      <span className="rounded bg-amber-500/20 px-1 py-0.5 text-[9px] font-bold text-amber-300">
-                        {s.badge}
-                      </span>
-                    )}
                   </Link>
                 </li>
               ))}
@@ -268,7 +263,7 @@ export default function Footer() {
               Ana Sayfa
             </Link>
             <Link href="/fiyatlar" className="text-amber-300 hover:text-white">
-              Çekici Fiyatları
+              Hizmet Planlama
             </Link>
             <Link href="/hizmet-bolgeleri" className="hover:text-amber-400">
               Tüm Hizmet Bölgeleri

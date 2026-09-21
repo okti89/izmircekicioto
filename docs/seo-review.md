@@ -29,6 +29,14 @@ Search Console'da aynı tarih aralıklarını karşılaştırın: indekslenen UR
 
 Sitemap'in başarılı alındığını kontrol edin; temsilî hizmet ve bölge sayfalarında URL denetimi canlı testini kullanın. Sitemap veya indeksleme isteği kabul garantisi değildir. Gerçek Googlebot taramalarını Vercel erişim kayıtları ve Search Console tarama istatistikleriyle doğrulayın. Kullanıcı deneyimi için Search Console Core Web Vitals ve mobil PageSpeed ölçümü ayrıca gerekir.
 
+## 21 Eylül 2026 kalite düzeltmesi
+
+- URL'ler silinmedi. Resmî yer kaynağı bulunmayan 47 bölgenin sekiz hizmet sayfası (376 URL) geçici olarak `noindex, follow` yapıldı ve sitemap'ten çıkarıldı. Kaynak durumu `sourced` veya `ambiguous` olduğunda sayfa yeniden indekslenebilir hale gelir.
+- Bölge sayfalarındaki görünür SSS korunurken tekrar eden FAQPage şeması yalnızca hizmet ana sayfalarında bırakıldı. Normal bir çekici sitesi için FAQ zengin sonucu beklenmemelidir.
+- Doğrulanmış fiziksel işletme adresi bulunmadığı için LocalBusiness eklenmedi. Sahte şube veya hizmet bölgesi adresi kullanılmıyor; Organization ve Service şemaları korunuyor.
+- Sabit fiyat, kesin varış süresi, hazır filo, sigorta/kasko ve hasarsızlık garantisi gibi doğrulama gerektiren ifadeler kaldırıldı. `/fiyatlar` URL'si silinmeden hizmet planlama rehberine dönüştürüldü.
+- Galeri görsellerinin `alt` metinleri fotoğrafta görünen araç, platform ve yol/servis bağlamına göre yeniden yazıldı; fotoğraflar bilinemeyen bölgelere bağlanmadı.
+
 Kaynaklar:
 - https://acikveri.bizizmir.com/en/dataset/muhtarliklar/resource/7d0b7f55-9ec2-4e35-91f8-0fd0aceefa18
 - https://www.torbali.bel.tr/muhtarlar

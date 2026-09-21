@@ -26,14 +26,22 @@ const sitemapRoutes = new Set(urls.map((url) => new URL(url).pathname));
 if (new Set(urls).size !== urls.length) errors.push("Sitemap contains duplicate URLs");
 const allLinks = new Map();
 const titles = new Map();
+let excludedNoindex = 0;
+const schemaCounts = { Organization: 0, Service: 0, FAQPage: 0, LocalBusiness: 0 };
 for (const [route, html] of pages) {
-  if (!sitemapRoutes.has(route)) continue;
   const check = (condition, message) => { if (!condition) errors.push(`${route}: ${message}`); };
+  for (const image of html.matchAll(/<img\b[^>]*>/gi)) check(/\balt="[^"]+"/i.test(image[0]), "Image has missing or empty alt text");
+  const hasNoindex = /<meta[^>]*name="robots"[^>]*content="[^"]*noindex/i.test(html);
+  if (!sitemapRoutes.has(route)) {
+    check(hasNoindex, "Generated page is outside sitemap without noindex");
+    if (hasNoindex) excludedNoindex++;
+    continue;
+  }
   check((html.match(/<h1(?:\s|>)/g) ?? []).length === 1, "Expected exactly one H1");
   check(html.includes('lang="tr"'), "Missing Turkish language");
   const canonical = html.match(/<link[^>]*rel="canonical"[^>]*href="([^"]+)"/i)?.[1];
   check(canonical && new URL(canonical).pathname === route && new URL(canonical).origin === base, "Incorrect canonical");
-  check(!/<meta[^>]*name="robots"[^>]*content="[^"]*noindex/i.test(html), "Unexpected noindex");
+  check(!hasNoindex, "Unexpected noindex");
   const title = html.match(/<title>(.*?)<\/title>/s)?.[1];
   check(Boolean(title), "Missing title");
   check(/<meta name="description" content="[^"]+"/.test(html), "Missing description");
@@ -45,6 +53,7 @@ for (const [route, html] of pages) {
     try {
       const schema = JSON.parse(json);
       for (const item of schema["@graph"] ?? [schema]) {
+        if (item["@type"] in schemaCounts) schemaCounts[item["@type"]]++;
         if (item["@type"] === "FAQPage") for (const faq of item.mainEntity) {
           const escape = (text) => text.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("'", "&#x27;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
           check(visible.includes(escape(faq.name)), `FAQ question absent from page: ${faq.name}`);
@@ -63,7 +72,7 @@ const reached = new Set(["/"]);
 const queue = ["/"];
 for (let i = 0; i < queue.length; i++) for (const link of allLinks.get(queue[i]) ?? []) if (!reached.has(link)) { reached.add(link); queue.push(link); }
 for (const route of sitemapRoutes) if (!reached.has(route)) errors.push(`No crawlable path from homepage: ${route}`);
-const report = { generatedAt: new Date().toISOString(), sitemapUrls: urls.length, auditedPages: allLinks.size, reachablePages: [...sitemapRoutes].filter((r) => reached.has(r)).length, homepageBytes: Buffer.byteLength(pages.get("/") ?? ""), errors: [...new Set(errors)], warnings: [...new Set(warnings)] };
+const report = { generatedAt: new Date().toISOString(), generatedPages: pages.size, sitemapUrls: urls.length, auditedPages: allLinks.size, excludedNoindex, reachablePages: [...sitemapRoutes].filter((r) => reached.has(r)).length, homepageBytes: Buffer.byteLength(pages.get("/") ?? ""), schemaCounts, errors: [...new Set(errors)], warnings: [...new Set(warnings)] };
 fs.mkdirSync("artifacts", { recursive: true });
 const regionsSource = fs.readFileSync("src/data/referenceRegions.ts", "utf8");
 const detailSource = fs.readFileSync("src/data/districtDetails.ts", "utf8");

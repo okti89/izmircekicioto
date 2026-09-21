@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { ShieldAlert, Wrench, Compass, DollarSign, MapPin, Phone } from "lucide-react";
 import Header from "@/components/Header";
@@ -59,7 +58,7 @@ export default function ServiceRegionsPage() {
               İzmir Çekici Hizmet Bölgeleri
             </h1>
             <p className="mt-5 max-w-3xl text-base leading-7 text-slate-300 md:text-lg">
-              İzmir Çevre Yolu, otoyollar, tüneller, 1-7. Sanayi Siteleri, Çeşme Yarımadası, Torbalı ve tüm ilçelerde en yakın kayar kasa çekici ekibi dakikalar içinde yönlendirilir.
+              İzmir Çevre Yolu, otoyollar, tüneller, sanayi siteleri, Çeşme Yarımadası, Torbalı ve ilçelerde konum ile araç bilgisine göre hizmet kapsamı değerlendirilir.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
@@ -74,7 +73,7 @@ export default function ServiceRegionsPage() {
                 className="inline-flex items-center gap-2 border border-amber-400/40 bg-slate-900 px-6 py-3.5 text-sm font-bold text-amber-300 hover:bg-amber-400 hover:text-slate-950 transition"
               >
                 <DollarSign className="h-4 w-4" />
-                2026 Çekici Fiyat Tarifesi
+                Hizmet Planlama Rehberi
               </Link>
             </div>
           </div>
@@ -232,25 +231,25 @@ export default function ServiceRegionsPage() {
             </div>
           </section>
 
-          {/* Fiyat Bannerı */}
+          {/* Hizmet planlama bağlantısı */}
           <section className="border-l-4 border-amber-500 bg-slate-950 p-8 text-white">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-amber-400">
-                  Şeffaf Fiyat Politikası
+                  Talep Öncesi Bilgilendirme
                 </p>
                 <h3 className="mt-1 font-heading text-2xl font-black">
-                  İzmir Çekici Fiyatları ve Hesaplama Rehberi
+                  Konum, Araç ve Teslim Bilgisi Rehberi
                 </h3>
                 <p className="mt-2 text-sm text-slate-300">
-                  Açılış ücreti, km başına mesafe tarifesi ve araç sınıfına göre net fiyat tablosunu inceleyin.
+                  Doğru ekipman ve hizmet kapsamının belirlenmesi için hangi bilgileri paylaşmanız gerektiğini inceleyin.
                 </p>
               </div>
               <Link
                 href="/fiyatlar"
                 className="shrink-0 bg-amber-500 px-6 py-3 font-heading text-sm font-black text-slate-950 hover:bg-amber-400 transition"
               >
-                Fiyat Tablosunu Gör →
+                Planlama Rehberini Aç →
               </Link>
             </div>
           </section>

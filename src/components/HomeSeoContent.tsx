@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-import { CheckCircle2, MapPin, Phone, ShieldCheck, ShieldAlert, Wrench, DollarSign } from "lucide-react";
+import { CheckCircle2, MapPin, Phone, ShieldCheck, ShieldAlert, Wrench, ClipboardList } from "lucide-react";
 import { MAIN_PHONE, MAIN_PHONE_RAW } from "@/data/districts";
 import {
   HIGHWAY_TUNNEL_LINKS,
@@ -37,7 +37,7 @@ export default function HomeSeoContent() {
               İzmir'de çekici ihtiyacı yalnızca aracın çalışmamasıyla ortaya çıkmaz. Kaza sonrası taşıma, akü bitmesi, marş ve şarj arızaları, lastik sorunu ya da güvenli servis transferi için aracın durumuna uygun ekipman gerekir. İzmir Çekici, ilk görüşmede konum ve araç bilgisini değerlendirerek ihtiyaç duyulan hizmeti planlar.
             </p>
             <p className="mt-4 leading-8 text-slate-600">
-              Kayar kasa hidrolik çekicilerimiz binek araç, SUV, spor araç ve hafif ticari araçların hasarsız yüklenmesini sağlar. İzmir Çevre Yolu, otoyollar, dağ geçitleri ve sanayi sitelerinde 7/24 teyakkuzdayız.
+              Kayar kasa seçimi; binek araç, SUV, spor araç veya hafif ticari aracın ölçüsü, yürür durumu ve bulunduğu alan değerlendirilerek yapılır. Otoyol, dağ geçidi ve sanayi sitesi taleplerinde yol ile erişim koşulları ayrıca dikkate alınır.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -45,8 +45,8 @@ export default function HomeSeoContent() {
                 href="/fiyatlar"
                 className="inline-flex items-center gap-2 rounded bg-amber-500 px-5 py-3 text-sm font-black text-slate-950 hover:bg-amber-400 transition"
               >
-                <DollarSign className="h-4 w-4" />
-                2026 Çekici Fiyatlarını Gör
+                <ClipboardList className="h-4 w-4" />
+                Hizmet Planlama Rehberi
               </Link>
               <Link
                 href="/hizmet-bolgeleri"
@@ -102,7 +102,7 @@ export default function HomeSeoContent() {
             </Link>
           </div>
           <p className="mt-4 max-w-3xl leading-7 text-slate-600 text-sm">
-            İzmir Çevre Yolu, Sabuncubeli Tüneli, Belkahve Rampası, Çeşme Otoyolu ve Aydın Otoyolu üzerinde arıza veya kaza halinde emniyet şeridine hızlı yönlendirme sağlıyoruz.
+            İzmir Çevre Yolu, Sabuncubeli Tüneli, Belkahve Rampası, Çeşme Otoyolu ve Aydın Otoyolu taleplerinde yolun adı, gidiş yönü, yakın çıkış ve güvenli bekleme noktası birlikte değerlendirilir.
           </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {HIGHWAY_TUNNEL_LINKS.slice(0, 6).map((item) => (
